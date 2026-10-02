@@ -5,7 +5,7 @@ import * as K from './calculos.js';
 import * as C from './componentes.js';
 const { n0, n1, usd, pct, fecha, esc } = K;
 
-const IG_DE_PESTANA = { athletum: 'juventusacademymiami', camps_usa: 'juventuscampsusa', camps_mx: 'juventuscampsmx' };
+const IG_DE_PESTANA = { athletum: 'juventusacademymiami', camps_usa: 'juventuscampsusa', camps_mx: 'juventuscampsmx', las_vegas: 'jacademylasvegas' };
 const mes = (k) => { const [y, m] = k.split('-'); return new Date(+y, +m - 1, 15).toLocaleDateString('es-ES', { month: 'short', year: 'numeric' }); };
 const urlFila = (gid, fila) => `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit#gid=${gid}&range=A${fila}`;
 const urlSheet = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit`;
@@ -95,7 +95,7 @@ export async function resumen(v) {
       <div><h3 style="margin:0 0 4px">Escenarios de seguidores a 90 días</h3><p class="fuente" style="margin:0 0 10px">Proyecciones condicionadas, no resultados.</p>${tablaProyeccion(ig, frec)}</div>
     </div>${notaProyeccion}`)
   + C.seccion('Avance de los contenidos', `Piezas del Sheet por estado. «Producidas» = por aprobar + aprobadas + programadas + publicadas; el avance se calcula sobre las piezas activas (sin pospuestas ni rechazadas).`,
-    `<div class="card">${C.lienzo('gAvance', 'bajo', 'Piezas por estado y cuenta')}</div>${C.fuente('Google Sheet «Social Media Content Plan», pestañas Athletum, Juve Camps USA y Juve Camps MEXICO', urlSheet)}`);
+    `<div class="card">${C.lienzo('gAvance', 'bajo', 'Piezas por estado y cuenta')}</div>${C.fuente('Google Sheet «Social Media Content Plan», pestañas Athletum, Juve Camps USA, Juve Camps MEXICO y Juve Las Vegas', urlSheet)}`);
 
   // gráficos
   C.grafico('gNuevos', { type: 'line', data: { labels: conSerie[0]?.seguidores.nuevos_por_dia.map(x => x.fecha.slice(5)) || [],
@@ -308,7 +308,7 @@ export async function contenido(v) {
   const pubStatus = p.tabs.filter(t => t.columnas.includes('Publication Status')).map(t => ({ cuenta: t.cuenta, conteo: K.contar(t.registros, 'Publication Status', '(vacío)') }));
 
   v.innerHTML = C.cabecera({ kicker: 'Plan de contenido', titulo: 'Plan de contenido', extra: C.badgeParrilla(p) + ` <a class="btn oro" href="${urlSheet}" target="_blank" rel="noopener">Abrir el Sheet ↗</a>`,
-    texto: 'Consolidado de las pestañas Athletum (Juve Miami), Juve Camps USA y Juve Camps MEXICO del Sheet «Social Media Content Plan». Lectura pública de solo lectura: el dashboard nunca modifica el documento.' })
+    texto: 'Consolidado de las pestañas Athletum (Juve Miami), Juve Camps USA, Juve Camps MEXICO y Juve Las Vegas del Sheet «Social Media Content Plan». Lectura pública de solo lectura: el dashboard nunca modifica el documento.' })
   + (p.origen === 'copia' ? C.aviso(`No se pudo leer el Sheet en vivo (${esc(p.error)}). Se muestra la copia guardada el ${fecha(p.leido)}.`, 'rojo') : '')
   + `<div class="grid g4">
     ${C.kpi({ valor: n0(rp.total), tipo: 'plan', etiqueta: 'Piezas en el plan', detalle: `${n0(rp.activas)} activas · ${n0(rp.por.fuera)} pospuestas o no aprobadas` })}
@@ -324,7 +324,7 @@ export async function contenido(v) {
       { t: 'Avance de producción', k: x => `${C.barra(x.r.avance)}<small class="mono">${pct(x.r.avance, 0)}</small>` }], porCuenta)
     + `<div class="card" style="margin-top:16px">${C.lienzo('gEstados', 'bajo', 'Piezas por estado y cuenta')}</div>`
     + (pubStatus.length ? `<p class="fuente">Estado de publicación (columna aparte «Publication Status»): ${pubStatus.map(x => `${esc(x.cuenta)}: ${x.conteo.map(([a, b]) => `${esc(a)} ${n0(b)}`).join(', ')}`).join(' · ')}.</p>` : ''))
-  + C.seccion('Distribución del plan', `Formatos y pilares de las piezas activas. ${sinPilar.map(t => esc(t.cuenta)).join(', ')}: pilar y público no registrados en esta pestaña.`, `<div class="grid g2">
+  + C.seccion('Distribución del plan', `Formatos y pilares de las piezas activas. Cada cuenta usa su propio sistema de pilares (por ejemplo, el P3 de Las Vegas es «Competición» y el de Camps es «Autoridad»), así que se comparan dentro de cada cuenta. ${sinPilar.map(t => esc(t.cuenta)).join(', ')}: pilar y público no registrados en esta pestaña.`, `<div class="grid g2">
       <div class="card"><h3>Por formato</h3>${C.lienzo('gFormato', '', 'Piezas por formato y cuenta')}</div>
       <div class="card"><h3>Por pilar</h3>${conPilar.length ? C.lienzo('gPilar', '', 'Piezas por pilar y cuenta') : '<p class="vacio">No registrado.</p>'}</div>
       <div class="card"><h3>Piezas planificadas por mes</h3>${C.lienzo('gMesCont', '', 'Piezas planificadas por mes')}</div>
@@ -348,7 +348,7 @@ export async function contenido(v) {
   const activos = (t) => t.registros.filter(r => K.grupoDe(r.Status) !== 'fuera');
   const barrasPor = (id, campo, tabs) => {
     const etiquetas = ops(tabs.flatMap(t => activos(t).map(r => r[campo] || '(sin dato)')));
-    C.grafico(id, { type: 'bar', data: { labels: etiquetas, datasets: tabs.map((t, i) => ({ label: t.cuenta, backgroundColor: C.PALETA[i], data: etiquetas.map(e => activos(t).filter(r => (r[campo] || '(sin dato)') === e).length) })) },
+    C.grafico(id, { type: 'bar', data: { labels: etiquetas, datasets: tabs.map(t => ({ label: t.cuenta, backgroundColor: C.PALETA[p.tabs.indexOf(t)], data: etiquetas.map(e => activos(t).filter(r => (r[campo] || '(sin dato)') === e).length) })) },
       options: { scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true, ticks: { precision: 0 } } } } });
   };
   barrasPor('gFormato', 'Format', p.tabs);

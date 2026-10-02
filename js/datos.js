@@ -8,6 +8,7 @@ export const PESTANAS = [
   { clave: 'athletum', nombre: 'Athletum (Juve Miami)', cuenta: 'Athletum', gid: 2019029769 },
   { clave: 'camps_usa', nombre: 'Juve Camps USA', cuenta: 'Juventus Camps USA', gid: 401158311 },
   { clave: 'camps_mx', nombre: 'Juve Camps MEXICO', cuenta: 'Juventus Camps México', gid: 1554982198 },
+  { clave: 'las_vegas', nombre: 'Juve Las Vegas', cuenta: 'Juventus Academy Las Vegas', gid: 895335398 },
 ];
 
 const cache = {};
