@@ -1,10 +1,10 @@
 // Evolución de la gestión de marketing desde el 15-sep-2026: bloque del resumen y sección completa.
-import { json, parrilla } from './datos.js?v=20261002e';
-import * as K from './calculos.js?v=20261002e';
-import * as C from './componentes.js?v=20261002e';
-import { CORTE, sumarDias, hoyISO, diasEntre } from './periodo.js?v=20261002e';
-import { comparacionIG, totalesComparacion, tablaSeguidores, tablaActividad, lecturaComparacion, IG_DE_PESTANA } from './vista_instagram.js?v=20261002e';
-import { comparacionContenido, tablaPlanificacion, tablaCumplimiento, lecturaContenido } from './vista_contenido.js?v=20261002e';
+import { json, parrilla } from './datos.js?v=20261002f';
+import * as K from './calculos.js?v=20261002f';
+import * as C from './componentes.js?v=20261002f';
+import { CORTE, sumarDias, hoyISO, diasEntre } from './periodo.js?v=20261002f';
+import { comparacionIG, totalesComparacion, tablaSeguidores, tablaActividad, lecturaComparacion, IG_DE_PESTANA } from './vista_instagram.js?v=20261002f';
+import { comparacionContenido, tablaPlanificacion, lecturaContenido, piezasHechas } from './vista_contenido.js?v=20261002f';
 const { n0, n1, usd, pct, fecha, esc } = K;
 const corta = (f) => new Date(f + 'T12:00:00').toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
 
@@ -104,9 +104,9 @@ export function bloque(d, completo = false, pref = 'evo') {
       <div class="grid g3">
         ${C.comparativa({ etiqueta: 'Pre-Academy · costo por conversación', antes: kp.cpaPrevio, despues: kp.cpa, formato: (x) => usd(x), invertir: true, detalle: `Campaña previa (${pre.mes_previo.dias} días, hasta el 19-sep) → campaña actual (${kp.dias} días). Duraciones distintas.` })}
         ${C.comparativa({ etiqueta: 'ID Camps · costo por lead (clic)', antes: temp?.cpl, despues: ki.cpl, formato: (x) => usd(x), invertir: true, detalle: `Temporada ${esc(temp?.temporada || '')} completa → ${ki.dias} días de la campaña nueva, en fase de aprendizaje. Registros atribuidos: pendiente de medición.` })}
-        ${C.kpi({ valor: pct(rp.avance, 0), tipo: 'actividad', etiqueta: 'Contenido producido sobre el plan activo', detalle: `${n0(rp.producidas)} de ${n0(rp.activas)} piezas · ${n0(rp.pend_aprob)} esperan aprobación · ${n0(rp.publicadas)} publicadas` })}
+        ${(() => { const h = piezasHechas(p.tabs), sm = (k) => h.reduce((s, x) => s + x[k], 0); return C.kpi({ valor: n0(sm('total')), tipo: 'actividad', etiqueta: 'Piezas de contenido hechas', detalle: `${n0(sm('carruseles'))} carruseles, ${n0(sm('fotos'))} posts de foto, ${n0(sm('flyers'))} flyers y ${n0(sm('reels'))} reels en ${h.filter(x => x.total).length} cuentas` }); })()}
       </div>
-      ${completo ? `<h3 style="margin:22px 0 8px">Planificación de contenido antes y después ${C.tipo('plan')}</h3>${tablaPlanificacion(cmpCont)}<h3 style="margin:22px 0 8px">Cumplimiento del calendario (según el Sheet)</h3>${tablaCumplimiento(cmpCont)}` : ''}
+      ${completo ? `<h3 style="margin:22px 0 8px">Planificación de contenido antes y después ${C.tipo('plan')}</h3>${tablaPlanificacion(cmpCont)}` : ''}
       ${C.lectura(`${lecturaCampanas([['Pre-Academy', kp.cpaPrevio, kp.cpa, kp.dias], ['ID Camps', temp?.cpl, ki.cpl, ki.dias]])} ${lecturaContenido(cmpCont)}`)}</div>
 
     <div class="parte"><h3><span class="n">6</span> Próximas acciones estratégicas ${C.tipo('plan')}</h3>

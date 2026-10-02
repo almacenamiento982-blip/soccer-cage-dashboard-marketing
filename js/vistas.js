@@ -1,14 +1,14 @@
 // Vistas de Resumen, Meta Ads, Email y Hoja de ruta. Instagram, Contenido y Evolución tienen su propio archivo.
-import { json, parrilla, SHEET_ID } from './datos.js?v=20261002e';
-import * as K from './calculos.js?v=20261002e';
-import * as C from './componentes.js?v=20261002e';
-import { frecuencias, tablaProyeccion, notaProyeccion } from './vista_instagram.js?v=20261002e';
-import { graficoEstados } from './vista_contenido.js?v=20261002e';
-import { cargar as cargarEvolucion, bloque as bloqueEvolucion } from './vista_evolucion.js?v=20261002e';
-import { hoyISO } from './periodo.js?v=20261002e';
-export { instagram } from './vista_instagram.js?v=20261002e';
-export { contenido } from './vista_contenido.js?v=20261002e';
-export { evolucion } from './vista_evolucion.js?v=20261002e';
+import { json, parrilla, SHEET_ID } from './datos.js?v=20261002f';
+import * as K from './calculos.js?v=20261002f';
+import * as C from './componentes.js?v=20261002f';
+import { frecuencias, tablaProyeccion, notaProyeccion } from './vista_instagram.js?v=20261002f';
+import { graficoHechas, piezasHechas } from './vista_contenido.js?v=20261002f';
+import { cargar as cargarEvolucion, bloque as bloqueEvolucion } from './vista_evolucion.js?v=20261002f';
+import { hoyISO } from './periodo.js?v=20261002f';
+export { instagram } from './vista_instagram.js?v=20261002f';
+export { contenido } from './vista_contenido.js?v=20261002f';
+export { evolucion } from './vista_evolucion.js?v=20261002f';
 const { n0, n1, usd, pct, fecha, esc } = K;
 
 const mes = (k) => { const [y, m] = k.split('-'); return new Date(+y, +m - 1, 15).toLocaleDateString('es-ES', { month: 'short', year: 'numeric' }); };
@@ -29,6 +29,7 @@ export async function resumen(v) {
   const nuevos = conSerie.reduce((s, c) => s + K.crecimiento(c).nuevos, 0);
   const plan = em.plan_cifras;
   const temp = K.historicoTemporadas(idc).at(-1);
+  const hechas = piezasHechas(p.tabs), totHechas = hechas.reduce((s, x) => s + x.total, 0), suma = (k) => hechas.reduce((s, x) => s + x[k], 0);
 
   v.innerHTML = C.cabecera({ kicker: 'Centro de control', titulo: 'Resumen ejecutivo',
     texto: `Estado del marketing digital de Soccer Cage. Cada cifra se calcula de su fuente: informes y campañas actualizados el ${fecha(ig.generado.slice(0, 10))}; el plan de contenido se lee del Sheet al abrir la página.`,
@@ -38,7 +39,7 @@ export async function resumen(v) {
     ${C.kpi({ valor: '+' + n0(nuevos), etiqueta: 'Nuevos seguidores en 30 días', detalle: `${conSerie.length} cuentas con serie diaria. Cifra bruta: no descuenta a quienes dejaron de seguir.${sinSerie.length ? ` ${sinSerie.map(c => '@' + c.usuario).join(', ')}: pendiente de medición.` : ''}` })}
     ${C.kpi({ valor: usd(kp.cpa), etiqueta: 'Pre-Academy · costo por conversación', detalle: `${n0(kp.conv)} conversaciones por ${usd(kp.gasto)} en ${kp.dias} días. Campaña previa: ${usd(kp.cpaPrevio)}.` })}
     ${C.kpi({ valor: n0(ki.leads), etiqueta: 'ID Camps · leads (clics en «Register now»)', detalle: `${usd(ki.cpl)} por lead · ${usd(ki.gasto)} invertidos en ${ki.dias} días${ki.parcial ? ' (último día parcial)' : ''}. Temporada ${esc(temp?.temporada || '')}: ${usd(temp?.cpl)} por lead.` })}
-    ${C.kpi({ valor: pct(rp.avance, 0), tipo: 'actividad', etiqueta: 'Avance de producción de contenido', detalle: `${n0(rp.producidas)} de ${n0(rp.activas)} piezas activas producidas · ${n0(rp.pend_aprob)} esperan aprobación · ${n0(rp.listas)} listas para publicar · ${n0(rp.publicadas)} publicadas.` })}
+    ${C.kpi({ valor: n0(totHechas), tipo: 'actividad', etiqueta: 'Piezas de contenido hechas', detalle: `En ${hechas.filter(x => x.total).length} cuentas: ${n0(suma('carruseles'))} carruseles, ${n0(suma('fotos'))} posts de foto, ${n0(suma('flyers'))} flyers y ${n0(suma('reels'))} reels.` })}
     ${C.kpi({ valor: plan ? `${n0(plan.enviados)} de ${n0(plan.emails)}` : '—', tipo: 'plan', etiqueta: 'Email · envíos del plan nuevo', detalle: plan ? `Plan publicado de ${n0(plan.emails)} emails y ${n0(plan.sms)} SMS. ${esc(plan.nota)}` : 'Cifras del plan no disponibles.' })}
   </div>`
   + `<section class="seccion">${evo.html}</section>`
@@ -56,8 +57,8 @@ export async function resumen(v) {
       <tr><td>Datos hasta</td><td>${fecha(pre.ultima.fecha)} · se actualiza con el CSV de Ads Manager</td><td>${fecha(idc.meta_diario.at(-1).fecha)}${idc.meta_diario.at(-1).parcial ? ' (parcial)' : ''} · se actualiza revisando Meta y la plataforma de registros</td></tr>
       <tr><td>Próxima revisión</td><td>${esc(pre.proxima_revision)}</td><td>10–13 de octubre</td></tr>
     </tbody></table></div>`)
-  + C.seccion('Avance de los contenidos', `Piezas del Sheet por estado. «Producidas» = por aprobar + aprobadas + programadas + publicadas; el avance se calcula sobre las piezas activas (sin pospuestas ni rechazadas). Son las mismas cifras de la sección Plan de contenido.`,
-    `<div class="card"><h3>Piezas por estado y cuenta</h3><p class="sub">El número al final de cada barra es el total de piezas de la cuenta.</p>${C.lienzo('gAvance', 'bajo', 'Piezas por estado y cuenta')}</div>${C.fuente('Google Sheet «Social Media Content Plan», pestañas Athletum, Juve Camps USA, Juve Camps MEXICO y Juve Las Vegas', urlSheet)}`)
+  + C.seccion('Piezas de contenido hechas', 'Piezas ya producidas en cada cuenta según el Sheet, por formato. Son las mismas cifras de la sección Plan de contenido.',
+    `<div class="card"><h3>Piezas hechas por cuenta y formato</h3><p class="sub">El número al final de cada barra es el total de piezas hechas de la cuenta.</p>${C.lienzo('gAvance', 'bajo', 'Piezas hechas por cuenta y formato')}</div>${C.fuente('Google Sheet «Social Media Content Plan», pestañas Athletum, Juve Camps USA, Juve Camps MEXICO y Juve Las Vegas', urlSheet)}`)
   + C.seccion('Escenarios de seguidores a 90 días', 'Proyecciones condicionadas a que se mantenga el ritmo reciente. No son resultados ni metas.', tablaProyeccion(ig, frecuencias(ig, p)) + notaProyeccion(ig))
   + C.seccion('Frentes de trabajo', 'Cada frente separa lo que se planificó, lo que ya se hizo y lo que falta. El estado se asigna solo con evidencia.',
     `<div class="grid gauto">${est.frentes.map(f => `<article class="card frente">
@@ -67,7 +68,7 @@ export async function resumen(v) {
       <div class="sig"><b>Siguiente paso:</b> ${esc(f.siguiente)} <a href="#${esc(f.seccion)}">Ver sección →</a></div></article>`).join('')}</div>`);
 
   evo.dibujar();
-  graficoEstados('gAvance', p.tabs);
+  graficoHechas('gAvance', p.tabs);
 }
 
 // Aviso de frescura: estas campañas no se actualizan con la tarea automática

@@ -26,7 +26,7 @@
    "realizado": "Parrillas en el Sheet «Social Media Content Plan 26/27» para Athletum (Juve Miami), Juve Camps USA, Juve Camps México y Juve Las Vegas, con piezas producidas y enlazadas en Drive.",
    "estado": "En progreso",
    "evidencia": "Google Sheet (lectura en vivo en la sección Plan de contenido).",
-   "hallazgo": "La mayoría de las piezas de Camps USA, México y Las Vegas están producidas pero en «To be approved»: el cuello de botella es la aprobación, no la producción.",
+   "hallazgo": "Las cuatro cuentas tienen su parrilla en el Sheet y la mayoría de las piezas de Camps USA, México y Las Vegas ya están producidas.",
    "siguiente": "Aprobar y programar las piezas producidas; corregir las 15 piezas de México señaladas en la revisión del 01-oct.",
    "seccion": "contenido"
   },
@@ -93,7 +93,13 @@
    "prioridad": "Prioritaria: antes de aumentar la inversión en adquisición",
    "estado": "Pendiente de validación",
    "objetivo": "Reducir las fricciones que impiden completar el formulario y poder medir cada registro.",
-   "acciones": ["Funcionamiento de los formularios y registro de los datos", "Experiencia en móvil y velocidad", "Propuesta de valor y llamados a la acción claros", "Medición de conversiones (evento de registro real, no solo clic)", "Verificar el recorrido completo: anuncio → página → registro → pago"],
+   "acciones": [
+    "Funcionamiento de los formularios y registro de los datos",
+    "Experiencia en móvil y velocidad",
+    "Propuesta de valor y llamados a la acción claros",
+    "Medición de conversiones (evento de registro real, no solo clic)",
+    "Verificar el recorrido completo: anuncio → página → registro → pago"
+   ],
    "hecho": "Auditoría de juventuscampsusa.com, brief del píxel y prototipo de landing por sede."
   },
   {
@@ -102,7 +108,13 @@
    "prioridad": "En curso, con revisiones programadas",
    "estado": "En progreso",
    "objetivo": "Optimizar las campañas activas con datos de costo y calidad del lead.",
-   "acciones": ["Pruebas de creatividades (ya se identifican anuncios ganadores en Pre-Academy)", "Evaluación de públicos (intereses, abiertos, similares, retargeting)", "Seguimiento del costo por lead", "Calidad de los registros y tasa de conversión de las páginas", "Separar indicadores de tráfico (clics) de indicadores de captación (conversaciones, registros, pagos)"],
+   "acciones": [
+    "Pruebas de creatividades (ya se identifican anuncios ganadores en Pre-Academy)",
+    "Evaluación de públicos (intereses, abiertos, similares, retargeting)",
+    "Seguimiento del costo por lead",
+    "Calidad de los registros y tasa de conversión de las páginas",
+    "Separar indicadores de tráfico (clics) de indicadores de captación (conversaciones, registros, pagos)"
+   ],
    "hecho": "Dos campañas activas con seguimiento: Pre-Academy (desde 22-sep) e ID Camps (desde 30-sep)."
   },
   {
@@ -111,7 +123,13 @@
    "prioridad": "Oportunidad futura, sujeta a medición, estrategia y presupuesto",
    "estado": "Planificado",
    "objetivo": "Captar demanda con intención de búsqueda una vez que las páginas y la medición estén listas.",
-   "acciones": ["Google Search por ubicación y servicio", "Investigación de palabras clave", "Análisis de términos de búsqueda", "Costo por conversión", "Calidad comercial de los leads"],
+   "acciones": [
+    "Google Search por ubicación y servicio",
+    "Investigación de palabras clave",
+    "Análisis de términos de búsqueda",
+    "Costo por conversión",
+    "Calidad comercial de los leads"
+   ],
    "hecho": "Ninguna campaña creada. Pendiente: identificar la cuenta de Google Ads existente."
   },
   {
@@ -120,7 +138,13 @@
    "prioridad": "Planificada para octubre 2026 – junio 2027",
    "estado": "Planificado",
    "objetivo": "Dar continuidad entre la captación del lead y la inscripción o la venta.",
-   "acciones": ["Autenticación del correo (DKIM y DMARC) en los dominios propios", "Limpieza de rebotes y etiquetado de la base por público", "Secuencias por público: Pre-Academy, ID Camps, Summer, JTE, Las Vegas y torneos", "SMS de recordatorio en momentos clave", "UTM en todos los enlaces para medir"],
+   "acciones": [
+    "Autenticación del correo (DKIM y DMARC) en los dominios propios",
+    "Limpieza de rebotes y etiquetado de la base por público",
+    "Secuencias por público: Pre-Academy, ID Camps, Summer, JTE, Las Vegas y torneos",
+    "SMS de recordatorio en momentos clave",
+    "UTM en todos los enlaces para medir"
+   ],
    "hecho": "Auditoría y plan publicados. Ninguna automatización activa todavía."
   },
   {
@@ -129,7 +153,14 @@
    "prioridad": "Evolución continua del dashboard",
    "estado": "En progreso",
    "objetivo": "Pasar de métricas de alcance a resultados comerciales.",
-   "acciones": ["Inversión publicitaria", "Visitas a las páginas", "Formularios iniciados y completados", "Leads y costo por lead", "Leads calificados", "Conversión a inscripción o venta"],
+   "acciones": [
+    "Inversión publicitaria",
+    "Visitas a las páginas",
+    "Formularios iniciados y completados",
+    "Leads y costo por lead",
+    "Leads calificados",
+    "Conversión a inscripción o venta"
+   ],
    "hecho": "Ya se cruzan gasto de Meta con registros y pagos de la app para ID Camps (sin atribución directa)."
   }
  ]

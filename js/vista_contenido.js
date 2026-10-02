@@ -1,9 +1,9 @@
 // Sección Plan de contenido: Sheet en vivo, filtrado por periodo, y comparación antes / desde el 15-sep.
-import { json, parrilla, SHEET_ID } from './datos.js?v=20261002e';
-import * as K from './calculos.js?v=20261002e';
-import * as C from './componentes.js?v=20261002e';
-import { CORTE, rangos, rangoActivo, periodo, hoyISO, enRango, sumarDias } from './periodo.js?v=20261002e';
-import { IG_DE_PESTANA } from './vista_instagram.js?v=20261002e';
+import { json, parrilla, SHEET_ID } from './datos.js?v=20261002f';
+import * as K from './calculos.js?v=20261002f';
+import * as C from './componentes.js?v=20261002f';
+import { CORTE, rangos, rangoActivo, periodo, hoyISO, enRango, sumarDias } from './periodo.js?v=20261002f';
+import { IG_DE_PESTANA } from './vista_instagram.js?v=20261002f';
 const { n0, n1, pct, fecha, esc } = K;
 
 const mes = (k) => { const [y, m] = k.split('-'); return new Date(+y, +m - 1, 15).toLocaleDateString('es-ES', { month: 'short', year: 'numeric' }); };
@@ -67,6 +67,44 @@ function graficoEstados(id, tabs) {
 }
 export { graficoEstados };
 
+// «Piezas hechas» = producidas: por aprobar, aprobadas, programadas o publicadas
+const HECHAS = ['pend_aprob', 'aprobada', 'programada', 'publicada'];
+export const hecha = (x) => HECHAS.includes(K.grupoDe(x.Status));
+
+export function piezasHechas(tabs) {
+  return tabs.map(t => {
+    const h = t.registros.filter(hecha);
+    const f = (re) => h.filter(x => re.test(x.Format || '')).length;
+    const fotos = f(/photo/i), carruseles = f(/carousel/i), flyers = f(/graphic|flyer/i), reels = f(/reel/i);
+    const distintos = (campo) => t.columnas.includes(campo) ? new Set(h.map(x => (x[campo] || '').trim()).filter(Boolean)).size : null;
+    return { t, h, total: h.length, fotos, carruseles, flyers, reels, otros: h.length - fotos - carruseles - flyers - reels, pilares: distintos('Pilar'), publicos: distintos('Publico') };
+  });
+}
+
+export function tablaHechas(filas) {
+  const tot = (k) => filas.reduce((s, x) => s + (x[k] || 0), 0);
+  const todas = [...filas, { t: { cuenta: 'Total' }, total: tot('total'), fotos: tot('fotos'), carruseles: tot('carruseles'), flyers: tot('flyers'), reels: tot('reels'), otros: tot('otros'), pilares: null, publicos: null, _total: true }];
+  return C.tabla([
+    { t: 'Cuenta', k: x => x._total ? '<b>Total</b>' : `<b>${esc(x.t.cuenta)}</b><br><small><a href="https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit#gid=${x.t.gid}" target="_blank" rel="noopener">pestaña «${esc(x.t.nombre)}» ↗</a></small>` },
+    { t: 'Piezas hechas', num: 1, k: x => `<b>${n0(x.total)}</b>` },
+    { t: 'Posts de foto', num: 1, k: x => n0(x.fotos) },
+    { t: 'Carruseles', num: 1, k: x => n0(x.carruseles) },
+    { t: 'Flyers', num: 1, k: x => n0(x.flyers) },
+    { t: 'Reels', num: 1, k: x => n0(x.reels) },
+    { t: 'Otros formatos', num: 1, k: x => n0(x.otros) },
+    { t: 'Pilares trabajados', num: 1, k: x => x._total ? '' : x.pilares == null ? '<span class="vacio">no registrado</span>' : n0(x.pilares) },
+    { t: 'Públicos', num: 1, k: x => x._total ? '' : x.publicos == null ? '<span class="vacio">no registrado</span>' : n0(x.publicos) },
+  ], todas);
+}
+
+// Gráfico de piezas hechas por cuenta y formato (lo usan Contenido y Resumen)
+export function graficoHechas(id, tabs) {
+  const filas = piezasHechas(tabs);
+  const series = [['Posts de foto', 'fotos', '#111214'], ['Carruseles', 'carruseles', '#B8862F'], ['Flyers', 'flyers', '#7F8792'], ['Reels', 'reels', '#2F5D8A'], ['Otros formatos', 'otros', '#C9CDD2']];
+  C.grafico(id, { type: 'bar', data: { labels: filas.map(x => x.t.cuenta), datasets: series.map(([n, k, c]) => ({ label: n, backgroundColor: c, data: filas.map(x => x[k]) })).filter(d => d.data.some(Boolean)) },
+    options: { indexAxis: 'y', plugins: { valores: { mostrar: true } }, scales: { x: { stacked: true, beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: 'Piezas hechas' } }, y: { stacked: true } } } });
+}
+
 const filtrosCont = { cuenta: '', grupo: '', formato: '', pilar: '', mes: '', q: '' };
 export async function contenido(v) {
   const [p, ig] = await Promise.all([parrilla(), json('instagram').catch(() => null)]);
@@ -86,11 +124,13 @@ export async function contenido(v) {
   const posibles = new Map(); todos.forEach(x => { const k = `${x._clave}|${x.Date}|${(x.Hook || x.Description || '').toLowerCase()}`; posibles.set(k, (posibles.get(k) || 0) + 1); });
   const dup = [...posibles.values()].filter(n => n > 1).reduce((s, n) => s + n - 1, 0);
   const cmp = comparacionContenido(p, hoy);
+  const hechas = piezasHechas(tabsF);
+  const totHechas = hechas.reduce((s, x) => s + x.total, 0);
   // ventanas iguales para el modo comparar
   const enV = (x, w) => enRango(x._iso, w);
   const planA = todos.filter(x => enV(x, r.antes) && K.grupoDe(x.Status) !== 'fuera'), planD = todos.filter(x => enV(x, r.despues) && K.grupoDe(x.Status) !== 'fuera');
   const pubA = planA.filter(x => K.grupoDe(x.Status) === 'publicada').length, pubD = planD.filter(x => K.grupoDe(x.Status) === 'publicada').length;
-  const etiquetaPeriodo = modo === 'todo' ? 'todo el plan' : modo === 'comparar' ? 'todo el plan (las comparaciones usan ventanas iguales)' : ra.etiqueta;
+  const etiquetaPeriodo = modo === 'todo' ? 'todo el plan' : modo === 'comparar' ? 'todo el plan' : ra.etiqueta;
   // publicaciones reales en Instagram por semana (no se mezclan con el plan)
   const finIg = ig ? K.finIG(ig) : null;
   const semanas = ig ? K.semanal([], '2026-07-01', finIg).map(s => s.semana) : [];
@@ -99,43 +139,30 @@ export async function contenido(v) {
     texto: 'Consolidado de las pestañas Athletum (Juve Miami), Juve Camps USA, Juve Camps MEXICO y Juve Las Vegas del Sheet «Social Media Content Plan». Lectura pública de solo lectura: el dashboard nunca modifica el documento. Los indicadores, gráficos y tablas se recalculan con cada lectura.' })
   + (p.origen === 'copia' ? C.aviso(`No se pudo leer el Sheet en vivo (${esc(p.error)}). Se muestra la copia guardada el ${fecha(p.leido)}.`, 'rojo') : '')
   + C.barraPeriodo(hoy, '· Filtra por la fecha planificada de cada pieza.')
-  + (modo === 'comparar'
-    ? `<div class="grid g4">
-      ${C.comparativa({ etiqueta: 'Piezas planificadas con fecha en la ventana', antes: planA.length, despues: planD.length, tipo: 'plan', detalle: `${r.despues.dias} días antes → ${r.despues.dias} días desde el 15-sep (sin pospuestas)` })}
-      ${C.comparativa({ etiqueta: 'Marcadas como publicadas en el Sheet', antes: pubA, despues: pubD, tipo: 'resultado', detalle: 'Estado «Posted» de las piezas de cada ventana' })}
-      ${C.comparativa({ etiqueta: 'Cuentas con parrilla en la ventana', antes: new Set(planA.map(x => x._clave)).size, despues: new Set(planD.map(x => x._clave)).size, tipo: 'actividad', detalle: `De ${p.tabs.length} pestañas del Sheet` })}
-      ${C.kpi({ valor: n0(rp.pend_aprob), tipo: 'actividad', etiqueta: 'Esperan aprobación (todo el plan)', detalle: `${n0(rp.listas)} aprobadas · ${n0(rp.programadas)} programadas · ${n0(rp.publicadas)} publicadas` })}
+  // --- piezas hechas (lo primero que se ve)
+  + C.seccion(`Piezas hechas por cuenta · ${etiquetaPeriodo}`, 'Piezas de contenido ya producidas en cada cuenta, por formato, pilar y público. Se cuentan en vivo desde el Sheet.',
+    tablaHechas(hechas)
+    + `<div class="grid g2" style="margin-top:16px">
+      <div class="card"><h3>Piezas hechas por pilar</h3>${conPilar.map(t => `<p class="sub" style="margin:8px 0 4px"><b>${esc(t.cuenta)}</b></p>` + C.tabla([{ t: 'Pilar', k: x => esc(x[0]) }, { t: 'Piezas', num: 1, k: x => n0(x[1]) }],
+        K.contar(t.registros.filter(hecha), 'Pilar'))).join('') || '<p class="vacio">No registrado.</p>'}</div>
+      <div class="card"><h3>Piezas hechas por público</h3>${conPilar.map(t => `<p class="sub" style="margin:8px 0 4px"><b>${esc(t.cuenta)}</b></p>` + C.tabla([{ t: 'Público', k: x => esc(x[0]) }, { t: 'Piezas', num: 1, k: x => n0(x[1]) }],
+        K.contar(t.registros.filter(hecha), 'Publico'))).join('') || '<p class="vacio">No registrado.</p>'}</div>
     </div>`
-    : `<div class="grid g4">
-      ${C.kpi({ valor: n0(rp.total), tipo: 'plan', etiqueta: `Piezas en el plan · ${etiquetaPeriodo}`, detalle: `${n0(rp.activas)} activas · ${n0(rp.por.fuera)} pospuestas o no aprobadas` })}
-      ${C.kpi({ valor: n0(rp.producidas), tipo: 'actividad', etiqueta: 'Producidas', detalle: `${pct(rp.avance, 0)} de las activas · ${n0(rp.pend_prod)} pendientes de producir` })}
-      ${C.kpi({ valor: n0(rp.pend_aprob), tipo: 'actividad', etiqueta: 'Esperan aprobación', detalle: `${n0(rp.listas)} aprobadas listas para publicar · ${n0(rp.programadas)} programadas` })}
-      ${C.kpi({ valor: n0(rp.publicadas), etiqueta: 'Publicadas', detalle: 'Estado «Posted» en el Sheet' })}
-    </div>`)
-  + C.lectura(rp.activas ? `De ${n0(rp.activas)} piezas activas (${etiquetaPeriodo}), ${n0(rp.producidas)} están producidas (${pct(rp.avance, 0)}) y ${n0(rp.pend_prod)} siguen por producir. ${n0(rp.pend_aprob)} esperan aprobación, y ${n0(rp.listas + rp.programadas)} están aprobadas o programadas.${rp.pend_aprob > rp.pend_prod ? ' Hay más piezas esperando aprobación que por producir: el cuello de botella está en la aprobación.' : ''}` : '')
+    + C.lectura(totHechas ? `Hay <b>${n0(totHechas)} piezas hechas</b> en ${hechas.filter(x => x.total).length} cuentas: ${n0(hechas.reduce((s, x) => s + x.carruseles, 0))} carruseles, ${n0(hechas.reduce((s, x) => s + x.fotos, 0))} posts de foto, ${n0(hechas.reduce((s, x) => s + x.flyers, 0))} flyers y ${n0(hechas.reduce((s, x) => s + x.reels, 0))} reels. ${sinPilar.map(t => esc(t.cuenta)).join(', ')}: pilar y público no registrados en su pestaña.` : ''))
+  + (modo === 'comparar' ? `<div class="grid g2" style="margin-top:16px">
+      ${C.comparativa({ etiqueta: 'Piezas planificadas con fecha en la ventana', antes: planA.length, despues: planD.length, tipo: 'plan', detalle: `${r.despues.dias} días antes → ${r.despues.dias} días desde el 15-sep` })}
+      ${C.comparativa({ etiqueta: 'Cuentas con parrilla en la ventana', antes: new Set(planA.map(x => x._clave)).size, despues: new Set(planD.map(x => x._clave)).size, tipo: 'actividad', detalle: `De ${p.tabs.length} pestañas del Sheet` })}
+    </div>` : '')
   // --- antes y después
-  + C.seccion('Antes y desde el 15 de septiembre', 'Se separan tres cosas que no son la misma métrica: lo <b>planificado</b> en el Sheet, lo que el Sheet marca como <b>publicado</b> y lo que efectivamente se <b>publicó en Instagram</b>.',
+  + C.seccion('Antes y desde el 15 de septiembre', 'Se separan dos cosas que no son la misma métrica: lo <b>planificado</b> en el Sheet y lo que efectivamente se <b>publicó en Instagram</b>.',
     `<h3 style="margin:4px 0 8px">Planificación en el Sheet ${C.tipo('plan')}</h3>${tablaPlanificacion(cmp)}
-     <h3 style="margin:22px 0 8px">Cumplimiento del calendario (según el Sheet) ${C.tipo('resultado')}</h3>
-     <p class="fuente" style="margin:0 0 10px">Piezas activas cuya fecha planificada ya pasó (hasta hoy, ${fecha(hoy)}) y cuántas figuran como «Posted». El Sheet no registra la fecha real de publicación, así que no se mide el retraso.</p>${tablaCumplimiento(cmp)}
      ${ig ? `<div class="card" style="margin-top:16px"><h3>Publicaciones reales en Instagram por semana ${C.tipo('resultado')}</h3><p class="sub">Publicaciones del feed leídas de la API, del ${fecha('2026-07-01')} al ${fecha(finIg)}. No es la parrilla: es lo publicado. La semana que empieza el 14-sep (contiene el corte) queda a la derecha de la línea.</p>${C.lienzo('gPubReal', '', 'Publicaciones reales por semana y cuenta')}</div>` : ''}
      ${C.lectura(lecturaContenido(cmp))}`)
-  // --- avance
-  + C.seccion(`Avance por cuenta · ${etiquetaPeriodo}`, '', C.tabla([
-      { t: 'Cuenta', k: x => `<b>${esc(x.t.cuenta)}</b><br><small><a href="https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit#gid=${x.t.gid}" target="_blank" rel="noopener">pestaña «${esc(x.t.nombre)}» ↗</a></small>` },
-      { t: 'Total', num: 1, k: x => n0(x.r.total) }, { t: 'Fuera del plan', num: 1, k: x => n0(x.r.por.fuera) },
-      { t: 'Por producir', num: 1, k: x => n0(x.r.pend_prod) }, { t: 'Por aprobar', num: 1, k: x => n0(x.r.pend_aprob) },
-      { t: 'Aprobadas', num: 1, k: x => n0(x.r.listas) }, { t: 'Programadas', num: 1, k: x => n0(x.r.programadas) }, { t: 'Publicadas', num: 1, k: x => n0(x.r.publicadas) },
-      { t: 'Avance de producción', k: x => `${C.barra(x.r.avance)}<small class="mono">${pct(x.r.avance, 0)}</small>` }], porCuenta)
-    + `<div class="card" style="margin-top:16px"><h3>Piezas por estado y cuenta</h3><p class="sub">Cantidad de piezas en cada estado del Sheet; el número al final de cada barra es el total de la cuenta.</p>${C.lienzo('gEstados', 'bajo', 'Piezas por estado y cuenta')}</div>`
-    + (pubStatus.length ? `<p class="fuente">Estado de publicación (columna aparte «Publication Status»): ${pubStatus.map(x => `${esc(x.cuenta)}: ${x.conteo.map(([a, b]) => `${esc(a)} ${n0(b)}`).join(', ')}`).join(' · ')}.</p>` : ''))
   // --- distribución
-  + C.seccion(`Distribución del plan · ${etiquetaPeriodo}`, `Piezas activas por formato, pilar, mes y público. Cada cuenta usa su propio sistema de pilares (por ejemplo, el P3 de Las Vegas es «Competición» y el de Camps es «Autoridad»), así que los pilares se comparan dentro de cada cuenta. ${sinPilar.map(t => esc(t.cuenta)).join(', ')}: pilar y público no registrados en su pestaña.`, `<div class="grid g2">
-      <div class="card"><h3>Piezas por formato</h3><p class="sub">Cantidad de piezas activas por formato, apiladas por cuenta.</p>${C.lienzo('gFormato', '', 'Piezas por formato y cuenta')}</div>
-      <div class="card"><h3>Piezas planificadas por mes</h3><p class="sub">Cantidad de piezas activas según su mes planificado.</p>${C.lienzo('gMesCont', '', 'Piezas planificadas por mes')}</div>
-      <div class="card"><h3>Piezas por pilar</h3><p class="sub">Cantidad de piezas activas por pilar de contenido.</p>${conPilar.length ? C.lienzo('gPilar', 'alto', 'Piezas por pilar y cuenta') : '<p class="vacio">No registrado.</p>'}</div>
-      <div class="card"><h3>Piezas por público</h3>${conPilar.map(t => `<p class="sub" style="margin:8px 0 4px"><b>${esc(t.cuenta)}</b></p>` + C.tabla([{ t: 'Público', k: x => esc(x[0]) }, { t: 'Piezas', num: 1, k: x => n0(x[1]) }],
-        K.contar(t.registros.filter(x => K.grupoDe(x.Status) !== 'fuera'), 'Publico'))).join('')}</div>
+  + C.seccion(`Distribución de las piezas hechas · ${etiquetaPeriodo}`, `Piezas hechas por formato, pilar y mes. Cada cuenta usa su propio sistema de pilares (por ejemplo, el P3 de Las Vegas es «Competición» y el de Camps es «Autoridad»), así que los pilares se comparan dentro de cada cuenta. ${sinPilar.map(t => esc(t.cuenta)).join(', ')}: pilar y público no registrados en su pestaña.`, `<div class="grid g2">
+      <div class="card"><h3>Piezas hechas por formato</h3><p class="sub">Cantidad de piezas hechas por formato, apiladas por cuenta.</p>${C.lienzo('gFormato', '', 'Piezas por formato y cuenta')}</div>
+      <div class="card"><h3>Piezas hechas por mes de publicación</h3><p class="sub">Cantidad de piezas hechas según su mes planificado.</p>${C.lienzo('gMesCont', '', 'Piezas planificadas por mes')}</div>
+      <div class="card" style="grid-column:1/-1"><h3>Piezas hechas por pilar</h3><p class="sub">Cantidad de piezas hechas por pilar de contenido.</p>${conPilar.length ? C.lienzo('gPilar', 'alto', 'Piezas por pilar y cuenta') : '<p class="vacio">No registrado.</p>'}</div>
     </div>${C.lectura(lecturaFormatos(regs))}`)
   // --- tabla
   + `<section class="seccion"><h2>Todas las piezas · ${etiquetaPeriodo}</h2><p class="intro">Filtra por cuenta, estado, formato, pilar o mes, o busca por texto. Cada fila enlaza a su material y a su fila en el Sheet.${dup ? ` <b>Atención:</b> ${dup} ${dup === 1 ? 'pieza parece repetida' : 'piezas parecen repetidas'} en el Sheet (misma cuenta, fecha y texto).` : ' No se encontraron piezas repetidas.'}</p>
@@ -151,8 +178,7 @@ export async function contenido(v) {
     <p class="fuente" id="fCuenta-n" aria-live="polite"></p><div id="tablaPiezas"></div><div class="mas"><button type="button" class="btn" id="fMas" hidden>Mostrar 40 más</button></div></section>`;
 
   // gráficos
-  graficoEstados('gEstados', tabsF);
-  const activos = (t) => t.registros.filter(x => K.grupoDe(x.Status) !== 'fuera');
+  const activos = (t) => t.registros.filter(hecha);
   const barrasPor = (id, campo, tabs) => {
     const totales = {}; tabs.forEach(t => activos(t).forEach(x => { const k = x[campo] || '(sin dato)'; totales[k] = (totales[k] || 0) + 1; }));
     const etiquetas = Object.keys(totales).sort((a, b) => totales[b] - totales[a]);
@@ -161,7 +187,7 @@ export async function contenido(v) {
   };
   barrasPor('gFormato', 'Format', tabsF);
   if (conPilar.length) barrasPor('gPilar', 'Pilar', conPilar);
-  C.grafico('gMesCont', { type: 'bar', data: { labels: meses.map(mes), datasets: tabsF.map(t => { const m = Object.fromEntries(K.porMes(t.registros)); return { label: t.cuenta, backgroundColor: C.COLOR[t.clave], data: meses.map(k => m[k] || 0) }; }) },
+  C.grafico('gMesCont', { type: 'bar', data: { labels: meses.map(mes), datasets: tabsF.map(t => { const m = Object.fromEntries(K.porMes(t.registros.filter(hecha))); return { label: t.cuenta, backgroundColor: C.COLOR[t.clave], data: meses.map(k => m[k] || 0) }; }) },
     options: { plugins: { valores: { mostrar: true } }, scales: { x: { stacked: true, title: { display: true, text: 'Mes planificado' } }, y: { stacked: true, beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: 'Piezas' } } } } });
   if (ig) {
     const cuentas = p.tabs.map(t => ig.cuentas.find(c => c.usuario === IG_DE_PESTANA[t.clave])).filter(Boolean);
@@ -204,14 +230,14 @@ export async function contenido(v) {
 export function lecturaContenido(cmp) {
   const sinAntes = cmp.filter(x => !x.antes).map(x => x.t.cuenta);
   const conAntes = cmp.filter(x => x.antes).map(x => `${x.t.cuenta} (desde el ${fecha(x.primera)})`);
-  const venc = cmp.reduce((s, x) => s + x.vencidas, 0), pub = cmp.reduce((s, x) => s + x.vencidasPublicadas, 0);
-  return `${conAntes.length ? `Antes del 15-sep solo ${K.lista(conAntes)} tenía piezas planificadas en el Sheet.` : 'Antes del 15-sep no hay piezas planificadas en el Sheet.'} ${sinAntes.length ? `${K.lista(sinAntes)} empiezan su parrilla a partir del corte.` : ''} De ${n0(venc)} piezas activas con fecha ya cumplida, ${n0(pub)} figuran como publicadas en el Sheet${venc ? ` (${pct(pub / venc, 0)})` : ''}.`;
+  const desde = cmp.reduce((s, x) => s + x.desde, 0);
+  return `${conAntes.length ? `Antes del 15-sep solo ${K.lista(conAntes)} tenía piezas planificadas en el Sheet.` : 'Antes del 15-sep no hay piezas planificadas en el Sheet.'} ${sinAntes.length ? `Desde el corte se sumaron las parrillas de ${K.lista(sinAntes)}.` : ''} Hoy hay ${n0(desde)} piezas planificadas con fecha desde el 15-sep.`;
 }
 
 function lecturaFormatos(regs) {
-  const act = regs.filter(x => K.grupoDe(x.Status) !== 'fuera');
+  const act = regs.filter(hecha);
   if (!act.length) return '';
   const c = K.contar(act, 'Format', '(sin formato)');
   const top = c.slice(0, 2).map(([f, n]) => `${esc(f)} (${n0(n)}, ${pct(n / act.length, 0)})`).join(' y ');
-  return `Los formatos que concentran la producción son ${top}, sobre ${n0(act.length)} piezas activas.`;
+  return `Los formatos que concentran la producción son ${top}, sobre ${n0(act.length)} piezas hechas.`;
 }
