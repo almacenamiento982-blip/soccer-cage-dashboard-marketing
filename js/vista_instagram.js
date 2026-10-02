@@ -1,8 +1,8 @@
 // Sección Instagram: estado actual, comparación antes / desde el 15-sep y evolución temporal.
-import { json, parrilla } from './datos.js?v=20261002h';
-import * as K from './calculos.js?v=20261002h';
-import * as C from './componentes.js?v=20261002h';
-import { CORTE, rangos, rangoActivo, periodo, sumarDias, diasEntre } from './periodo.js?v=20261002h';
+import { json, parrilla } from './datos.js?v=20261002i';
+import * as K from './calculos.js?v=20261002i';
+import * as C from './componentes.js?v=20261002i';
+import { CORTE, rangos, rangoActivo, periodo, sumarDias, diasEntre } from './periodo.js?v=20261002i';
 const { n0, n1, pct, fecha, esc, signo } = K;
 
 export const IG_DE_PESTANA = { athletum: 'juventusacademymiami', camps_usa: 'juventuscampsusa', camps_mx: 'juventuscampsmx', las_vegas: 'jacademylasvegas' };
@@ -57,6 +57,30 @@ export function tablaActividad(filas) {
   ], filas);
 }
 
+// Interacción y tráfico de la cuenta (totales de la API por ventana)
+export function tablaTrafico(filas) {
+  const par = (a, b, f = n0) => `${a == null ? '—' : f(a)} → <b>${b == null ? '—' : f(b)}</b>`;
+  return C.tabla([
+    { t: 'Cuenta', k: x => `<b>@${esc(x.c.usuario)}</b>` },
+    { t: 'Alcance de la cuenta (cuentas únicas)', num: 1, k: x => par(x.va?.reach, x.vd?.reach) },
+    { t: 'Cuentas que interactuaron', num: 1, k: x => par(x.va?.accounts_engaged, x.vd?.accounts_engaged) },
+    { t: 'Visitas al perfil', num: 1, k: x => par(x.va?.profile_views, x.vd?.profile_views) },
+    { t: 'Clics en el enlace', num: 1, k: x => par(x.va?.website_clicks, x.vd?.website_clicks) },
+  ], filas);
+}
+
+// Publicaciones del feed por ventana
+export function tablaPublicaciones(filas) {
+  const par = (a, b, f = n0) => `${a == null ? '—' : f(a)} → <b>${b == null ? '—' : f(b)}</b>`;
+  return C.tabla([
+    { t: 'Cuenta', k: x => `<b>@${esc(x.c.usuario)}</b>` },
+    { t: 'Publicaciones', num: 1, k: x => par(x.pa.n, x.pd.n) },
+    { t: 'Por semana', num: 1, k: x => par(x.pa.por_semana, x.pd.por_semana, n1) },
+    { t: 'Alcance medio por publicación', num: 1, k: x => par(x.pa.alcance_prom, x.pd.alcance_prom) },
+    { t: 'Interacciones medias por publicación', num: 1, k: x => par(x.pa.interacciones_prom, x.pd.interacciones_prom, n1) },
+  ], filas);
+}
+
 export function lecturaComparacion(filas) {
   const conBase = filas.filter(x => x.base.abs != null).sort((a, b) => b.base.abs - a.base.abs);
   const conBrutos = filas.filter(x => x.brutos).sort((a, b) => b.brutos.n - a.brutos.n);
@@ -88,32 +112,32 @@ export async function instagram(v) {
   const crec = ig.cuentas.map(c => ({ c, g: K.crecimiento(c) }));
   const lider = [...crec].filter(x => x.g.dias).sort((a, b) => b.g.nuevos - a.g.nuevos)[0];
 
+  const textoVentanas = `Ventanas de igual duración: ${fecha(r.antes.desde)} – ${fecha(r.antes.hasta)} frente a ${fecha(r.despues.desde)} – ${fecha(r.despues.hasta)} (${r.despues.dias} días cada una).`;
   v.innerHTML = C.cabecera({ kicker: 'Social media', titulo: 'Instagram y crecimiento', informe: ig.informe,
     texto: `Cuatro cuentas por propiedad. Seguidores y alcance leídos de la API de Instagram; publicaciones con sus métricas desde el ${fecha('2026-06-01')}. Datos hasta el ${fecha(fin)}.` })
+  + C.guia({ muestra: 'Comunidad, interacción y tráfico, y publicaciones de las cuatro cuentas, con la comparación antes y desde el 15-sep.', estado: `Lectura de la API del ${fecha(ig.cuentas[0].seguidores.fecha)}. ${ig.cuentas.filter(c => c.seguidores.nuevos_por_dia?.length).length} de ${ig.cuentas.length} cuentas con serie diaria.`, siguiente: 'Publicar la parrilla aprobada con constancia y medir cada mes seguidores, alcance e interacción por formato.' })
   + (sinSerie.length ? C.aviso(`<b>Conexión por renovar:</b> ${sinSerie.map(c => '@' + c.usuario).join(', ')} no respondió a la API. Se muestran sus últimos datos y lo que falta aparece como pendiente de medición.`, 'rojo') : '')
   + C.barraPeriodo(fin, '· La comparación antes/después usa siempre ventanas de igual duración.')
-  // --- estado actual
-  + C.seccion('Seguidores y crecimiento por cuenta', esc(ig.nota_seguidores), `<div class="grid g2">
+  // --- 1. comunidad
+  + C.bloque('1 · Comunidad: seguidores', 'Cuántas personas siguen cada cuenta y cómo cambia ese número.', `<div class="grid g2">
       <div class="card"><h3>Seguidores actuales por cuenta</h3><p class="sub">Total de seguidores en la última lectura de la API.</p>${C.lienzo('gSeg', 'bajo', 'Seguidores actuales por cuenta')}</div>
-      <div class="card"><h3>Nuevos seguidores en los últimos 30 días</h3><p class="sub">Suma de nuevos seguidores por día (brutos, sin restar bajas).</p>${C.lienzo('gNuevos30', 'bajo', 'Nuevos seguidores en 30 días por cuenta')}</div></div>`
+      <div class="card"><h3>Nuevos seguidores en los últimos 30 días ${C.ayuda('Suma de los nuevos seguidores por día que entrega la API. No descuenta a quienes dejan de seguir.')}</h3><p class="sub">Brutos, sin restar bajas.</p>${C.lienzo('gNuevos30', 'bajo', 'Nuevos seguidores en 30 días por cuenta')}</div></div>
+    <h3 style="margin:22px 0 8px">Línea base y variación neta ${C.ayuda('No existe una captura de seguidores del 15-sep. Se usa la primera captura verificada después del corte y se indica su fecha; la variación neta se mide entre esa captura y la actual.')}</h3>
+    ${tablaSeguidores(filas)}`
     + C.lectura(lider ? `<b>@${esc(lider.c.usuario)}</b> concentra el mayor crecimiento absoluto de los últimos 30 días (+${n0(lider.g.nuevos)} nuevos, ${n1(lider.g.media_dia)} por día). Las cifras son brutas: no descuentan a quienes dejaron de seguir.` : ''))
-  // --- antes vs después
-  + C.seccion('Antes y desde el 15 de septiembre', `Ventanas de igual duración: antes del ${fecha(r.antes.desde)} al ${fecha(r.antes.hasta)} y después del ${fecha(r.despues.desde)} al ${fecha(r.despues.hasta)} (${r.despues.dias} días cada una). Alcance, visitas y clics son totales de la cuenta que entrega la API para cada ventana.`,
-    `<h3 style="margin:4px 0 8px">Seguidores: línea base y variación</h3>
-    <p class="fuente" style="margin:0 0 10px">No existe una captura de seguidores del 15-sep. Se usa la primera captura verificada después del corte y se indica su fecha; la variación neta se mide entre esa captura y la actual.</p>
-    ${tablaSeguidores(filas)}
-    <h3 style="margin:22px 0 8px">Actividad y alcance: antes → después</h3>
-    ${tablaActividad(filas)}
-    ${C.lectura(lecturaComparacion(filas))}`)
-  // --- detalle por cuenta
-  + `<section class="seccion"><h2>Evolución por cuenta</h2><p class="intro">Elige la cuenta y la métrica. La línea punteada marca el 15-sep; el periodo seleccionado arriba limita las fechas.</p>
+  // --- 2. interacción y tráfico
+  + C.bloque('2 · Interacción y tráfico', `Alcance, interacción, visitas al perfil y clics al enlace: totales de cada cuenta según la API. ${textoVentanas}`, tablaTrafico(filas))
+  // --- 3. publicaciones y formatos
+  + C.bloque('3 · Publicaciones y formatos', `Frecuencia y rendimiento medio de las publicaciones del feed. ${textoVentanas}`, tablaPublicaciones(filas)
+    + `<h3 style="margin:24px 0 8px">Evolución por cuenta</h3><p class="fuente" style="margin:0 0 10px">Elige la cuenta y la métrica. La línea punteada marca el 15-sep; el periodo seleccionado arriba limita las fechas.</p>
     <div class="filtros"><div class="tabs" role="group" aria-label="Cuenta">${ig.cuentas.map(c => `<button type="button" data-cuenta="${esc(c.usuario)}" aria-pressed="${c.usuario === cuentaIG}">@${esc(c.usuario)}</button>`).join('')}</div>
     <label for="selMetrica">Métrica<select id="selMetrica">${METRICAS.map(m => `<option value="${m.id}"${m.id === metricaIG ? ' selected' : ''}>${esc(m.nombre)}</option>`).join('')}</select></label></div>
-    <div id="detalleIG"></div></section>`
-  // --- proyección e histórico
-  + C.seccion('Escenarios de seguidores a 90 días', '', tablaProyeccion(ig, frecuencias(ig, p)) + notaProyeccion(ig))
-  + C.seccion('Histórico de la auditoría (hasta 24 meses)', 'Alcance mensual y publicaciones del periodo auditado de cada cuenta, como referencia de largo plazo.', `<div class="card"><h3 id="tMes">Alcance mensual y publicaciones</h3>${C.lienzo('gMes', '', 'Alcance mensual y publicaciones')}</div>`
-    + C.fuente(ig.fuente, ig.informe));
+    <div id="detalleIG"></div>`)
+  // --- 4. proyección y 5. histórico
+  + C.bloque('4 · Proyección de seguidores a 90 días', 'Escenarios condicionados a que se mantenga el ritmo reciente. No son resultados ni metas.', tablaProyeccion(ig, frecuencias(ig, p)) + notaProyeccion(ig))
+  + C.bloque('5 · Histórico de la auditoría (hasta 24 meses)', 'Alcance mensual y publicaciones del periodo auditado de cada cuenta, como referencia de largo plazo.', `<div class="card"><h3 id="tMes">Alcance mensual y publicaciones</h3>${C.lienzo('gMes', '', 'Alcance mensual y publicaciones')}</div>`
+    + C.fuente(ig.fuente, ig.informe))
+  + C.volver();
 
   // gráficos de estado actual
   const orden = [...ig.cuentas].sort((a, b) => (b.seguidores.actual || 0) - (a.seguidores.actual || 0));

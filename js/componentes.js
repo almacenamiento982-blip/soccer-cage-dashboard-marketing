@@ -1,7 +1,7 @@
 // Componentes de presentación: devuelven HTML (strings) o crean gráficos. Sin lógica de negocio.
-import { esc, fecha, claseEstado, n0, pct } from './calculos.js?v=20261002h';
-import { MODOS, periodo, rangos, CORTE } from './periodo.js?v=20261002h';
-import { T } from './i18n.js?v=20261002h';
+import { esc, fecha, claseEstado, n0, pct } from './calculos.js?v=20261002i';
+import { MODOS, periodo, rangos, CORTE } from './periodo.js?v=20261002i';
+import { T } from './i18n.js?v=20261002i';
 
 export const PENDIENTE = '<span class="vacio">pendiente de medición</span>';
 
@@ -168,6 +168,10 @@ export function grafico(id, config) {
   }]));
   const conValores = o.plugins?.valores?.mostrar;
   if (o.plugins?.corte) o.plugins.corte.alto = conValores ? 24 : 6;   // la etiqueta del corte va por encima de los valores
+  // en barras, el eje de categorías muestra todas las etiquetas (no se salta ninguna)
+  const nCat = Array.isArray(config.data?.labels) ? config.data.labels.length : 0;
+  const ejeCat = o.indexAxis === 'y' ? 'y' : 'x';
+  if ((config.type === 'bar' || o.indexAxis === 'y') && escalas[ejeCat] && nCat && nCat <= 16) escalas[ejeCat].ticks = { ...escalas[ejeCat].ticks, autoSkip: false };
   // en pantallas angostas, acorta las etiquetas largas del eje de categorías de las barras horizontales
   if (o.indexAxis === 'y' && escalas.y) escalas.y.ticks = { ...escalas.y.ticks, callback(v) { const t = this.getLabelForValue(v); return this.chart.width < 520 && t.length > 15 ? t.slice(0, 14) + '…' : t; } };
   const extraArriba = o.plugins?.corte ? (conValores ? 40 : 22) : conValores ? 18 : 4;
@@ -188,3 +192,26 @@ export function grafico(id, config) {
 
 // Posición de la primera etiqueta (fecha ISO) igual o posterior al corte
 export const indiceCorte = (fechas) => fechas.findIndex(e => e >= CORTE);
+
+// ---------- estructura de navegación y lectura ----------
+// Ayuda contextual: un «?» que muestra la definición al pasar el cursor o al enfocarlo con el teclado
+export const ayuda = (texto) => `<span class="ayuda" tabindex="0" role="note" aria-label="${esc(texto)}" data-ayuda="${esc(texto)}">?</span>`;
+
+// Encabezado de un nivel del resumen: número, pregunta y título
+export function nivel(n, pregunta, titulo, intro, cuerpo, id) {
+  return `<section class="nivel" id="${id}" aria-labelledby="${id}-t"><div class="nivel-cab"><span class="nivel-n" aria-hidden="true">${n}</span><div>
+    <p class="nivel-p">${esc(pregunta)}</p><h2 id="${id}-t">${esc(titulo)}</h2>${intro ? `<p class="intro">${intro}</p>` : ''}</div></div>${cuerpo}</section>`;
+}
+
+// Guía de sección: qué se ve, en qué estado está y qué consultar o hacer después
+export function guia({ muestra, estado, siguiente }) {
+  return `<div class="guia" role="group" aria-label="Guía de la sección">
+    <div><span class="guia-t">Qué muestra</span><p>${muestra}</p></div>
+    <div><span class="guia-t">Estado actual</span><p>${estado}</p></div>
+    <div><span class="guia-t">Qué sigue</span><p>${siguiente}</p></div></div>`;
+}
+
+export const volver = () => `<p class="volver"><a href="#resumen">← Volver al resumen ejecutivo</a></p>`;
+
+// Bloque con título común para varios gráficos o tablas del mismo análisis
+export const bloque = (titulo, intro, cuerpo, extra = '') => `<section class="bloque"><div class="bloque-cab"><h2>${esc(titulo)}</h2>${extra}</div>${intro ? `<p class="intro">${intro}</p>` : ''}${cuerpo}</section>`;

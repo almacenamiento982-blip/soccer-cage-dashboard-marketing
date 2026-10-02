@@ -17,7 +17,9 @@
    "evidencia": "Informe de Instagram (4 cuentas) y data.json de cada cuenta.",
    "hallazgo": "Juventus Academy Miami suma cerca de 1.000 nuevos seguidores al mes; las otras tres cuentas, entre 19 y 103. Ese dato no descuenta bajas: en Miami, del 18-sep al 01-oct, el neto fue +197 frente a 320 nuevos. El historial de seguidores totales se guarda desde el 01-oct-2026.",
    "siguiente": "Publicar la parrilla aprobada con constancia y medir mensualmente seguidores, alcance e interacción por formato.",
-   "seccion": "instagram"
+   "seccion": "instagram",
+   "atencion": "Medir cada mes seguidores, alcance e interacción para tener una serie propia.",
+   "corto": "Redes sociales"
   },
   {
    "id": "contenido",
@@ -28,7 +30,9 @@
    "evidencia": "Google Sheet (lectura en vivo en la sección Plan de contenido).",
    "hallazgo": "Las cuatro cuentas tienen su parrilla en el Sheet y la mayoría de las piezas de Camps USA, México y Las Vegas ya están producidas.",
    "siguiente": "Aprobar y programar las piezas producidas; corregir las 15 piezas de México señaladas en la revisión del 01-oct.",
-   "seccion": "contenido"
+   "seccion": "contenido",
+   "atencion": "Aprobar y programar las piezas producidas.",
+   "corto": "Contenido"
   },
   {
    "id": "meta",
@@ -39,7 +43,9 @@
    "evidencia": "Lecturas de Ads Manager (Pre-Academy) y seguimiento diario de Meta (ID Camps).",
    "hallazgo": "Pre-Academy bajó el costo por conversación frente a la campaña anterior; ID Camps está en fase de aprendizaje y su «lead» todavía es un clic, no un registro confirmado.",
    "siguiente": "Revisión de ID Camps del 10 al 13 de octubre; seguir midiendo cuántas conversaciones de Pre-Academy terminan en clase de prueba.",
-   "seccion": "meta-idcamps"
+   "seccion": "meta-idcamps",
+   "atencion": "Revisión de ID Camps del 10 al 13 de octubre.",
+   "corto": "Meta Ads"
   },
   {
    "id": "email",
@@ -50,7 +56,9 @@
    "evidencia": "Informe de auditoría de email y bitácora del plan (01-oct-2026).",
    "hallazgo": "Cerca del 89 % de los correos sale sin firma DKIM propia y no existen secuencias automáticas.",
    "siguiente": "Configurar DKIM y DMARC con el administrador del DNS y arrancar los primeros envíos (8–20 de octubre).",
-   "seccion": "email"
+   "seccion": "email",
+   "atencion": "Requiere al administrador del DNS para configurar DKIM y DMARC.",
+   "corto": "Email y SMS"
   },
   {
    "id": "web",
@@ -61,7 +69,9 @@
    "evidencia": "Auditoría de la landing (29-sep), brief PDF y prototipo publicado.",
    "hallazgo": "La app de inscripción no envía eventos de conversión: hoy no se puede saber qué registro vino de qué anuncio.",
    "siguiente": "Definir con el programador la medición del registro (el píxel quedó para más adelante) y revisar formularios en móvil.",
-   "seccion": "ruta"
+   "seccion": "ruta",
+   "atencion": "Requiere al programador para medir el registro real (evento de conversión).",
+   "corto": "Web y formularios"
   },
   {
    "id": "analitica",
@@ -72,7 +82,9 @@
    "evidencia": "Pestaña de seguimiento del informe de ID Camps y datos.json de Pre-Academy.",
    "hallazgo": "Los registros de la app incluyen todos los canales: sirven como indicador de crecimiento, no como atribución a la publicidad.",
    "siguiente": "Export diario de inscritos por sede y medición de leads calificados por campaña.",
-   "seccion": "ruta"
+   "seccion": "ruta",
+   "atencion": "Depende del evento de conversión de la app para atribuir registros.",
+   "corto": "Medición"
   },
   {
    "id": "google",
@@ -83,7 +95,9 @@
    "evidencia": "Reunión del 29-sep. No hay campañas creadas.",
    "hallazgo": "No se sabe quién administra la cuenta de Google Ads vinculada al sitio (etiqueta AW-11171359255).",
    "siguiente": "Identificar al dueño de la cuenta y evaluar el lanzamiento después de verificar las páginas y la medición.",
-   "seccion": "ruta"
+   "seccion": "ruta",
+   "atencion": "Requiere identificar al dueño de la cuenta y definir presupuesto.",
+   "corto": "Google Ads"
   }
  ],
  "fases": [
@@ -100,7 +114,14 @@
     "Medición de conversiones (evento de registro real, no solo clic)",
     "Verificar el recorrido completo: anuncio → página → registro → pago"
    ],
-   "hecho": "Auditoría de juventuscampsusa.com, brief del píxel y prototipo de landing por sede."
+   "hecho": "Auditoría de juventuscampsusa.com, brief del píxel y prototipo de landing por sede.",
+   "nivel": "Prioridad 1",
+   "depende_de": [],
+   "requisito": "Acceso del programador a la web y a la app de registro.",
+   "frentes": [
+    "web",
+    "analitica"
+   ]
   },
   {
    "n": 2,
@@ -115,7 +136,15 @@
     "Calidad de los registros y tasa de conversión de las páginas",
     "Separar indicadores de tráfico (clics) de indicadores de captación (conversaciones, registros, pagos)"
    ],
-   "hecho": "Dos campañas activas con seguimiento: Pre-Academy (desde 22-sep) e ID Camps (desde 30-sep)."
+   "hecho": "Dos campañas activas con seguimiento: Pre-Academy (desde 22-sep) e ID Camps (desde 30-sep).",
+   "nivel": "En curso",
+   "depende_de": [
+    1
+   ],
+   "requisito": "Para ampliar la inversión, medir el registro real (fase 1).",
+   "frentes": [
+    "meta"
+   ]
   },
   {
    "n": 3,
@@ -130,7 +159,16 @@
     "Costo por conversión",
     "Calidad comercial de los leads"
    ],
-   "hecho": "Ninguna campaña creada. Pendiente: identificar la cuenta de Google Ads existente."
+   "hecho": "Ninguna campaña creada. Pendiente: identificar la cuenta de Google Ads existente.",
+   "nivel": "Oportunidad futura",
+   "depende_de": [
+    1,
+    2
+   ],
+   "requisito": "Páginas y medición verificadas, cuenta de Google Ads identificada y presupuesto aprobado.",
+   "frentes": [
+    "google"
+   ]
   },
   {
    "n": 4,
@@ -145,7 +183,13 @@
     "SMS de recordatorio en momentos clave",
     "UTM en todos los enlaces para medir"
    ],
-   "hecho": "Auditoría y plan publicados. Ninguna automatización activa todavía."
+   "hecho": "Auditoría y plan publicados. Ninguna automatización activa todavía.",
+   "nivel": "En paralelo",
+   "depende_de": [],
+   "requisito": "DKIM y DMARC configurados por el administrador del DNS y plan de Constant Contact confirmado.",
+   "frentes": [
+    "email"
+   ]
   },
   {
    "n": 5,
@@ -161,7 +205,15 @@
     "Leads calificados",
     "Conversión a inscripción o venta"
    ],
-   "hecho": "Ya se cruzan gasto de Meta con registros y pagos de la app para ID Camps (sin atribución directa)."
+   "hecho": "Ya se cruzan gasto de Meta con registros y pagos de la app para ID Camps (sin atribución directa).",
+   "nivel": "Transversal",
+   "depende_de": [
+    1
+   ],
+   "requisito": "Evento de conversión de la app y UTM en todos los enlaces.",
+   "frentes": [
+    "analitica"
+   ]
   }
  ]
 }

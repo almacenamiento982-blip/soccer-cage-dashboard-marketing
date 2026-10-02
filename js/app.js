@@ -1,11 +1,11 @@
 // Enrutador por hash, menú móvil, periodo compartido, actualización manual y estados de carga y error.
-import * as V from './vistas.js?v=20261002h';
-import { json, refrescar } from './datos.js?v=20261002h';
-import { destruirGraficos } from './componentes.js?v=20261002h';
-import { esc } from './calculos.js?v=20261002h';
-import { fijarPeriodo } from './periodo.js?v=20261002h';
-import { idioma, fijarIdioma, cargarDiccionario, traducir, restaurar, T } from './i18n.js?v=20261002h';
-const VERSION = '20261002h';
+import * as V from './vistas.js?v=20261002i';
+import { json, refrescar } from './datos.js?v=20261002i';
+import { destruirGraficos } from './componentes.js?v=20261002i';
+import { esc } from './calculos.js?v=20261002i';
+import { fijarPeriodo } from './periodo.js?v=20261002i';
+import { idioma, fijarIdioma, cargarDiccionario, traducir, restaurar, T } from './i18n.js?v=20261002i';
+const VERSION = '20261002i';
 
 const RUTAS = {
   resumen: ['Resumen ejecutivo', V.resumen],
@@ -63,6 +63,15 @@ botonMenu.addEventListener('click', () => {
   botonMenu.setAttribute('aria-expanded', String(abierto));
 });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrarMenu(); });
+
+// Saltos dentro de la página (no cambian de sección)
+vista.addEventListener('click', e => {
+  const s = e.target.closest('[data-salto]');
+  if (!s) return;
+  e.preventDefault();
+  const destino = document.getElementById(s.dataset.salto);
+  if (destino) { destino.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }); destino.setAttribute('tabindex', '-1'); destino.focus({ preventScroll: true }); }
+});
 
 // Selector de periodo (el mismo en todas las secciones que lo muestran)
 vista.addEventListener('click', e => {

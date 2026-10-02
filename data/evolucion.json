@@ -167,53 +167,68 @@
  ],
  "operativo": [
   {
+   "area": "Redes sociales",
+   "frente": "social",
+   "antes": "Cuatro cuentas publicando; sin registro disponible de una auditoría anterior ni de los seguidores totales.",
+   "despues": "Auditoría de las 4 cuentas (24 meses), análisis de 16 cuentas de la competencia e historial de seguidores desde el 01-oct.",
+   "estado": "Implementado",
+   "evidencia": "Informe de Instagram e historial de seguidores"
+  },
+  {
    "area": "Informes y fuentes",
    "antes": "Sin registro disponible de un tablero consolidado.",
    "despues": "Informes publicados de Instagram, Meta Ads (2), email/SMS y este dashboard, todos construidos sobre los mismos archivos fuente.",
    "estado": "Implementado",
-   "evidencia": "Informes en GitHub Pages y data/estado.json"
+   "evidencia": "Informes en GitHub Pages y data/estado.json",
+   "frente": "analitica"
   },
   {
    "area": "Planificación de campañas",
    "antes": "Campañas previas documentadas (Pre-Academy ago-sep; ID Camps por clínica en 24-25 y 25-26).",
    "despues": "Estrategia escrita, nomenclatura y presupuestos por conjunto, con revisiones programadas.",
    "estado": "En progreso",
-   "evidencia": "ESTRATEGIA_ID_CAMPS_2026-27.md y reporte de Pre-Academy"
+   "evidencia": "ESTRATEGIA_ID_CAMPS_2026-27.md y reporte de Pre-Academy",
+   "frente": "meta"
   },
   {
    "area": "Creatividades y anuncios",
    "antes": "Anuncios activos en campañas previas (sin registro de su proceso de prueba).",
    "despues": "6 anuncios en prueba en Pre-Academy y 16 en ID Camps, con lectura por anuncio.",
    "estado": "En progreso",
-   "evidencia": "Tablas por anuncio de cada campaña"
+   "evidencia": "Tablas por anuncio de cada campaña",
+   "frente": "meta"
   },
   {
    "area": "Contenido para las cuentas",
    "antes": "Publicaciones en las 4 cuentas; parrilla en el Sheet solo para Athletum.",
    "despues": "Parrillas para Camps USA, México y Las Vegas, con piezas producidas y enlazadas en Drive.",
    "estado": "En progreso",
-   "evidencia": "Google Sheet (sección Plan de contenido)"
+   "evidencia": "Google Sheet (sección Plan de contenido)",
+   "frente": "contenido"
   },
   {
    "area": "Email y SMS",
    "antes": "Envíos sin autenticación propia en la mayoría del volumen y sin secuencias.",
    "despues": "Auditorías de email y SMS y plan por público. Los envíos del plan aún no empiezan.",
    "estado": "Planificado",
-   "evidencia": "RESULTADOS_AUDITORIA_EMAIL.md, RESULTADOS_AUDITORIA_SMS.md y bitácora del plan"
+   "evidencia": "RESULTADOS_AUDITORIA_EMAIL.md, RESULTADOS_AUDITORIA_SMS.md y bitácora del plan",
+   "frente": "email"
   },
   {
    "area": "Páginas de destino",
    "antes": "Sin registro disponible de una auditoría anterior.",
    "despues": "Auditoría de juventuscampsusa.com y prototipo de landing por sede.",
    "estado": "Pendiente de validación",
-   "evidencia": "AUDITORIA_LANDING_juventuscampsusa.html"
+   "evidencia": "AUDITORIA_LANDING_juventuscampsusa.html",
+   "frente": "web"
   },
   {
    "area": "Medición",
    "antes": "El «lead» era un clic; no había registro periódico de seguidores.",
    "despues": "Seguimiento diario de Meta frente a la app (sin atribución), historial de seguidores desde el 01-oct y brief del píxel. El evento de registro real sigue pendiente.",
    "estado": "En progreso",
-   "evidencia": "Seguimiento diario de ID Camps y seguidores_historial.json"
+   "evidencia": "Seguimiento diario de ID Camps y seguidores_historial.json",
+   "frente": "analitica"
   }
  ],
  "proximas": [
@@ -658,5 +673,24 @@
     "texto": "Auditoría histórica de Meta Ads de Pre-Academy y de Juventus Camps USA para elegir públicos y anuncios."
    }
   ]
+ },
+ "area_frente": {
+  "Instagram": "social",
+  "Competencia": "social",
+  "Contenido": "contenido",
+  "Diseño": "contenido",
+  "Reels": "contenido",
+  "Archivo": "contenido",
+  "Presentación": "contenido",
+  "Meta Ads": "meta",
+  "Google Ads": "google",
+  "Email": "email",
+  "SMS": "email",
+  "Bases de datos": "email",
+  "Web": "web",
+  "Informes": "analitica",
+  "Estrategia": "analitica",
+  "Reuniones": "analitica",
+  "Gestión": "analitica"
  }
 }

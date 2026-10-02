@@ -1,5 +1,5 @@
 // Cálculos puros (sin DOM). Todo sale de los datos; nada de cifras escritas a mano.
-import { CORTE, sumarDias, diasEntre, enRango } from './periodo.js?v=20261002h';
+import { CORTE, sumarDias, diasEntre, enRango } from './periodo.js?v=20261002i';
 
 // ---------- formato ----------
 const nf = (d) => new Intl.NumberFormat('de-DE', { minimumFractionDigits: d, maximumFractionDigits: d });

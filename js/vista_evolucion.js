@@ -1,10 +1,10 @@
 // Evolución de la gestión de marketing desde el 15-sep-2026: bloque del resumen y sección completa.
-import { json, parrilla } from './datos.js?v=20261002h';
-import * as K from './calculos.js?v=20261002h';
-import * as C from './componentes.js?v=20261002h';
-import { CORTE, sumarDias, hoyISO, diasEntre } from './periodo.js?v=20261002h';
-import { comparacionIG, totalesComparacion, tablaSeguidores, tablaActividad, lecturaComparacion, IG_DE_PESTANA } from './vista_instagram.js?v=20261002h';
-import { comparacionContenido, tablaPlanificacion, lecturaContenido, piezasHechas } from './vista_contenido.js?v=20261002h';
+import { json, parrilla } from './datos.js?v=20261002i';
+import * as K from './calculos.js?v=20261002i';
+import * as C from './componentes.js?v=20261002i';
+import { CORTE, sumarDias, hoyISO, diasEntre } from './periodo.js?v=20261002i';
+import { comparacionIG, totalesComparacion, tablaSeguidores, tablaActividad, lecturaComparacion, IG_DE_PESTANA } from './vista_instagram.js?v=20261002i';
+import { comparacionContenido, tablaPlanificacion, lecturaContenido, piezasHechas } from './vista_contenido.js?v=20261002i';
 const { n0, n1, usd, pct, fecha, esc } = K;
 const corta = (f) => new Date(f + 'T12:00:00').toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
 
@@ -137,6 +137,7 @@ export async function evolucion(v) {
   const b = bloque(d, true, 'evoC');
   v.innerHTML = C.cabecera({ kicker: 'Desde el 15-sep-2026', titulo: 'Evolución de la gestión',
     texto: `Comparación transparente entre la situación documentada antes del 15 de septiembre de 2026 y lo realizado y medido desde entonces. Contenido editorial actualizado el ${fecha(d.evo.actualizado)} (data/evolucion.json); las cifras se calculan de sus fuentes.` })
-    + b.html + `<p class="fuente">${esc(d.evo.nota)}</p>`;
+    + C.guia({ muestra: 'El detalle de lo que había antes del 15-sep, lo que se hizo cada día desde entonces, los avances y los resultados medidos.', estado: `${n0((d.evo.bitacora || []).length)} días con trabajo registrado y ${n0(d.evo.hitos.length)} hitos con evidencia.`, siguiente: 'Ver la ruta de trabajo en el Resumen o en la Hoja de ruta.' })
+    + b.html + `<p class="fuente">${esc(d.evo.nota)}</p>` + C.volver();
   b.dibujar();
 }
