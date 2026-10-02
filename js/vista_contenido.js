@@ -1,9 +1,9 @@
 // Sección Plan de contenido: Sheet en vivo, filtrado por periodo, y comparación antes / desde el 15-sep.
-import { json, parrilla, SHEET_ID } from './datos.js?v=20261002f';
-import * as K from './calculos.js?v=20261002f';
-import * as C from './componentes.js?v=20261002f';
-import { CORTE, rangos, rangoActivo, periodo, hoyISO, enRango, sumarDias } from './periodo.js?v=20261002f';
-import { IG_DE_PESTANA } from './vista_instagram.js?v=20261002f';
+import { json, parrilla, SHEET_ID } from './datos.js?v=20261002h';
+import * as K from './calculos.js?v=20261002h';
+import * as C from './componentes.js?v=20261002h';
+import { CORTE, rangos, rangoActivo, periodo, hoyISO, enRango, sumarDias } from './periodo.js?v=20261002h';
+import { IG_DE_PESTANA } from './vista_instagram.js?v=20261002h';
 const { n0, n1, pct, fecha, esc } = K;
 
 const mes = (k) => { const [y, m] = k.split('-'); return new Date(+y, +m - 1, 15).toLocaleDateString('es-ES', { month: 'short', year: 'numeric' }); };
@@ -215,7 +215,7 @@ export async function contenido(v) {
       { t: 'Fecha', k: x => x._iso ? fecha(x._iso) : '<span class="vacio">sin fecha</span>' },
       { t: 'Cuenta', k: x => esc(x._cuenta) },
       { t: 'Formato', k: x => esc(x.Format || '—') },
-      { t: 'Pieza', k: x => `<b>${esc(x.Hook || x.Content || '')}</b>${x.Description ? `<br><small>${esc(x.Description.slice(0, 140))}${x.Description.length > 140 ? '…' : ''}</small>` : ''}` },
+      { t: 'Pieza', nt: 1, k: x => `<b>${esc(x.Hook || x.Content || '')}</b>${x.Description ? `<br><small>${esc(x.Description.slice(0, 140))}${x.Description.length > 140 ? '…' : ''}</small>` : ''}` },
       { t: 'Pilar', k: x => esc(x.Pilar || '—') },
       { t: 'Estado', k: x => { const g = K.GRUPOS.find(y => y.id === K.grupoDe(x.Status)); return `<span class="est ${{ publicada: 'implementado', programada: 'planificado', aprobada: 'progreso', pend_aprob: 'progreso', fuera: 'alerta' }[g.id] || 'validacion'}" title="${esc(g.nombre)}">${esc(x.Status || 'Sin estado')}</span>`; } },
       { t: 'Enlaces', k: x => [...enlaces(x).map((u, i) => `<a href="${esc(u)}" target="_blank" rel="noopener">Material${enlaces(x).length > 1 ? ' ' + (i + 1) : ''} ↗</a>`), `<a href="${urlFila(x._gid, x._fila)}" target="_blank" rel="noopener">Fila ${x._fila} ↗</a>`].join('<br>') },

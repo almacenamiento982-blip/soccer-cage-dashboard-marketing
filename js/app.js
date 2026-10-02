@@ -1,9 +1,11 @@
 // Enrutador por hash, menú móvil, periodo compartido, actualización manual y estados de carga y error.
-import * as V from './vistas.js?v=20261002f';
-import { json, refrescar } from './datos.js?v=20261002f';
-import { destruirGraficos } from './componentes.js?v=20261002f';
-import { esc } from './calculos.js?v=20261002f';
-import { fijarPeriodo } from './periodo.js?v=20261002f';
+import * as V from './vistas.js?v=20261002h';
+import { json, refrescar } from './datos.js?v=20261002h';
+import { destruirGraficos } from './componentes.js?v=20261002h';
+import { esc } from './calculos.js?v=20261002h';
+import { fijarPeriodo } from './periodo.js?v=20261002h';
+import { idioma, fijarIdioma, cargarDiccionario, traducir, restaurar, T } from './i18n.js?v=20261002h';
+const VERSION = '20261002h';
 
 const RUTAS = {
   resumen: ['Resumen ejecutivo', V.resumen],
@@ -26,7 +28,7 @@ async function mostrar({ mantenerScroll = false } = {}) {
   const [titulo, render] = RUTAS[id];
   const mio = ++turno;
   const y = window.scrollY;
-  document.title = `${titulo} · Marketing Digital Soccer Cage`;
+  document.title = `${T(titulo)} · ${T('Marketing Digital Soccer Cage')}`;
   document.querySelectorAll('.nav a').forEach(a => { if (a.getAttribute('href') === '#' + id) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   cerrarMenu();
   destruirGraficos();
@@ -38,11 +40,13 @@ async function mostrar({ mantenerScroll = false } = {}) {
   vista.replaceChildren(destino);
   try {
     await render(destino);
+    if (mio === turno) traducir(destino);
   } catch (e) {
     if (mio !== turno) return;
     console.error(e);
     vista.innerHTML = `<div class="aviso rojo" role="alert"><b>No se pudo cargar «${esc(titulo)}».</b> ${esc(e.message)}<br>
       Si abriste el archivo directamente desde la carpeta, sírvelo con un servidor web (ver LEEME.md). <button type="button" class="btn" id="reintentar">Reintentar</button></div>`;
+    traducir(vista);
     document.getElementById('reintentar').addEventListener('click', () => mostrar());
   } finally {
     if (mio === turno) vista.removeAttribute('aria-busy');
@@ -86,15 +90,28 @@ async function pintarPie() {
     <span>Plan de contenido: <b>lectura en vivo</b> del Sheet.</span>
     <button type="button" id="btnRefrescar">Volver a leer las fuentes</button>
     <span id="refrescado" aria-live="polite"></span>`;
+  traducir(pie);
   document.getElementById('btnRefrescar').addEventListener('click', async (e) => {
     e.currentTarget.disabled = true;
     refrescar();
     await mostrar({ mantenerScroll: true });
     await pintarPie();
-    document.getElementById('refrescado').textContent = `Leído de nuevo a las ${new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' })}.`;
+    document.getElementById('refrescado').textContent = idioma() === 'en' ? `Read again at ${new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}.` : `Leído de nuevo a las ${new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' })}.`;
   });
 }
 
+// Botón de idioma (español / inglés)
+const fijos = [document.querySelector('.side .marca'), document.querySelector('.nav'), document.querySelector('.top')];
+function pintarIdioma() {
+  document.querySelectorAll('[data-idioma]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.idioma === idioma())));
+  fijos.forEach(el => { restaurar(el); traducir(el); });
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-idioma]');
+  if (!b || b.dataset.idioma === idioma()) return;
+  fijarIdioma(b.dataset.idioma);
+});
+window.addEventListener('idioma', async () => { pintarIdioma(); await mostrar({ mantenerScroll: true }); pintarPie(); });
+
 window.addEventListener('hashchange', () => mostrar());
-mostrar();
-pintarPie();
+cargarDiccionario(VERSION).then(() => { pintarIdioma(); mostrar(); pintarPie(); });

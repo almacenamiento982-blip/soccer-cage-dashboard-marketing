@@ -1,6 +1,7 @@
 // Componentes de presentación: devuelven HTML (strings) o crean gráficos. Sin lógica de negocio.
-import { esc, fecha, claseEstado, n0, pct } from './calculos.js?v=20261002f';
-import { MODOS, periodo, rangos, CORTE } from './periodo.js?v=20261002f';
+import { esc, fecha, claseEstado, n0, pct } from './calculos.js?v=20261002h';
+import { MODOS, periodo, rangos, CORTE } from './periodo.js?v=20261002h';
+import { T } from './i18n.js?v=20261002h';
 
 export const PENDIENTE = '<span class="vacio">pendiente de medición</span>';
 
@@ -48,7 +49,7 @@ export function tabla(columnas, filas, { vacio = 'Sin registros.', caption = '' 
   const celda = (c, f) => (typeof c.k === 'function' ? c.k(f) : esc(f[c.k]));
   return `<div class="tabla-wrap"><table>${caption ? `<caption class="sr">${esc(caption)}</caption>` : ''}
   <thead><tr>${columnas.map(c => `<th scope="col"${c.num ? ' class="num"' : ''}>${esc(c.t)}</th>`).join('')}</tr></thead>
-  <tbody>${filas.map(f => `<tr>${columnas.map(c => `<td${c.num ? ' class="num"' : ''}>${celda(c, f) ?? ''}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  <tbody>${filas.map(f => `<tr>${columnas.map(c => `<td${c.num ? ' class="num"' : ''}${c.nt ? ' translate="no"' : ''}>${celda(c, f) ?? ''}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 }
 
 export const barra = (v) => `<div class="barra" role="img" aria-label="${Math.round((v || 0) * 100)} %"><i style="width:${Math.min(100, Math.max(0, (v || 0) * 100))}%"></i></div>`;
@@ -149,9 +150,18 @@ export function grafico(id, config) {
   const C = window.Chart;
   C.defaults.font.family = 'Barlow, -apple-system, "Segoe UI", Arial, sans-serif';
   C.defaults.font.size = 13;
+  C.defaults.locale = document.documentElement.lang === 'en' ? 'en-US' : 'es-ES';   // separadores de miles de los ejes
   C.defaults.color = '#3B4048';
   C.defaults.borderColor = '#ECEEF1';
   const o = config.options || {};
+  // textos del gráfico en el idioma elegido (las cifras y fechas se convierten solas)
+  if (config.data) {
+    if (Array.isArray(config.data.labels)) config.data.labels = config.data.labels.map(x => (typeof x === 'string' ? T(x) : x));
+    (config.data.datasets || []).forEach(d => { d.label = T(d.label); });
+  }
+  Object.values(o.scales || {}).forEach(s => { if (s.title?.text) s.title.text = T(s.title.text); });
+  if (o.plugins?.corte) o.plugins.corte.texto = T(o.plugins.corte.texto || '15-sep · nueva gestión');
+  if (o.plugins?.valores?.mostrar) { const f = o.plugins.valores.formato || n0; o.plugins.valores.formato = (v) => T(f(v)); }
   const escalas = Object.fromEntries(Object.entries(o.scales || {}).map(([k, s]) => [k, {
     ...s, ticks: { maxRotation: 0, autoSkip: true, autoSkipPadding: 12, ...(s.ticks || {}) },
     ...(s.title ? { title: { font: { weight: '600', size: 13 }, color: '#3B4048', ...s.title } } : {}),

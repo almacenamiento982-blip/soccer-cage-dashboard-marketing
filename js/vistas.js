@@ -1,14 +1,14 @@
 // Vistas de Resumen, Meta Ads, Email y Hoja de ruta. Instagram, Contenido y Evolución tienen su propio archivo.
-import { json, parrilla, SHEET_ID } from './datos.js?v=20261002f';
-import * as K from './calculos.js?v=20261002f';
-import * as C from './componentes.js?v=20261002f';
-import { frecuencias, tablaProyeccion, notaProyeccion } from './vista_instagram.js?v=20261002f';
-import { graficoHechas, piezasHechas } from './vista_contenido.js?v=20261002f';
-import { cargar as cargarEvolucion, bloque as bloqueEvolucion } from './vista_evolucion.js?v=20261002f';
-import { hoyISO } from './periodo.js?v=20261002f';
-export { instagram } from './vista_instagram.js?v=20261002f';
-export { contenido } from './vista_contenido.js?v=20261002f';
-export { evolucion } from './vista_evolucion.js?v=20261002f';
+import { json, parrilla, SHEET_ID } from './datos.js?v=20261002h';
+import * as K from './calculos.js?v=20261002h';
+import * as C from './componentes.js?v=20261002h';
+import { frecuencias, tablaProyeccion, notaProyeccion } from './vista_instagram.js?v=20261002h';
+import { graficoHechas, piezasHechas } from './vista_contenido.js?v=20261002h';
+import { cargar as cargarEvolucion, bloque as bloqueEvolucion } from './vista_evolucion.js?v=20261002h';
+import { hoyISO } from './periodo.js?v=20261002h';
+export { instagram } from './vista_instagram.js?v=20261002h';
+export { contenido } from './vista_contenido.js?v=20261002h';
+export { evolucion } from './vista_evolucion.js?v=20261002h';
 const { n0, n1, usd, pct, fecha, esc } = K;
 
 const mes = (k) => { const [y, m] = k.split('-'); return new Date(+y, +m - 1, 15).toLocaleDateString('es-ES', { month: 'short', year: 'numeric' }); };
