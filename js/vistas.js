@@ -1,13 +1,14 @@
 // Vistas de Resumen, Meta Ads, Email y Hoja de ruta. Instagram, Contenido y Evolución tienen su propio archivo.
-import { json, parrilla, SHEET_ID } from './datos.js?v=20261002d';
-import * as K from './calculos.js?v=20261002d';
-import * as C from './componentes.js?v=20261002d';
-import { frecuencias, tablaProyeccion, notaProyeccion } from './vista_instagram.js?v=20261002d';
-import { graficoEstados } from './vista_contenido.js?v=20261002d';
-import { cargar as cargarEvolucion, bloque as bloqueEvolucion } from './vista_evolucion.js?v=20261002d';
-export { instagram } from './vista_instagram.js?v=20261002d';
-export { contenido } from './vista_contenido.js?v=20261002d';
-export { evolucion } from './vista_evolucion.js?v=20261002d';
+import { json, parrilla, SHEET_ID } from './datos.js?v=20261002e';
+import * as K from './calculos.js?v=20261002e';
+import * as C from './componentes.js?v=20261002e';
+import { frecuencias, tablaProyeccion, notaProyeccion } from './vista_instagram.js?v=20261002e';
+import { graficoEstados } from './vista_contenido.js?v=20261002e';
+import { cargar as cargarEvolucion, bloque as bloqueEvolucion } from './vista_evolucion.js?v=20261002e';
+import { hoyISO } from './periodo.js?v=20261002e';
+export { instagram } from './vista_instagram.js?v=20261002e';
+export { contenido } from './vista_contenido.js?v=20261002e';
+export { evolucion } from './vista_evolucion.js?v=20261002e';
 const { n0, n1, usd, pct, fecha, esc } = K;
 
 const mes = (k) => { const [y, m] = k.split('-'); return new Date(+y, +m - 1, 15).toLocaleDateString('es-ES', { month: 'short', year: 'numeric' }); };
@@ -52,6 +53,7 @@ export async function resumen(v) {
       <tr><td>Costo por resultado</td><td class="mono"><b>${usd(kp.cpa)}</b></td><td class="mono"><b>${usd(ki.cpl)}</b></td></tr>
       <tr><td>Referencia anterior</td><td>${usd(kp.cpaPrevio)} por conversación (últimos ${pre.mes_previo.dias} días de la campaña previa)</td><td>${usd(temp?.cpl)} por lead (temporada ${esc(temp?.temporada || '')}, mismo tipo de lead)</td></tr>
       <tr><td>Resultado comercial</td><td>Clases de prueba agendadas: ${C.PENDIENTE}</td><td>Registros por anuncio: ${C.PENDIENTE} (la app suma ${n0(ki.registros)} registros de todos los canales)</td></tr>
+      <tr><td>Datos hasta</td><td>${fecha(pre.ultima.fecha)} · se actualiza con el CSV de Ads Manager</td><td>${fecha(idc.meta_diario.at(-1).fecha)}${idc.meta_diario.at(-1).parcial ? ' (parcial)' : ''} · se actualiza revisando Meta y la plataforma de registros</td></tr>
       <tr><td>Próxima revisión</td><td>${esc(pre.proxima_revision)}</td><td>10–13 de octubre</td></tr>
     </tbody></table></div>`)
   + C.seccion('Avance de los contenidos', `Piezas del Sheet por estado. «Producidas» = por aprobar + aprobadas + programadas + publicadas; el avance se calcula sobre las piezas activas (sin pospuestas ni rechazadas). Son las mismas cifras de la sección Plan de contenido.`,
@@ -68,6 +70,13 @@ export async function resumen(v) {
   graficoEstados('gAvance', p.tabs);
 }
 
+// Aviso de frescura: estas campañas no se actualizan con la tarea automática
+function avisoFrescura(f, nombreApp = '') {
+  const viejo = f.dias != null && f.dias > 3;
+  return C.aviso(`<b>Datos hasta el ${fecha(f.hasta)}${f.parcial ? ' (último día parcial)' : ''}${f.app ? ` · registros y pagos leídos el ${fecha(f.app)}` : ''}.</b>
+    ${esc(f.como)} La actualización automática del dashboard no puede traer estos datos por sí sola: publica lo último que se haya cargado.${viejo ? ` <b>Han pasado ${f.dias} días desde la última lectura.</b>` : ''}`, viejo ? 'rojo' : 'gris');
+}
+
 // =====================================================================
 export async function metaIdcamps(v) {
   const d = await json('meta_idcamps');
@@ -77,7 +86,8 @@ export async function metaIdcamps(v) {
 
   v.innerHTML = C.cabecera({ kicker: 'Meta Ads', titulo: 'Juventus Camps USA · ID Camps', informe: d.informe,
     texto: `${esc(d.objetivo)}. Campaña <b>${esc(d.campana)}</b>, montada el ${fecha(d.montada)} y activa desde el ${fecha(d.activa_desde)}.` })
-  + C.aviso(`<b>Qué es un «lead» aquí:</b> ${esc(d.medicion)} ${esc(d.revision)}`)
+  + avisoFrescura(K.frescuraMeta('idcamps', d, hoyISO()))
+  + `<div style="margin-top:10px">${C.aviso(`<b>Qué es un «lead» aquí:</b> ${esc(d.medicion)} ${esc(d.revision)}`)}</div>`
   + `<div class="grid g3" style="margin-top:16px">
     ${C.kpi({ valor: usd(k.presup, 0), tipo: 'plan', etiqueta: 'Presupuesto diario', detalle: conj.map(c => `${c} ${usd(d.presupuesto_diario[c], 0)}`).join(' · ') })}
     ${C.kpi({ valor: usd(k.gasto), etiqueta: 'Inversión acumulada', detalle: `${k.dias} días de entrega${k.parcial ? '; el último día es parcial' : ''}.` })}
@@ -134,6 +144,7 @@ export async function metaPreacademy(v) {
 
   v.innerHTML = C.cabecera({ kicker: 'Meta Ads', titulo: 'Pre-Academy Miami', informe: d.informe,
     texto: `${esc(d.objetivo)}. Campaña <b>${esc(d.campana)}</b>, activa desde el ${fecha(d.inicio)}. Próxima revisión: ${esc(d.proxima_revision)}.` })
+  + `<div style="margin-bottom:16px">${avisoFrescura(K.frescuraMeta('preacademy', d, hoyISO()))}</div>`
   + `<div class="grid g4">
     ${C.kpi({ valor: n0(k.conv), etiqueta: 'Conversaciones iniciadas', detalle: `Acumulado al ${fecha(k.fecha)} (${k.dias} días).` })}
     ${C.kpi({ valor: usd(k.cpa), etiqueta: 'Costo por conversación', detalle: `Campaña anterior: ${usd(k.cpaPrevio)} (${n0(d.mes_previo.conv)} conversaciones por ${usd(d.mes_previo.gasto)} en ${d.mes_previo.dias} días).` })}

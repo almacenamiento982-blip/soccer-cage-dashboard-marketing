@@ -1,10 +1,10 @@
 // Evolución de la gestión de marketing desde el 15-sep-2026: bloque del resumen y sección completa.
-import { json, parrilla } from './datos.js?v=20261002d';
-import * as K from './calculos.js?v=20261002d';
-import * as C from './componentes.js?v=20261002d';
-import { CORTE, sumarDias, hoyISO, diasEntre } from './periodo.js?v=20261002d';
-import { comparacionIG, totalesComparacion, tablaSeguidores, tablaActividad, lecturaComparacion, IG_DE_PESTANA } from './vista_instagram.js?v=20261002d';
-import { comparacionContenido, tablaPlanificacion, tablaCumplimiento, lecturaContenido } from './vista_contenido.js?v=20261002d';
+import { json, parrilla } from './datos.js?v=20261002e';
+import * as K from './calculos.js?v=20261002e';
+import * as C from './componentes.js?v=20261002e';
+import { CORTE, sumarDias, hoyISO, diasEntre } from './periodo.js?v=20261002e';
+import { comparacionIG, totalesComparacion, tablaSeguidores, tablaActividad, lecturaComparacion, IG_DE_PESTANA } from './vista_instagram.js?v=20261002e';
+import { comparacionContenido, tablaPlanificacion, tablaCumplimiento, lecturaContenido } from './vista_contenido.js?v=20261002e';
 const { n0, n1, usd, pct, fecha, esc } = K;
 const corta = (f) => new Date(f + 'T12:00:00').toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
 

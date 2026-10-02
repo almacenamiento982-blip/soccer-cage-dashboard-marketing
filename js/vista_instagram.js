@@ -1,8 +1,8 @@
 // Sección Instagram: estado actual, comparación antes / desde el 15-sep y evolución temporal.
-import { json, parrilla } from './datos.js?v=20261002d';
-import * as K from './calculos.js?v=20261002d';
-import * as C from './componentes.js?v=20261002d';
-import { CORTE, rangos, rangoActivo, periodo, sumarDias, diasEntre } from './periodo.js?v=20261002d';
+import { json, parrilla } from './datos.js?v=20261002e';
+import * as K from './calculos.js?v=20261002e';
+import * as C from './componentes.js?v=20261002e';
+import { CORTE, rangos, rangoActivo, periodo, sumarDias, diasEntre } from './periodo.js?v=20261002e';
 const { n0, n1, pct, fecha, esc, signo } = K;
 
 export const IG_DE_PESTANA = { athletum: 'juventusacademymiami', camps_usa: 'juventuscampsusa', camps_mx: 'juventuscampsmx', las_vegas: 'jacademylasvegas' };

@@ -1,5 +1,5 @@
 // Cálculos puros (sin DOM). Todo sale de los datos; nada de cifras escritas a mano.
-import { CORTE, sumarDias, diasEntre, enRango } from './periodo.js?v=20261002d';
+import { CORTE, sumarDias, diasEntre, enRango } from './periodo.js?v=20261002e';
 
 // ---------- formato ----------
 const nf = (d) => new Intl.NumberFormat('de-DE', { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -178,4 +178,16 @@ export function leerCambio(nombre, a, b, f = n0, unidad = '') {
   if (a === b) return `${nombre} se mantuvo igual (${f(a)}${unidad}).`;
   const rel = a ? ` (${a < b ? '+' : '−'}${pct(Math.abs((b - a) / a), 0)})` : '';
   return `${nombre} pasó de ${f(a)}${unidad} a ${f(b)}${unidad}${rel}.`;
+}
+
+// ---------- frescura de los datos de las campañas (no se actualizan solos) ----------
+export function frescuraMeta(tipo, d, hoy) {
+  const dias = (f) => f ? Math.round((new Date(hoy + 'T12:00:00') - new Date(f + 'T12:00:00')) / 864e5) : null;
+  if (tipo === 'preacademy') {
+    const f = d.ultima?.fecha;
+    return { hasta: f, dias: dias(f), como: 'Se actualiza cuando el responsable de la campaña envía el export CSV de Ads Manager y se carga en el reporte comparativo.' };
+  }
+  const f = d.meta_diario?.at(-1)?.fecha, app = d.app?.leido;
+  return { hasta: f, app, dias: dias(f), parcial: !!d.meta_diario?.at(-1)?.parcial,
+    como: 'Se actualiza al revisar la campaña en Meta Ads (resultados por día) y la plataforma de registros (registros y pagos, lectura en el navegador con acceso de solo lectura).' };
 }
