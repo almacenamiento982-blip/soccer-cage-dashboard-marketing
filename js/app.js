@@ -1,8 +1,8 @@
 // Enrutador por hash, menú móvil y estados de carga y error.
-import * as V from './vistas.js';
-import { json } from './datos.js';
-import { destruirGraficos } from './componentes.js';
-import { esc, fecha } from './calculos.js';
+import * as V from './vistas.js?v=20261001c';
+import { json } from './datos.js?v=20261001c';
+import { destruirGraficos } from './componentes.js?v=20261001c';
+import { esc, fecha } from './calculos.js?v=20261001c';
 
 const RUTAS = {
   resumen: ['Resumen ejecutivo', V.resumen],

@@ -1,5 +1,5 @@
 // Componentes de presentación: devuelven HTML (strings) o crean gráficos. Sin lógica de negocio.
-import { esc, fecha, claseEstado } from './calculos.js';
+import { esc, fecha, claseEstado } from './calculos.js?v=20261001c';
 
 export const PENDIENTE = '<span class="vacio">pendiente de medición</span>';
 

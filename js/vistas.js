@@ -1,8 +1,8 @@
 // Vistas: arman cada sección con la capa de datos (datos.js), los cálculos (calculos.js)
 // y los componentes (componentes.js).
-import { json, parrilla, SHEET_ID } from './datos.js';
-import * as K from './calculos.js';
-import * as C from './componentes.js';
+import { json, parrilla, SHEET_ID } from './datos.js?v=20261001c';
+import * as K from './calculos.js?v=20261001c';
+import * as C from './componentes.js?v=20261001c';
 const { n0, n1, usd, pct, fecha, esc } = K;
 
 const IG_DE_PESTANA = { athletum: 'juventusacademymiami', camps_usa: 'juventuscampsusa', camps_mx: 'juventuscampsmx', las_vegas: 'jacademylasvegas' };
