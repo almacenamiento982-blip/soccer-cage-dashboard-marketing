@@ -303,7 +303,7 @@
     },
     {
      "area": "Diseño",
-     "texto": "Diseño de una «gráfica» tipo noticia para Juventus Las Vegas y corrección del carrusel final y de 2 posts con ChatGPT."
+     "texto": "Diseño de una «gráfica» tipo noticia para Juventus Las Vegas y corrección del carrusel final y de 2 posts."
     },
     {
      "area": "Reuniones",
@@ -362,7 +362,7 @@
     },
     {
      "area": "Diseño",
-     "texto": "Ajuste de los anuncios de la pauta (sedes, «first month free») con ChatGPT."
+     "texto": "Ajuste de los anuncios de la pauta (sedes, «first month free»)."
     },
     {
      "area": "Competencia",
@@ -424,7 +424,7 @@
     },
     {
      "area": "Diseño",
-     "texto": "Primeras piezas de Juve Camps USA generadas con ChatGPT (6 diseños y un carrusel)."
+     "texto": "Primeras piezas de Juve Camps USA (6 diseños y un carrusel)."
     },
     {
      "area": "Archivo",
@@ -491,7 +491,7 @@
     },
     {
      "area": "Diseño",
-     "texto": "34 portadas de carrusel generadas con ChatGPT."
+     "texto": "34 portadas de carrusel."
     },
     {
      "area": "Archivo",
@@ -525,7 +525,7 @@
     },
     {
      "area": "Diseño",
-     "texto": "Portadas con el fondo de cada ciudad y lámina final del carrusel con ChatGPT."
+     "texto": "Portadas con el fondo de cada ciudad y lámina final del carrusel."
     },
     {
      "area": "Informes",
@@ -583,7 +583,7 @@
     },
     {
      "area": "Contenido",
-     "texto": "Parrilla de Juve Camps México (oct-dic) y revisión de las piezas hechas con ChatGPT."
+     "texto": "Parrilla de Juve Camps México (oct-dic) y revisión de sus piezas."
     }
    ]
   },
@@ -632,28 +632,7 @@
  ],
  "bitacora_nota": "Tareas reconstruidas a partir del registro de trabajo de cada día y de los archivos generados (informes, piezas, reportes y transcripciones de reuniones). Cada tarea figura el día en que se trabajó; las que se extendieron varios días aparecen en el día en que avanzaron.",
  "produccion": {
-  "nota": "Piezas del Sheet con responsable «David» y material enlazado (se cuentan en vivo). Las imágenes hechas con ChatGPT se cuentan en las carpetas de generación de cada cuenta; las láminas interiores de los carruseles y parte de los flyers son HTML.",
-  "chatgpt": [
-   {
-    "clave": "camps_usa",
-    "posts": 48,
-    "portadas": 35,
-    "fuente": "piezas_posts_chatgpt (48) y piezas_portadas_chatgpt (35)"
-   },
-   {
-    "clave": "las_vegas",
-    "posts": 12,
-    "portadas": 17,
-    "fuente": "piezas_chatgpt (12) y piezas_chatgpt_portadas (17)"
-   },
-   {
-    "clave": "camps_mx",
-    "posts": null,
-    "portadas": null,
-    "total": 20,
-    "fuente": "LEEME del pipeline de México: 20 piezas con portada o post de ChatGPT; el resto de láminas y 4 flyers en HTML"
-   }
-  ],
+  "nota": "Piezas del Sheet con responsable «David» y material enlazado, por formato (se cuentan en vivo cada vez que se abre la página).",
   "pauta": [
    {
     "campana": "Pre-Academy Miami",

@@ -1,10 +1,10 @@
 // Evolución de la gestión de marketing desde el 15-sep-2026: bloque del resumen y sección completa.
-import { json, parrilla } from './datos.js?v=20261002b';
-import * as K from './calculos.js?v=20261002b';
-import * as C from './componentes.js?v=20261002b';
-import { CORTE, sumarDias, hoyISO, diasEntre } from './periodo.js?v=20261002b';
-import { comparacionIG, totalesComparacion, tablaSeguidores, tablaActividad, lecturaComparacion, IG_DE_PESTANA } from './vista_instagram.js?v=20261002b';
-import { comparacionContenido, tablaPlanificacion, tablaCumplimiento, lecturaContenido } from './vista_contenido.js?v=20261002b';
+import { json, parrilla } from './datos.js?v=20261002c';
+import * as K from './calculos.js?v=20261002c';
+import * as C from './componentes.js?v=20261002c';
+import { CORTE, sumarDias, hoyISO, diasEntre } from './periodo.js?v=20261002c';
+import { comparacionIG, totalesComparacion, tablaSeguidores, tablaActividad, lecturaComparacion, IG_DE_PESTANA } from './vista_instagram.js?v=20261002c';
+import { comparacionContenido, tablaPlanificacion, tablaCumplimiento, lecturaContenido } from './vista_contenido.js?v=20261002c';
 const { n0, n1, usd, pct, fecha, esc } = K;
 const corta = (f) => new Date(f + 'T12:00:00').toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
 
@@ -30,7 +30,6 @@ export function produccionSheet(p) {
 }
 
 function tablaProduccion(prod, info) {
-  const gpt = Object.fromEntries((info?.chatgpt || []).map(x => [x.clave, x]));
   const tot = (k) => prod.reduce((s, x) => s + x[k], 0);
   const filas = [...prod, { t: { cuenta: 'Total', clave: '' }, total: tot('total'), fotos: tot('fotos'), flyers: tot('flyers'), carruseles: tot('carruseles'), reels: tot('reels'), _total: true }];
   return C.tabla([
@@ -39,8 +38,6 @@ function tablaProduccion(prod, info) {
     { t: 'Posts de foto', num: 1, k: x => n0(x.fotos) },
     { t: 'Flyers', num: 1, k: x => n0(x.flyers) },
     { t: 'Carruseles', num: 1, k: x => n0(x.carruseles) },
-    { t: 'Hechas con ChatGPT', k: x => { const g = gpt[x.t.clave]; if (x._total || !g) return x._total ? '' : '—';
-      return g.total != null ? `${n0(g.total)} piezas con portada o post de ChatGPT` : `${n0(g.posts)} posts y ${n0(g.portadas)} portadas de carrusel`; } },
   ], filas);
 }
 
