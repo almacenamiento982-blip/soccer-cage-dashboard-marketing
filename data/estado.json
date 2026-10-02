@@ -1,8 +1,8 @@
 {
- "generado": "2026-10-02T00:14",
+ "generado": "2026-10-02T07:10",
  "secciones": {
   "instagram": {
-   "actualizado": "2026-10-02T00:14",
+   "actualizado": "2026-10-02T07:10",
    "fuentes": [
     {
      "archivo": "7 HERRAMIENTAS Y DASHBOARDS/Dashboard Instagram/_version con servidor/data.json",
@@ -24,7 +24,7 @@
    "api": true
   },
   "preacademy": {
-   "actualizado": "2026-10-02T00:14",
+   "actualizado": "2026-10-02T07:10",
    "fuentes": [
     {
      "archivo": "1 JUVENTUS ACADEMY MIAMI/Campana Ads PreAcademy/REPORTE_COMPARATIVO/datos.json",
@@ -33,7 +33,7 @@
    ]
   },
   "idcamps": {
-   "actualizado": "2026-10-02T00:14",
+   "actualizado": "2026-10-02T07:10",
    "fuentes": [
     {
      "archivo": "3 ID CAMPS JUVENTUS/Campana Ads/_pipeline_ads/montaje_meta_estado.json",
@@ -54,7 +54,7 @@
    ]
   },
   "email": {
-   "actualizado": "2026-10-02T00:14",
+   "actualizado": "2026-10-02T07:10",
    "fuentes": [
     {
      "archivo": "7 HERRAMIENTAS Y DASHBOARDS/Auditoria Email Constant Contact/scripts/data/report.json",
@@ -71,7 +71,7 @@
    ]
   },
   "parrilla": {
-   "actualizado": "2026-10-02T00:14",
+   "actualizado": "2026-10-02T07:10",
    "fuentes": []
   }
  }
