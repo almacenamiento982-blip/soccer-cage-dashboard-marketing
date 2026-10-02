@@ -120,10 +120,14 @@ h1{font-size:38px}h2{font-size:27px}h3{font-size:19px}
 .bloque-evo .parte>h3 .n{font-family:var(--display);color:var(--gold-bar)}
 .bloque-evo .card{background:#FBFBFC}
 .linea-tiempo{list-style:none;margin:0;padding:0}
-.linea-tiempo li{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid var(--line-2)}
-.linea-tiempo li:last-child{border-bottom:0}
+.linea-tiempo>li{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid var(--line-2)}
+.linea-tiempo>li:last-child{border-bottom:0}
 .linea-tiempo time{font-weight:700;color:var(--gold);font-size:14px}
 .linea-tiempo .ev{display:block;color:var(--ink-3);font-size:13.5px;margin-top:2px}
+.bitacora time{text-transform:capitalize}
+.bitacora .tareas{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.bitacora .tareas li{font-size:15px}
+.bitacora .area{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--blue);background:var(--blue-soft);border-radius:5px;padding:1px 7px;margin-right:4px}
 .leyenda-tipos{display:flex;gap:8px 14px;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--ink-2)}
 .leyenda-tipos .item{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
 
@@ -193,7 +197,7 @@ details summary{cursor:pointer;font-weight:600;color:var(--gold)}
   h1{font-size:31px}h2{font-size:24px}
   .g4,.g3,.g2{grid-template-columns:minmax(0,1fr)}
   .kpi .v{font-size:36px}
-  .linea-tiempo li{grid-template-columns:1fr;gap:2px}
+  .linea-tiempo>li{grid-template-columns:1fr;gap:2px}
   .chart{height:260px}
   .bloque-evo{padding:16px}
 }

@@ -1,9 +1,9 @@
 // Sección Plan de contenido: Sheet en vivo, filtrado por periodo, y comparación antes / desde el 15-sep.
-import { json, parrilla, SHEET_ID } from './datos.js?v=20261002a';
-import * as K from './calculos.js?v=20261002a';
-import * as C from './componentes.js?v=20261002a';
-import { CORTE, rangos, rangoActivo, periodo, hoyISO, enRango, sumarDias } from './periodo.js?v=20261002a';
-import { IG_DE_PESTANA } from './vista_instagram.js?v=20261002a';
+import { json, parrilla, SHEET_ID } from './datos.js?v=20261002b';
+import * as K from './calculos.js?v=20261002b';
+import * as C from './componentes.js?v=20261002b';
+import { CORTE, rangos, rangoActivo, periodo, hoyISO, enRango, sumarDias } from './periodo.js?v=20261002b';
+import { IG_DE_PESTANA } from './vista_instagram.js?v=20261002b';
 const { n0, n1, pct, fecha, esc } = K;
 
 const mes = (k) => { const [y, m] = k.split('-'); return new Date(+y, +m - 1, 15).toLocaleDateString('es-ES', { month: 'short', year: 'numeric' }); };
