@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-02T07:09",
+ "generado": "2026-10-02T09:42",
  "fuente": "REPORTE_COMPARATIVO/datos.json (lecturas de Ads Manager)",
  "informe": "https://almacenamiento982-blip.github.io/jam-preacademy-reporte/",
  "campana": "PREACADEMY | WHATSAPP | COLD | SEP26",
@@ -71,46 +71,53 @@
    "gasto": 316.03,
    "imp": 17913,
    "clics": 232
+  },
+  {
+   "fecha": "2026-10-02",
+   "conv": 99,
+   "gasto": 352.92,
+   "imp": 20980,
+   "clics": 261
   }
  ],
  "ultima": {
-  "fecha": "2026-10-01",
-  "conv": 92,
-  "gasto": 316.03,
-  "imp": 17913,
-  "clics": 232,
+  "fecha": "2026-10-02",
+  "conv": 99,
+  "gasto": 352.92,
+  "imp": 20980,
+  "clics": 261,
   "conjuntos": {
    "INTERESTS": {
-    "conv": 40,
-    "gasto": 122,
-    "imp": 7299,
-    "clics": 91
+    "conv": 46,
+    "gasto": 137.33,
+    "imp": 8499,
+    "clics": 104
    },
    "LAL": {
     "conv": 25,
-    "gasto": 99.69,
-    "imp": 5469,
-    "clics": 72
+    "gasto": 111.12,
+    "imp": 6541,
+    "clics": 79
    },
    "BROAD": {
-    "conv": 27,
-    "gasto": 94.34,
-    "imp": 5145,
-    "clics": 69
+    "conv": 28,
+    "gasto": 104.47,
+    "imp": 5940,
+    "clics": 78
    }
   },
   "anuncios": {
    "REEL-A": {
     "conv": 1,
-    "gasto": 3.09,
-    "imp": 153,
+    "gasto": 3.53,
+    "imp": 167,
     "clics": 2
    },
    "REEL-B": {
     "conv": 6,
-    "gasto": 34.07,
-    "imp": 1551,
-    "clics": 13
+    "gasto": 34.61000000000001,
+    "imp": 1579,
+    "clics": 15
    },
    "AD2": {
     "conv": 0,
@@ -120,21 +127,21 @@
    },
    "AD1": {
     "conv": 13,
-    "gasto": 25.08,
-    "imp": 1589,
+    "gasto": 25.83,
+    "imp": 1665,
     "clics": 21
    },
    "AD3": {
-    "conv": 38,
-    "gasto": 115.72999999999999,
-    "imp": 7010,
-    "clics": 86
+    "conv": 44,
+    "gasto": 139,
+    "imp": 9027,
+    "clics": 108
    },
    "AD4": {
-    "conv": 34,
-    "gasto": 133.86,
-    "imp": 7405,
-    "clics": 104
+    "conv": 35,
+    "gasto": 145.73,
+    "imp": 8336,
+    "clics": 111
    }
   }
  },
