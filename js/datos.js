@@ -67,6 +67,9 @@ function aFecha(s) {
 let lectura = null;
 export function parrilla() { return (lectura = lectura || leerParrilla()); }
 
+// Botón «Volver a leer las fuentes»: descarta lo cargado y vuelve a pedir los JSON y el Sheet
+export function refrescar() { Object.keys(cache).forEach(k => delete cache[k]); lectura = null; }
+
 async function leerParrilla() {
   try {
     const tabs = await Promise.all(PESTANAS.map(async p => {

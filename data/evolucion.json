@@ -1,0 +1,49 @@
+{
+ "actualizado": "2026-10-01",
+ "corte": "2026-09-15",
+ "nota": "Contenido editorial. Cada línea cita su evidencia (archivo o informe del proyecto). «Sin registro disponible» significa que no hay documentación del estado anterior, no que el trabajo no existiera. Las cifras que cambian (seguidores, piezas, campañas) no se escriben aquí: el dashboard las calcula de sus fuentes.",
+ "situacion_inicial": [
+  {"area": "Instagram", "texto": "Cuatro cuentas activas y publicando. No se guardaba un registro periódico de seguidores totales: la API solo entrega el total del momento.", "evidencia": "Auditorías de Instagram (18 al 30-sep) sobre 24 meses de publicaciones", "url": "https://almacenamiento982-blip.github.io/soccer-cage-instagram-report/"},
+  {"area": "Plan de contenido", "texto": "Solo Athletum tenía su parrilla en el Sheet. Camps USA, México y Las Vegas no tenían piezas planificadas antes del 15-sep (la fecha más temprana de cada pestaña se muestra en «Plan de contenido»).", "evidencia": "Google Sheet «Social Media Content Plan 26/27» (fechas de cada pestaña)", "url": null},
+  {"area": "Meta Ads · Pre-Academy", "texto": "Campaña previa de WhatsApp activa entre el 21-ago y el 19-sep de 2026.", "evidencia": "Export de Ads Manager Ads-Aug-21-2026-Sep-19-2026.csv (reporte comparativo)", "url": "https://almacenamiento982-blip.github.io/jam-preacademy-reporte/"},
+  {"area": "Meta Ads · ID Camps", "texto": "Dos temporadas de campañas por clínica (24-25 y 25-26). En 25-26, Audience Network se llevó el 46 % del gasto.", "evidencia": "Diagnóstico de clínicas e HISTORIAL_META_ADS_CAMPS_USA.md", "url": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/"},
+  {"area": "Email", "texto": "482 campañas enviadas entre jun-2024 y sep-2026. Cerca del 89 % del volumen salía sin firma DKIM propia, no había secuencias automáticas y el 84 % de los envíos masivos era de venta o cuenta regresiva.", "evidencia": "RESULTADOS_AUDITORIA_EMAIL.md (auditoría del 24-sep sobre el periodo 13-jun-2024 → 21-sep-2026)", "url": "https://almacenamiento982-blip.github.io/auditoria-email-juventus/"},
+  {"area": "SMS", "texto": "469 campañas entre nov-2022 y el 15-sep-2026. El 84 % de los mensajes ocupaba 2 segmentos o más (se cobran doble) y cada envío provocaba un 0,90 % de bajas.", "evidencia": "RESULTADOS_AUDITORIA_SMS.md (30-sep, periodo 15-nov-2022 → 15-sep-2026)", "url": "https://almacenamiento982-blip.github.io/auditoria-email-juventus/"},
+  {"area": "Bases de datos", "texto": "Constant Contact (43.597 contactos), Vozzi (36.826) y los clientes de la app estaban en bases separadas, sin cruzar.", "evidencia": "RESULTADOS_CRUCE.md (01-oct)", "url": "https://almacenamiento982-blip.github.io/auditoria-email-juventus/#cruce"},
+  {"area": "Web y medición", "texto": "La app de inscripción no enviaba eventos de conversión a Meta: el «lead» de las campañas era un clic en «Register now».", "evidencia": "AUDITORIA_LANDING_juventuscampsusa.html (29-sep)", "url": null},
+  {"area": "Informes", "texto": "Sin registro disponible de un tablero consolidado anterior.", "evidencia": "Sin documentación previa al 15-sep", "url": null}
+ ],
+ "hitos": [
+  {"fecha": "2026-09-18", "area": "Instagram", "texto": "Auditoría de @juventusacademymiami: 243 publicaciones en 24 meses, por formato, tema, día y hora.", "evidencia": "data.json de la auditoría (18-sep)", "url": "https://almacenamiento982-blip.github.io/soccer-cage-instagram-report/"},
+  {"fecha": "2026-09-21", "area": "Meta Ads", "texto": "Campaña Pre-Academy montada: 3 públicos y 6 anuncios por público. Activa desde el 22-sep.", "evidencia": "Registro de cambios del reporte comparativo", "url": "https://almacenamiento982-blip.github.io/jam-preacademy-reporte/"},
+  {"fecha": "2026-09-23", "area": "Instagram", "texto": "Auditorías de @juventuscampsusa y @jacademylasvegas; la de @juventuscampsmx, el 30-sep.", "evidencia": "data.json de cada auditoría", "url": "https://almacenamiento982-blip.github.io/soccer-cage-instagram-report/"},
+  {"fecha": "2026-09-23", "area": "Contenido", "texto": "Parrilla de Juve Camps USA en el Sheet, con piezas producidas y enlazadas en Drive.", "evidencia": "Pestaña «Juve Camps USA» (primera fecha: 23-sep)", "url": null},
+  {"fecha": "2026-09-24", "area": "Email", "texto": "Auditoría de Constant Contact: 482 campañas, entrega, autenticación y públicos.", "evidencia": "RESULTADOS_AUDITORIA_EMAIL.md", "url": "https://almacenamiento982-blip.github.io/auditoria-email-juventus/"},
+  {"fecha": "2026-09-24", "area": "Contenido", "texto": "Parrilla diaria de Juve Las Vegas (25-sep a 31-dic).", "evidencia": "Pestaña «Juve Las Vegas» (generada el 24/09/2026)", "url": null},
+  {"fecha": "2026-09-26", "area": "Meta Ads", "texto": "Estrategia de Meta Ads para los ID Camps 2026-27.", "evidencia": "ESTRATEGIA_ID_CAMPS_2026-27.md (propuesta del 26-09)", "url": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/"},
+  {"fecha": "2026-09-29", "area": "Web y medición", "texto": "Auditoría de juventuscampsusa.com y brief al programador para medir el registro real (píxel).", "evidencia": "AUDITORIA_LANDING_juventuscampsusa.html y BRIEF_PROGRAMADOR_PIXEL.pdf", "url": null},
+  {"fecha": "2026-09-30", "area": "Meta Ads", "texto": "Campaña ID Camps activa: Chicago, Dallas y retargeting de 7 sedes, 16 anuncios.", "evidencia": "montaje_meta_estado.json y seguimiento diario", "url": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/"},
+  {"fecha": "2026-09-30", "area": "SMS", "texto": "Auditoría de Vozzi: 469 campañas y comparación con el email.", "evidencia": "RESULTADOS_AUDITORIA_SMS.md", "url": "https://almacenamiento982-blip.github.io/auditoria-email-juventus/"},
+  {"fecha": "2026-09-30", "area": "Contenido", "texto": "Parrilla de Juve Camps México (oct-dic).", "evidencia": "Pestaña «Juve Camps MEXICO»", "url": null},
+  {"fecha": "2026-10-01", "area": "Bases de datos", "texto": "Cruce de Constant Contact, Vozzi y clientes de Meta: 52.436 personas únicas y segmentos para recuperar familias sin pago.", "evidencia": "RESULTADOS_CRUCE.md", "url": "https://almacenamiento982-blip.github.io/auditoria-email-juventus/#cruce"},
+  {"fecha": "2026-10-01", "area": "Email", "texto": "Plan de email y SMS por público (56 emails y 36 SMS, oct-2026 a jun-2027).", "evidencia": "BITACORA_PLAN_EMAIL_SMS.md", "url": "https://almacenamiento982-blip.github.io/auditoria-email-juventus/#plan-email-sms"},
+  {"fecha": "2026-10-01", "area": "Contenido", "texto": "Revisión de copys de Camps USA, Las Vegas y México: el llamado a la acción se escribe dentro del copy.", "evidencia": "REVISION_CAMBIOS.md (corrección de copys)", "url": null},
+  {"fecha": "2026-10-01", "area": "Informes", "texto": "Dashboard ejecutivo publicado, con el plan de contenido leído en vivo del Sheet.", "evidencia": "Este dashboard", "url": null}
+ ],
+ "operativo": [
+  {"area": "Informes y fuentes", "antes": "Sin registro disponible de un tablero consolidado.", "despues": "Informes publicados de Instagram, Meta Ads (2), email/SMS y este dashboard, todos construidos sobre los mismos archivos fuente.", "estado": "Implementado", "evidencia": "Informes en GitHub Pages y data/estado.json"},
+  {"area": "Planificación de campañas", "antes": "Campañas previas documentadas (Pre-Academy ago-sep; ID Camps por clínica en 24-25 y 25-26).", "despues": "Estrategia escrita, nomenclatura y presupuestos por conjunto, con revisiones programadas.", "estado": "En progreso", "evidencia": "ESTRATEGIA_ID_CAMPS_2026-27.md y reporte de Pre-Academy"},
+  {"area": "Creatividades y anuncios", "antes": "Anuncios activos en campañas previas (sin registro de su proceso de prueba).", "despues": "6 anuncios en prueba en Pre-Academy y 16 en ID Camps, con lectura por anuncio.", "estado": "En progreso", "evidencia": "Tablas por anuncio de cada campaña"},
+  {"area": "Contenido para las cuentas", "antes": "Publicaciones en las 4 cuentas; parrilla en el Sheet solo para Athletum.", "despues": "Parrillas para Camps USA, México y Las Vegas, con piezas producidas y enlazadas en Drive.", "estado": "En progreso", "evidencia": "Google Sheet (sección Plan de contenido)"},
+  {"area": "Email y SMS", "antes": "Envíos sin autenticación propia en la mayoría del volumen y sin secuencias.", "despues": "Auditorías de email y SMS y plan por público. Los envíos del plan aún no empiezan.", "estado": "Planificado", "evidencia": "RESULTADOS_AUDITORIA_EMAIL.md, RESULTADOS_AUDITORIA_SMS.md y bitácora del plan"},
+  {"area": "Páginas de destino", "antes": "Sin registro disponible de una auditoría anterior.", "despues": "Auditoría de juventuscampsusa.com y prototipo de landing por sede.", "estado": "Pendiente de validación", "evidencia": "AUDITORIA_LANDING_juventuscampsusa.html"},
+  {"area": "Medición", "antes": "El «lead» era un clic; no había registro periódico de seguidores.", "despues": "Seguimiento diario de Meta frente a la app (sin atribución), historial de seguidores desde el 01-oct y brief del píxel. El evento de registro real sigue pendiente.", "estado": "En progreso", "evidencia": "Seguimiento diario de ID Camps y seguidores_historial.json"}
+ ],
+ "proximas": [
+  {"fecha": "2026-10-04", "texto": "Lectura de la campaña Pre-Academy y decisión sobre el presupuesto por público."},
+  {"fecha": "2026-10-08", "texto": "Primeros envíos del plan de email y SMS (ventana 8 al 20 de octubre), tras configurar DKIM y DMARC."},
+  {"fecha": "2026-10-10", "texto": "Revisión de la campaña ID Camps (10 al 13 de octubre): presupuestos, Atlanta, zonas del retargeting y sedes nuevas."},
+  {"fecha": null, "texto": "Aprobar y programar las piezas producidas que esperan aprobación en el Sheet."},
+  {"fecha": null, "texto": "Definir con el programador la medición del registro real (evento de conversión)."}
+ ]
+}

@@ -1,11 +1,12 @@
 // Cálculos puros (sin DOM). Todo sale de los datos; nada de cifras escritas a mano.
+import { CORTE, sumarDias, diasEntre, enRango } from './periodo.js?v=20261002a';
 
 // ---------- formato ----------
 const nf = (d) => new Intl.NumberFormat('de-DE', { minimumFractionDigits: d, maximumFractionDigits: d });
 export const n0 = (x) => (x == null || isNaN(x) ? '—' : nf(0).format(x));
 export const n1 = (x) => (x == null || isNaN(x) ? '—' : nf(1).format(x));
 export const usd = (x, d = 2) => (x == null || isNaN(x) ? '—' : '$' + nf(d).format(x));
-export const pct = (x, d = 1) => (x == null || isNaN(x) ? '—' : nf(d).format(x * 100) + ' %');
+export const pct = (x, d = 1) => (x == null || isNaN(x) ? '—' : nf(d).format(x * 100) + ' %');   // espacio que no se corta
 export const fecha = (s) => {
   if (!s) return '—';
   const d = s instanceof Date ? s : new Date(s.length === 10 ? s + 'T12:00:00' : s);
@@ -117,3 +118,64 @@ export function historicoTemporadas(d) {
 }
 
 export const claseEstado = (e) => ({ 'Implementado': 'implementado', 'En progreso': 'progreso', 'Planificado': 'planificado', 'Pendiente de validación': 'validacion' }[e] || 'validacion');
+
+// ---------- comparación antes / desde el 15-sep ----------
+
+export const variacion = (a, b) => (a == null || b == null ? { abs: null, rel: null } : { abs: b - a, rel: a ? (b - a) / a : null });
+export const lista = (a) => a.length < 2 ? a.join('') : a.slice(0, -1).join(', ') + ' y ' + a.at(-1);
+export const signo = (x, f = n0) => (x == null ? '—' : (x > 0 ? '+' : x < 0 ? '−' : '') + f(Math.abs(x)));
+
+// Último día completo con datos de Instagram (las ventanas de la API terminan el día anterior a la extracción)
+export const finIG = (ig) => {
+  const fines = ig.cuentas.map(c => c.ventanas?.despues?.hasta).filter(Boolean).sort();
+  return fines.at(-1) || sumarDias(ig.generado.slice(0, 10), -1);
+};
+
+// Línea base de seguidores: captura verificada más cercana al corte (no se estima la del 15-sep)
+export function lineaBase(c) {
+  const caps = (c.capturas || []).filter(x => x.seguidores != null).sort((a, b) => a.fecha.localeCompare(b.fecha));
+  const previa = [...caps].reverse().find(x => x.fecha <= CORTE);
+  const base = previa || caps.find(x => x.fecha >= CORTE) || null;
+  const actual = caps[caps.length - 1] || null;
+  if (!base || !actual || base === actual) return { base, actual, exacta: false, abs: null, rel: null, dias: null };
+  const v = variacion(base.seguidores, actual.seguidores);
+  return { base, actual, exacta: base.fecha === CORTE, ...v, dias: diasEntre(base.fecha, actual.fecha) - 1 };
+}
+
+// Nuevos seguidores (brutos, sin descontar bajas) desde el corte, según la serie diaria de la API
+export function nuevosDesdeCorte(c, hasta) {
+  const s = (c.seguidores?.nuevos_por_dia || []).filter(x => x.fecha >= CORTE && (!hasta || x.fecha <= hasta));
+  return s.length ? { n: s.reduce((a, x) => a + x.n, 0), dias: s.length, desde: s[0].fecha, hasta: s[s.length - 1].fecha } : null;
+}
+
+// Métricas de publicaciones en un rango
+export function resumenPosts(posts, r) {
+  const p = (posts || []).filter(x => enRango(x.fecha, r));
+  const dias = r && r.desde && r.hasta ? diasEntre(r.desde, r.hasta) : null;
+  const suma = (k) => p.reduce((s, x) => s + (x[k] || 0), 0);
+  const conAlcance = p.filter(x => x.alcance != null);
+  const formatos = {}; p.forEach(x => { formatos[x.formato] = (formatos[x.formato] || 0) + 1; });
+  return {
+    n: p.length, dias, por_semana: dias ? (p.length / dias) * 7 : null,
+    alcance_prom: conAlcance.length ? conAlcance.reduce((s, x) => s + x.alcance, 0) / conAlcance.length : null,
+    interacciones_prom: p.length ? suma('interacciones') / p.length : null,
+    interacciones: suma('interacciones'), alcance: suma('alcance'), formatos,
+  };
+}
+
+// Serie semanal (semanas que empiezan en lunes) de publicaciones o de una métrica sumada
+export function semanal(posts, desde, hasta, campo = null) {
+  const lunes = (f) => { const d = new Date(f + 'T12:00:00'); const dow = (d.getDay() + 6) % 7; return sumarDias(f, -dow); };
+  const semanas = []; for (let s = lunes(desde); s <= hasta; s = sumarDias(s, 7)) semanas.push(s);
+  const m = Object.fromEntries(semanas.map(s => [s, 0]));
+  (posts || []).forEach(x => { if (x.fecha < desde || x.fecha > hasta) return; const k = lunes(x.fecha); if (k in m) m[k] += campo ? (x[campo] || 0) : 1; });
+  return semanas.map(s => ({ semana: s, n: m[s] }));
+}
+
+// Texto de lectura: compara dos valores sin atribuir causas
+export function leerCambio(nombre, a, b, f = n0, unidad = '') {
+  if (a == null || b == null) return '';
+  if (a === b) return `${nombre} se mantuvo igual (${f(a)}${unidad}).`;
+  const rel = a ? ` (${a < b ? '+' : '−'}${pct(Math.abs((b - a) / a), 0)})` : '';
+  return `${nombre} pasó de ${f(a)}${unidad} a ${f(b)}${unidad}${rel}.`;
+}

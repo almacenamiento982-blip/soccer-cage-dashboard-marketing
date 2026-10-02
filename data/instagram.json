@@ -1,8 +1,9 @@
 {
- "generado": "2026-10-01T23:28",
+ "generado": "2026-10-01T23:58",
  "fuente": "Auditoría de Instagram (informe unificado) + API de Instagram (Composio, solo lectura)",
  "informe": "https://almacenamiento982-blip.github.io/soccer-cage-instagram-report/",
  "nota_seguidores": "La API entrega los NUEVOS seguidores por día de los últimos 30 días; no descuenta a quienes dejan de seguir. No existe un historial de seguidores totales anterior: queda guardado a partir de esta primera lectura.",
+ "corte": "2026-09-15",
  "cuentas": [
   {
    "usuario": "juventusacademymiami",
@@ -428,7 +429,745 @@
       "n": 25
      }
     ]
-   }
+   },
+   "publicaciones": [
+    {
+     "fecha": "2026-06-03",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZIViQexlhs/",
+     "alcance": 5867,
+     "vistas": 10760,
+     "guardados": 6,
+     "compartidos": 12,
+     "interacciones": 235
+    },
+    {
+     "fecha": "2026-06-04",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZLUal5za4k/",
+     "alcance": 3466,
+     "vistas": 5587,
+     "guardados": 2,
+     "compartidos": 9,
+     "interacciones": 94
+    },
+    {
+     "fecha": "2026-06-09",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZXv4VLhtg9/",
+     "alcance": 3006,
+     "vistas": 4539,
+     "guardados": 1,
+     "compartidos": 4,
+     "interacciones": 74
+    },
+    {
+     "fecha": "2026-06-10",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DZbEtmWiGvA/",
+     "alcance": 4142,
+     "vistas": 10453,
+     "guardados": 1,
+     "compartidos": 34,
+     "interacciones": 190
+    },
+    {
+     "fecha": "2026-06-11",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZc5hHyhQTi/",
+     "alcance": 4469,
+     "vistas": 7612,
+     "guardados": 4,
+     "compartidos": 7,
+     "interacciones": 165
+    },
+    {
+     "fecha": "2026-06-16",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZqkmyxxTPZ/",
+     "alcance": 2149,
+     "vistas": 3205,
+     "guardados": 0,
+     "compartidos": 0,
+     "interacciones": 43
+    },
+    {
+     "fecha": "2026-06-24",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZ-j-9nROfe/",
+     "alcance": 5665,
+     "vistas": 9273,
+     "guardados": 4,
+     "compartidos": 6,
+     "interacciones": 185
+    },
+    {
+     "fecha": "2026-06-26",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DaERLcRo8fy/",
+     "alcance": 3660,
+     "vistas": 5141,
+     "guardados": 0,
+     "compartidos": 10,
+     "interacciones": 94
+    },
+    {
+     "fecha": "2026-07-10",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DankhM4Ohh_/",
+     "alcance": 5301,
+     "vistas": 9306,
+     "guardados": 2,
+     "compartidos": 13,
+     "interacciones": 306
+    },
+    {
+     "fecha": "2026-07-12",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/Dasw4mtiAwE/",
+     "alcance": 5550,
+     "vistas": 12720,
+     "guardados": 4,
+     "compartidos": 4,
+     "interacciones": 182
+    },
+    {
+     "fecha": "2026-07-16",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/Da3HQMoo5u5/",
+     "alcance": 7205,
+     "vistas": 17518,
+     "guardados": 6,
+     "compartidos": 53,
+     "interacciones": 215
+    },
+    {
+     "fecha": "2026-07-23",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DbJsHzeCHOR/",
+     "alcance": 3927,
+     "vistas": 12798,
+     "guardados": 4,
+     "compartidos": 24,
+     "interacciones": 248
+    },
+    {
+     "fecha": "2026-07-24",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DbMJ8QsulYm/",
+     "alcance": 4684,
+     "vistas": 6930,
+     "guardados": 7,
+     "compartidos": 24,
+     "interacciones": 209
+    },
+    {
+     "fecha": "2026-08-09",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/Db00VlmoVbO/",
+     "alcance": 6981,
+     "vistas": 11248,
+     "guardados": 4,
+     "compartidos": 46,
+     "interacciones": 426
+    },
+    {
+     "fecha": "2026-08-11",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/Db6gQN9x0IX/",
+     "alcance": 8479,
+     "vistas": 17892,
+     "guardados": 3,
+     "compartidos": 34,
+     "interacciones": 359
+    },
+    {
+     "fecha": "2026-08-13",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/Db_a2RgRHTG/",
+     "alcance": 5371,
+     "vistas": 9273,
+     "guardados": 6,
+     "compartidos": 16,
+     "interacciones": 275
+    },
+    {
+     "fecha": "2026-08-14",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DcBYrnuIFrF/",
+     "alcance": 10518,
+     "vistas": 21680,
+     "guardados": 5,
+     "compartidos": 41,
+     "interacciones": 376
+    },
+    {
+     "fecha": "2026-08-19",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DcOoT71CLiz/",
+     "alcance": 2917,
+     "vistas": 7394,
+     "guardados": 1,
+     "compartidos": 18,
+     "interacciones": 71
+    },
+    {
+     "fecha": "2026-08-24",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DcbpW23o6kd/",
+     "alcance": 3245,
+     "vistas": 5329,
+     "guardados": 1,
+     "compartidos": 8,
+     "interacciones": 125
+    },
+    {
+     "fecha": "2026-08-26",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/Dcgk8keoIfi/",
+     "alcance": 3873,
+     "vistas": 8282,
+     "guardados": 1,
+     "compartidos": 20,
+     "interacciones": 92
+    },
+    {
+     "fecha": "2026-08-28",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DcmGe2gxDVk/",
+     "alcance": 2210,
+     "vistas": 4148,
+     "guardados": 3,
+     "compartidos": 2,
+     "interacciones": 30
+    },
+    {
+     "fecha": "2026-08-30",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/Dcq5EcCuBuo/",
+     "alcance": 7702,
+     "vistas": 12366,
+     "guardados": 5,
+     "compartidos": 20,
+     "interacciones": 332
+    },
+    {
+     "fecha": "2026-08-31",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DcuN8ulO5-G/",
+     "alcance": 1985,
+     "vistas": 2771,
+     "guardados": 0,
+     "compartidos": 3,
+     "interacciones": 45
+    },
+    {
+     "fecha": "2026-08-31",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DctZ-2SoyVr/",
+     "alcance": 2172,
+     "vistas": 4480,
+     "guardados": 0,
+     "compartidos": 5,
+     "interacciones": 22
+    },
+    {
+     "fecha": "2026-09-02",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/Dcy0qTUIzQ1/",
+     "alcance": 9202,
+     "vistas": 15507,
+     "guardados": 10,
+     "compartidos": 42,
+     "interacciones": 594
+    },
+    {
+     "fecha": "2026-09-02",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/Dcyvo2eIolY/",
+     "alcance": 2535,
+     "vistas": 5223,
+     "guardados": 1,
+     "compartidos": 4,
+     "interacciones": 24
+    },
+    {
+     "fecha": "2026-09-05",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/Dc3dAKwxrl3/",
+     "alcance": 6495,
+     "vistas": 10170,
+     "guardados": 2,
+     "compartidos": 23,
+     "interacciones": 341
+    },
+    {
+     "fecha": "2026-09-07",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/Dc_6CMNhGfw/",
+     "alcance": 3076,
+     "vistas": 6603,
+     "guardados": 2,
+     "compartidos": 6,
+     "interacciones": 50
+    },
+    {
+     "fecha": "2026-09-07",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/Dc_f-ugEVSk/",
+     "alcance": 6353,
+     "vistas": 17450,
+     "guardados": 9,
+     "compartidos": 15,
+     "interacciones": 271
+    },
+    {
+     "fecha": "2026-09-08",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DdCmfyzkVq4/",
+     "alcance": 7253,
+     "vistas": 19798,
+     "guardados": 2,
+     "compartidos": 126,
+     "interacciones": 398
+    },
+    {
+     "fecha": "2026-09-09",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DdFXjK9xAyY/",
+     "alcance": 2871,
+     "vistas": 4598,
+     "guardados": 2,
+     "compartidos": 10,
+     "interacciones": 81
+    },
+    {
+     "fecha": "2026-09-09",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DdFEoQ7RzU0/",
+     "alcance": 14983,
+     "vistas": 30231,
+     "guardados": 10,
+     "compartidos": 95,
+     "interacciones": 747
+    },
+    {
+     "fecha": "2026-09-10",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DdHzidvuHyJ/",
+     "alcance": 8226,
+     "vistas": 14065,
+     "guardados": 4,
+     "compartidos": 53,
+     "interacciones": 468
+    },
+    {
+     "fecha": "2026-09-11",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DdKRfFykcps/",
+     "alcance": 6543,
+     "vistas": 17265,
+     "guardados": 1,
+     "compartidos": 16,
+     "interacciones": 378
+    },
+    {
+     "fecha": "2026-09-12",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DdM9HrIuUy3/",
+     "alcance": 9227,
+     "vistas": 15737,
+     "guardados": 12,
+     "compartidos": 85,
+     "interacciones": 556
+    },
+    {
+     "fecha": "2026-09-14",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DdRq1ZkoBhj/",
+     "alcance": 6670,
+     "vistas": 12778,
+     "guardados": 1,
+     "compartidos": 38,
+     "interacciones": 325
+    },
+    {
+     "fecha": "2026-09-15",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DdHN20UI4G4/",
+     "alcance": 6046,
+     "vistas": 11104,
+     "guardados": 1,
+     "compartidos": 14,
+     "interacciones": 311
+    },
+    {
+     "fecha": "2026-09-15",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DdUHcmXuWKq/",
+     "alcance": 4655,
+     "vistas": 8085,
+     "guardados": 4,
+     "compartidos": 12,
+     "interacciones": 255
+    },
+    {
+     "fecha": "2026-09-16",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DdXQTQ2CBZE/",
+     "alcance": 4046,
+     "vistas": 10682,
+     "guardados": 1,
+     "compartidos": 10,
+     "interacciones": 209
+    },
+    {
+     "fecha": "2026-09-18",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DdbnugkoP30/",
+     "alcance": 6973,
+     "vistas": 14591,
+     "guardados": 7,
+     "compartidos": 14,
+     "interacciones": 339
+    },
+    {
+     "fecha": "2026-09-21",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DdkE38KOvuq/",
+     "alcance": 4785,
+     "vistas": 9123,
+     "guardados": 0,
+     "compartidos": 9,
+     "interacciones": 240
+    },
+    {
+     "fecha": "2026-09-23",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DdpQLHNiI5B/",
+     "alcance": 2788,
+     "vistas": 7470,
+     "guardados": 0,
+     "compartidos": 6,
+     "interacciones": 171
+    },
+    {
+     "fecha": "2026-09-24",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/Ddr1BL7CHmH/",
+     "alcance": 2835,
+     "vistas": 7078,
+     "guardados": 0,
+     "compartidos": 6,
+     "interacciones": 143
+    },
+    {
+     "fecha": "2026-09-24",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DdrssWuMDN2/",
+     "alcance": 4046,
+     "vistas": 6393,
+     "guardados": 2,
+     "compartidos": 22,
+     "interacciones": 177
+    },
+    {
+     "fecha": "2026-09-29",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/Dd4rkTMx_ar/",
+     "alcance": 4469,
+     "vistas": 8974,
+     "guardados": 2,
+     "compartidos": 15,
+     "interacciones": 212
+    },
+    {
+     "fecha": "2026-09-30",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/Dd7Rwq6kVHk/",
+     "alcance": 1675,
+     "vistas": 4084,
+     "guardados": 0,
+     "compartidos": 7,
+     "interacciones": 82
+    }
+   ],
+   "alcance_diario": [
+    {
+     "fecha": "2026-08-02",
+     "n": 271
+    },
+    {
+     "fecha": "2026-08-03",
+     "n": 256
+    },
+    {
+     "fecha": "2026-08-04",
+     "n": 229
+    },
+    {
+     "fecha": "2026-08-05",
+     "n": 134
+    },
+    {
+     "fecha": "2026-08-06",
+     "n": 112
+    },
+    {
+     "fecha": "2026-08-07",
+     "n": 112
+    },
+    {
+     "fecha": "2026-08-08",
+     "n": 1200
+    },
+    {
+     "fecha": "2026-08-09",
+     "n": 4827
+    },
+    {
+     "fecha": "2026-08-10",
+     "n": 1117
+    },
+    {
+     "fecha": "2026-08-11",
+     "n": 4365
+    },
+    {
+     "fecha": "2026-08-12",
+     "n": 2288
+    },
+    {
+     "fecha": "2026-08-13",
+     "n": 4165
+    },
+    {
+     "fecha": "2026-08-14",
+     "n": 7344
+    },
+    {
+     "fecha": "2026-08-15",
+     "n": 1664
+    },
+    {
+     "fecha": "2026-08-16",
+     "n": 619
+    },
+    {
+     "fecha": "2026-08-17",
+     "n": 2115
+    },
+    {
+     "fecha": "2026-08-18",
+     "n": 538
+    },
+    {
+     "fecha": "2026-08-19",
+     "n": 1988
+    },
+    {
+     "fecha": "2026-08-20",
+     "n": 2077
+    },
+    {
+     "fecha": "2026-08-21",
+     "n": 2559
+    },
+    {
+     "fecha": "2026-08-22",
+     "n": 2738
+    },
+    {
+     "fecha": "2026-08-23",
+     "n": 1777
+    },
+    {
+     "fecha": "2026-08-24",
+     "n": 4120
+    },
+    {
+     "fecha": "2026-08-25",
+     "n": 3488
+    },
+    {
+     "fecha": "2026-08-26",
+     "n": 4532
+    },
+    {
+     "fecha": "2026-08-27",
+     "n": 3560
+    },
+    {
+     "fecha": "2026-08-28",
+     "n": 4061
+    },
+    {
+     "fecha": "2026-08-29",
+     "n": 3636
+    },
+    {
+     "fecha": "2026-08-30",
+     "n": 7650
+    },
+    {
+     "fecha": "2026-08-31",
+     "n": 4505
+    },
+    {
+     "fecha": "2026-09-01",
+     "n": 1930
+    },
+    {
+     "fecha": "2026-09-02",
+     "n": 8080
+    },
+    {
+     "fecha": "2026-09-03",
+     "n": 3739
+    },
+    {
+     "fecha": "2026-09-04",
+     "n": 4443
+    },
+    {
+     "fecha": "2026-09-05",
+     "n": 5545
+    },
+    {
+     "fecha": "2026-09-06",
+     "n": 2464
+    },
+    {
+     "fecha": "2026-09-07",
+     "n": 5300
+    },
+    {
+     "fecha": "2026-09-08",
+     "n": 7265
+    },
+    {
+     "fecha": "2026-09-09",
+     "n": 11629
+    },
+    {
+     "fecha": "2026-09-10",
+     "n": 13433
+    },
+    {
+     "fecha": "2026-09-11",
+     "n": 11567
+    },
+    {
+     "fecha": "2026-09-12",
+     "n": 11505
+    },
+    {
+     "fecha": "2026-09-13",
+     "n": 7241
+    },
+    {
+     "fecha": "2026-09-14",
+     "n": 8098
+    },
+    {
+     "fecha": "2026-09-15",
+     "n": 11551
+    },
+    {
+     "fecha": "2026-09-16",
+     "n": 8264
+    },
+    {
+     "fecha": "2026-09-17",
+     "n": 6683
+    },
+    {
+     "fecha": "2026-09-18",
+     "n": 8264
+    },
+    {
+     "fecha": "2026-09-19",
+     "n": 6901
+    },
+    {
+     "fecha": "2026-09-20",
+     "n": 4764
+    },
+    {
+     "fecha": "2026-09-21",
+     "n": 6893
+    },
+    {
+     "fecha": "2026-09-22",
+     "n": 4307
+    },
+    {
+     "fecha": "2026-09-23",
+     "n": 3732
+    },
+    {
+     "fecha": "2026-09-24",
+     "n": 4357
+    },
+    {
+     "fecha": "2026-09-25",
+     "n": 5292
+    },
+    {
+     "fecha": "2026-09-26",
+     "n": 4469
+    },
+    {
+     "fecha": "2026-09-27",
+     "n": 2707
+    },
+    {
+     "fecha": "2026-09-28",
+     "n": 3108
+    },
+    {
+     "fecha": "2026-09-29",
+     "n": 4664
+    },
+    {
+     "fecha": "2026-09-30",
+     "n": 4211
+    }
+   ],
+   "ventanas": {
+    "corte": "2026-09-15",
+    "dias": 16,
+    "antes": {
+     "desde": "2026-08-30",
+     "hasta": "2026-09-14",
+     "reach": 53066,
+     "profile_views": 5156,
+     "website_clicks": 194,
+     "accounts_engaged": 2376,
+     "total_interactions": 5954
+    },
+    "despues": {
+     "desde": "2026-09-15",
+     "hasta": "2026-09-30",
+     "reach": 43630,
+     "profile_views": 4039,
+     "website_clicks": 107,
+     "accounts_engaged": 1925,
+     "total_interactions": 4498
+    }
+   },
+   "capturas": [
+    {
+     "fecha": "2026-09-18",
+     "seguidores": 26771,
+     "fuente": "Auditoría de Instagram (data.json)"
+    },
+    {
+     "fecha": "2026-10-01",
+     "seguidores": 26968,
+     "fuente": "Lectura de la API (historial del dashboard)"
+    }
+   ]
   },
   {
    "usuario": "juventuscampsusa",
@@ -790,7 +1529,445 @@
       "n": 14
      }
     ]
-   }
+   },
+   "publicaciones": [
+    {
+     "fecha": "2026-06-03",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZIKRZoxDv0/",
+     "alcance": 1292,
+     "vistas": 1947,
+     "guardados": 0,
+     "compartidos": 5,
+     "interacciones": 82
+    },
+    {
+     "fecha": "2026-06-07",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DZTN0MHj2tr/",
+     "alcance": 1103,
+     "vistas": 2294,
+     "guardados": 1,
+     "compartidos": 3,
+     "interacciones": 28
+    },
+    {
+     "fecha": "2026-06-09",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZYWxl_P4ue/",
+     "alcance": 1347,
+     "vistas": 1879,
+     "guardados": 0,
+     "compartidos": 7,
+     "interacciones": 56
+    },
+    {
+     "fecha": "2026-06-21",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DZ2rqavDlWa/",
+     "alcance": 3294,
+     "vistas": 7356,
+     "guardados": 4,
+     "compartidos": 7,
+     "interacciones": 99
+    },
+    {
+     "fecha": "2026-06-30",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DaMH07HDtc_/",
+     "alcance": 1601,
+     "vistas": 4112,
+     "guardados": 2,
+     "compartidos": 4,
+     "interacciones": 81
+    },
+    {
+     "fecha": "2026-07-07",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DageYwuP2Tq/",
+     "alcance": 1554,
+     "vistas": 3159,
+     "guardados": 0,
+     "compartidos": 3,
+     "interacciones": 49
+    },
+    {
+     "fecha": "2026-07-14",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DayTxLSP4mc/",
+     "alcance": 1364,
+     "vistas": 2143,
+     "guardados": 0,
+     "compartidos": 3,
+     "interacciones": 65
+    },
+    {
+     "fecha": "2026-07-22",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DbGUxjDIBT3/",
+     "alcance": 1661,
+     "vistas": 4441,
+     "guardados": 1,
+     "compartidos": 6,
+     "interacciones": 75
+    },
+    {
+     "fecha": "2026-07-24",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DbKFfGIDrJ-/",
+     "alcance": 1718,
+     "vistas": 4199,
+     "guardados": 0,
+     "compartidos": 6,
+     "interacciones": 82
+    },
+    {
+     "fecha": "2026-07-31",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DbeJQVwEpCj/",
+     "alcance": 1254,
+     "vistas": 3485,
+     "guardados": 1,
+     "compartidos": 7,
+     "interacciones": 86
+    },
+    {
+     "fecha": "2026-08-05",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/Dbo9uPODj97/",
+     "alcance": 1524,
+     "vistas": 3997,
+     "guardados": 1,
+     "compartidos": 8,
+     "interacciones": 106
+    },
+    {
+     "fecha": "2026-08-13",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/Db_VIIQIIzS/",
+     "alcance": 1114,
+     "vistas": 2717,
+     "guardados": 2,
+     "compartidos": 3,
+     "interacciones": 56
+    },
+    {
+     "fecha": "2026-08-18",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DcKZp2MjiCj/",
+     "alcance": 1875,
+     "vistas": 4137,
+     "guardados": 1,
+     "compartidos": 10,
+     "interacciones": 84
+    },
+    {
+     "fecha": "2026-09-02",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/Dcw_KI4Dtcm/",
+     "alcance": 816,
+     "vistas": 1948,
+     "guardados": 1,
+     "compartidos": 1,
+     "interacciones": 22
+    },
+    {
+     "fecha": "2026-09-28",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/Dd14v14IE96/",
+     "alcance": 1039,
+     "vistas": 2083,
+     "guardados": 5,
+     "compartidos": 4,
+     "interacciones": 32
+    },
+    {
+     "fecha": "2026-09-30",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/Dd66u63OjQr/",
+     "alcance": 1358,
+     "vistas": 2169,
+     "guardados": 4,
+     "compartidos": 31,
+     "interacciones": 97
+    }
+   ],
+   "alcance_diario": [
+    {
+     "fecha": "2026-08-02",
+     "n": 178
+    },
+    {
+     "fecha": "2026-08-03",
+     "n": 94
+    },
+    {
+     "fecha": "2026-08-04",
+     "n": 702
+    },
+    {
+     "fecha": "2026-08-05",
+     "n": 651
+    },
+    {
+     "fecha": "2026-08-06",
+     "n": 156
+    },
+    {
+     "fecha": "2026-08-07",
+     "n": 90
+    },
+    {
+     "fecha": "2026-08-08",
+     "n": 69
+    },
+    {
+     "fecha": "2026-08-09",
+     "n": 65
+    },
+    {
+     "fecha": "2026-08-10",
+     "n": 54
+    },
+    {
+     "fecha": "2026-08-11",
+     "n": 46
+    },
+    {
+     "fecha": "2026-08-12",
+     "n": 39
+    },
+    {
+     "fecha": "2026-08-13",
+     "n": 672
+    },
+    {
+     "fecha": "2026-08-14",
+     "n": 292
+    },
+    {
+     "fecha": "2026-08-15",
+     "n": 85
+    },
+    {
+     "fecha": "2026-08-16",
+     "n": 72
+    },
+    {
+     "fecha": "2026-08-17",
+     "n": 599
+    },
+    {
+     "fecha": "2026-08-18",
+     "n": 1108
+    },
+    {
+     "fecha": "2026-08-19",
+     "n": 183
+    },
+    {
+     "fecha": "2026-08-20",
+     "n": 84
+    },
+    {
+     "fecha": "2026-08-21",
+     "n": 53
+    },
+    {
+     "fecha": "2026-08-22",
+     "n": 61
+    },
+    {
+     "fecha": "2026-08-23",
+     "n": 46
+    },
+    {
+     "fecha": "2026-08-24",
+     "n": 43
+    },
+    {
+     "fecha": "2026-08-25",
+     "n": 40
+    },
+    {
+     "fecha": "2026-08-26",
+     "n": 24
+    },
+    {
+     "fecha": "2026-08-27",
+     "n": 49
+    },
+    {
+     "fecha": "2026-08-28",
+     "n": 223
+    },
+    {
+     "fecha": "2026-08-29",
+     "n": 56
+    },
+    {
+     "fecha": "2026-08-30",
+     "n": 24
+    },
+    {
+     "fecha": "2026-08-31",
+     "n": 13
+    },
+    {
+     "fecha": "2026-09-01",
+     "n": 430
+    },
+    {
+     "fecha": "2026-09-02",
+     "n": 306
+    },
+    {
+     "fecha": "2026-09-03",
+     "n": 67
+    },
+    {
+     "fecha": "2026-09-04",
+     "n": 46
+    },
+    {
+     "fecha": "2026-09-05",
+     "n": 29
+    },
+    {
+     "fecha": "2026-09-06",
+     "n": 42
+    },
+    {
+     "fecha": "2026-09-07",
+     "n": 34
+    },
+    {
+     "fecha": "2026-09-08",
+     "n": 27
+    },
+    {
+     "fecha": "2026-09-09",
+     "n": 20
+    },
+    {
+     "fecha": "2026-09-10",
+     "n": 15
+    },
+    {
+     "fecha": "2026-09-11",
+     "n": 17
+    },
+    {
+     "fecha": "2026-09-12",
+     "n": 19
+    },
+    {
+     "fecha": "2026-09-13",
+     "n": 17
+    },
+    {
+     "fecha": "2026-09-14",
+     "n": 18
+    },
+    {
+     "fecha": "2026-09-15",
+     "n": 15
+    },
+    {
+     "fecha": "2026-09-16",
+     "n": 12
+    },
+    {
+     "fecha": "2026-09-17",
+     "n": 7
+    },
+    {
+     "fecha": "2026-09-18",
+     "n": 8
+    },
+    {
+     "fecha": "2026-09-19",
+     "n": 15
+    },
+    {
+     "fecha": "2026-09-20",
+     "n": 14
+    },
+    {
+     "fecha": "2026-09-21",
+     "n": 8
+    },
+    {
+     "fecha": "2026-09-22",
+     "n": 9
+    },
+    {
+     "fecha": "2026-09-23",
+     "n": 12
+    },
+    {
+     "fecha": "2026-09-24",
+     "n": 16
+    },
+    {
+     "fecha": "2026-09-25",
+     "n": 9
+    },
+    {
+     "fecha": "2026-09-26",
+     "n": 12
+    },
+    {
+     "fecha": "2026-09-27",
+     "n": 8
+    },
+    {
+     "fecha": "2026-09-28",
+     "n": 811
+    },
+    {
+     "fecha": "2026-09-29",
+     "n": 174
+    },
+    {
+     "fecha": "2026-09-30",
+     "n": 2707
+    }
+   ],
+   "ventanas": {
+    "corte": "2026-09-15",
+    "dias": 16,
+    "antes": {
+     "desde": "2026-08-30",
+     "hasta": "2026-09-14",
+     "reach": 947,
+     "profile_views": 208,
+     "website_clicks": 7,
+     "accounts_engaged": 27,
+     "total_interactions": 30
+    },
+    "despues": {
+     "desde": "2026-09-15",
+     "hasta": "2026-09-30",
+     "reach": 3350,
+     "profile_views": 247,
+     "website_clicks": 19,
+     "accounts_engaged": 110,
+     "total_interactions": 215
+    }
+   },
+   "capturas": [
+    {
+     "fecha": "2026-09-23",
+     "seguidores": 10192,
+     "fuente": "Auditoría de Instagram (data.json)"
+    },
+    {
+     "fecha": "2026-10-01",
+     "seguidores": 10192,
+     "fuente": "Lectura de la API (historial del dashboard)"
+    }
+   ]
   },
   {
    "usuario": "jacademylasvegas",
@@ -1027,7 +2204,7 @@
     }
    ],
    "seguidores": {
-    "actual": 2432,
+    "actual": 2431,
     "fecha": "2026-10-01",
     "publicaciones_total": 454,
     "nuevos_por_dia": [
@@ -1152,7 +2329,505 @@
       "n": 3
      }
     ]
-   }
+   },
+   "publicaciones": [
+    {
+     "fecha": "2026-06-02",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZELGqkJDeT/",
+     "alcance": 1351,
+     "vistas": 2676,
+     "guardados": 2,
+     "compartidos": 7,
+     "interacciones": 67
+    },
+    {
+     "fecha": "2026-06-15",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DZmixnTPQ7g/",
+     "alcance": 987,
+     "vistas": 1931,
+     "guardados": 2,
+     "compartidos": 5,
+     "interacciones": 44
+    },
+    {
+     "fecha": "2026-06-16",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZoleMYB2kB/",
+     "alcance": 1152,
+     "vistas": 2349,
+     "guardados": 1,
+     "compartidos": 3,
+     "interacciones": 46
+    },
+    {
+     "fecha": "2026-06-19",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZxuG-6AIXW/",
+     "alcance": 1073,
+     "vistas": 2090,
+     "guardados": 0,
+     "compartidos": 7,
+     "interacciones": 41
+    },
+    {
+     "fecha": "2026-07-04",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DaYIaDJJj3T/",
+     "alcance": 740,
+     "vistas": 1075,
+     "guardados": 0,
+     "compartidos": 0,
+     "interacciones": 16
+    },
+    {
+     "fecha": "2026-07-19",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/Da_HRy5IsI1/",
+     "alcance": 2437,
+     "vistas": 4400,
+     "guardados": 2,
+     "compartidos": 63,
+     "interacciones": 117
+    },
+    {
+     "fecha": "2026-07-30",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/Dbbt4SGSWCP/",
+     "alcance": 6554,
+     "vistas": 10382,
+     "guardados": 5,
+     "compartidos": 22,
+     "interacciones": 215
+    },
+    {
+     "fecha": "2026-07-31",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DbdwIbXt_vg/",
+     "alcance": 676,
+     "vistas": 1300,
+     "guardados": 0,
+     "compartidos": 4,
+     "interacciones": 17
+    },
+    {
+     "fecha": "2026-08-02",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DbhKyXcCYJt/",
+     "alcance": 1079,
+     "vistas": 2638,
+     "guardados": 2,
+     "compartidos": 6,
+     "interacciones": 52
+    },
+    {
+     "fecha": "2026-08-07",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/Dbvo04OpmTp/",
+     "alcance": 1018,
+     "vistas": 2048,
+     "guardados": 1,
+     "compartidos": 5,
+     "interacciones": 51
+    },
+    {
+     "fecha": "2026-08-10",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/Db362VLoe6k/",
+     "alcance": 1064,
+     "vistas": 2246,
+     "guardados": 1,
+     "compartidos": 4,
+     "interacciones": 68
+    },
+    {
+     "fecha": "2026-08-16",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DcHY9PHI11Q/",
+     "alcance": 671,
+     "vistas": 1222,
+     "guardados": 0,
+     "compartidos": 2,
+     "interacciones": 23
+    },
+    {
+     "fecha": "2026-08-20",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DcRgPaPoStX/",
+     "alcance": 697,
+     "vistas": 1074,
+     "guardados": 0,
+     "compartidos": 2,
+     "interacciones": 25
+    },
+    {
+     "fecha": "2026-08-20",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DcQbKH3I2UZ/",
+     "alcance": 630,
+     "vistas": 1283,
+     "guardados": 0,
+     "compartidos": 0,
+     "interacciones": 16
+    },
+    {
+     "fecha": "2026-08-21",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DcT_lY9Jy5I/",
+     "alcance": 538,
+     "vistas": 756,
+     "guardados": 0,
+     "compartidos": 0,
+     "interacciones": 17
+    },
+    {
+     "fecha": "2026-08-30",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DcrMTHuItkL/",
+     "alcance": 1434,
+     "vistas": 2265,
+     "guardados": 0,
+     "compartidos": 9,
+     "interacciones": 82
+    },
+    {
+     "fecha": "2026-09-14",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DdQqjHFI2SF/",
+     "alcance": 901,
+     "vistas": 1368,
+     "guardados": 0,
+     "compartidos": 7,
+     "interacciones": 51
+    },
+    {
+     "fecha": "2026-09-16",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DdWtvAFJMVE/",
+     "alcance": 966,
+     "vistas": 1757,
+     "guardados": 0,
+     "compartidos": 3,
+     "interacciones": 31
+    },
+    {
+     "fecha": "2026-09-18",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/Ddb6fLpJbOK/",
+     "alcance": 1318,
+     "vistas": 2970,
+     "guardados": 5,
+     "compartidos": 8,
+     "interacciones": 64
+    },
+    {
+     "fecha": "2026-09-23",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DdokqUGh4Cc/",
+     "alcance": 534,
+     "vistas": 1142,
+     "guardados": 0,
+     "compartidos": 3,
+     "interacciones": 12
+    },
+    {
+     "fecha": "2026-09-23",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DdnA73yJtiU/",
+     "alcance": 1280,
+     "vistas": 2107,
+     "guardados": 2,
+     "compartidos": 3,
+     "interacciones": 60
+    },
+    {
+     "fecha": "2026-09-25",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/Ddst3PisJEN/",
+     "alcance": 920,
+     "vistas": 1551,
+     "guardados": 1,
+     "compartidos": 15,
+     "interacciones": 47
+    }
+   ],
+   "alcance_diario": [
+    {
+     "fecha": "2026-08-02",
+     "n": 6371
+    },
+    {
+     "fecha": "2026-08-03",
+     "n": 5865
+    },
+    {
+     "fecha": "2026-08-04",
+     "n": 987
+    },
+    {
+     "fecha": "2026-08-05",
+     "n": 414
+    },
+    {
+     "fecha": "2026-08-06",
+     "n": 126
+    },
+    {
+     "fecha": "2026-08-07",
+     "n": 1938
+    },
+    {
+     "fecha": "2026-08-08",
+     "n": 3493
+    },
+    {
+     "fecha": "2026-08-09",
+     "n": 3319
+    },
+    {
+     "fecha": "2026-08-10",
+     "n": 3854
+    },
+    {
+     "fecha": "2026-08-11",
+     "n": 4451
+    },
+    {
+     "fecha": "2026-08-12",
+     "n": 1256
+    },
+    {
+     "fecha": "2026-08-13",
+     "n": 456
+    },
+    {
+     "fecha": "2026-08-14",
+     "n": 73
+    },
+    {
+     "fecha": "2026-08-15",
+     "n": 63
+    },
+    {
+     "fecha": "2026-08-16",
+     "n": 668
+    },
+    {
+     "fecha": "2026-08-17",
+     "n": 194
+    },
+    {
+     "fecha": "2026-08-18",
+     "n": 107
+    },
+    {
+     "fecha": "2026-08-19",
+     "n": 80
+    },
+    {
+     "fecha": "2026-08-20",
+     "n": 692
+    },
+    {
+     "fecha": "2026-08-21",
+     "n": 557
+    },
+    {
+     "fecha": "2026-08-22",
+     "n": 242
+    },
+    {
+     "fecha": "2026-08-23",
+     "n": 87
+    },
+    {
+     "fecha": "2026-08-24",
+     "n": 80
+    },
+    {
+     "fecha": "2026-08-25",
+     "n": 82
+    },
+    {
+     "fecha": "2026-08-26",
+     "n": 80
+    },
+    {
+     "fecha": "2026-08-27",
+     "n": 51
+    },
+    {
+     "fecha": "2026-08-28",
+     "n": 189
+    },
+    {
+     "fecha": "2026-08-29",
+     "n": 331
+    },
+    {
+     "fecha": "2026-08-30",
+     "n": 1038
+    },
+    {
+     "fecha": "2026-08-31",
+     "n": 309
+    },
+    {
+     "fecha": "2026-09-01",
+     "n": 94
+    },
+    {
+     "fecha": "2026-09-02",
+     "n": 49
+    },
+    {
+     "fecha": "2026-09-03",
+     "n": 52
+    },
+    {
+     "fecha": "2026-09-04",
+     "n": 335
+    },
+    {
+     "fecha": "2026-09-05",
+     "n": 604
+    },
+    {
+     "fecha": "2026-09-06",
+     "n": 711
+    },
+    {
+     "fecha": "2026-09-07",
+     "n": 556
+    },
+    {
+     "fecha": "2026-09-08",
+     "n": 132
+    },
+    {
+     "fecha": "2026-09-09",
+     "n": 43
+    },
+    {
+     "fecha": "2026-09-10",
+     "n": 38
+    },
+    {
+     "fecha": "2026-09-11",
+     "n": 493
+    },
+    {
+     "fecha": "2026-09-12",
+     "n": 98
+    },
+    {
+     "fecha": "2026-09-13",
+     "n": 60
+    },
+    {
+     "fecha": "2026-09-14",
+     "n": 817
+    },
+    {
+     "fecha": "2026-09-15",
+     "n": 89
+    },
+    {
+     "fecha": "2026-09-16",
+     "n": 724
+    },
+    {
+     "fecha": "2026-09-17",
+     "n": 359
+    },
+    {
+     "fecha": "2026-09-18",
+     "n": 955
+    },
+    {
+     "fecha": "2026-09-19",
+     "n": 360
+    },
+    {
+     "fecha": "2026-09-20",
+     "n": 179
+    },
+    {
+     "fecha": "2026-09-21",
+     "n": 126
+    },
+    {
+     "fecha": "2026-09-22",
+     "n": 762
+    },
+    {
+     "fecha": "2026-09-23",
+     "n": 662
+    },
+    {
+     "fecha": "2026-09-24",
+     "n": 564
+    },
+    {
+     "fecha": "2026-09-25",
+     "n": 733
+    },
+    {
+     "fecha": "2026-09-26",
+     "n": 470
+    },
+    {
+     "fecha": "2026-09-27",
+     "n": 407
+    },
+    {
+     "fecha": "2026-09-28",
+     "n": 321
+    },
+    {
+     "fecha": "2026-09-29",
+     "n": 273
+    },
+    {
+     "fecha": "2026-09-30",
+     "n": 202
+    }
+   ],
+   "ventanas": {
+    "corte": "2026-09-15",
+    "dias": 16,
+    "antes": {
+     "desde": "2026-08-30",
+     "hasta": "2026-09-14",
+     "reach": 2792,
+     "profile_views": 860,
+     "website_clicks": 27,
+     "accounts_engaged": 361,
+     "total_interactions": 1142
+    },
+    "despues": {
+     "desde": "2026-09-15",
+     "hasta": "2026-09-30",
+     "reach": 3423,
+     "profile_views": 727,
+     "website_clicks": 32,
+     "accounts_engaged": 329,
+     "total_interactions": 968
+    }
+   },
+   "capturas": [
+    {
+     "fecha": "2026-09-23",
+     "seguidores": 2415,
+     "fuente": "Auditoría de Instagram (data.json)"
+    },
+    {
+     "fecha": "2026-10-01",
+     "seguidores": 2431,
+     "fuente": "Lectura de la API (historial del dashboard)"
+    }
+   ]
   },
   {
    "usuario": "juventuscampsmx",
@@ -1474,7 +3149,385 @@
       "n": 0
      }
     ]
-   }
+   },
+   "publicaciones": [
+    {
+     "fecha": "2026-06-01",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZDKbYAOjfF/",
+     "alcance": 2322,
+     "vistas": 3061,
+     "guardados": 3,
+     "compartidos": 29,
+     "interacciones": 70
+    },
+    {
+     "fecha": "2026-06-05",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DZNyXG5iY9X/",
+     "alcance": 2659,
+     "vistas": 3018,
+     "guardados": 2,
+     "compartidos": 4,
+     "interacciones": 31
+    },
+    {
+     "fecha": "2026-07-01",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DaQqtY0xaVa/",
+     "alcance": 2563,
+     "vistas": 5125,
+     "guardados": 5,
+     "compartidos": 14,
+     "interacciones": 64
+    },
+    {
+     "fecha": "2026-07-02",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DaRZgmzNCMr/",
+     "alcance": 2147,
+     "vistas": 2521,
+     "guardados": 6,
+     "compartidos": 8,
+     "interacciones": 48
+    },
+    {
+     "fecha": "2026-07-15",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/Da0sUNeRU3Q/",
+     "alcance": 2347,
+     "vistas": 3829,
+     "guardados": 2,
+     "compartidos": 19,
+     "interacciones": 71
+    },
+    {
+     "fecha": "2026-07-20",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DbBe835x0p_/",
+     "alcance": 8861,
+     "vistas": 19431,
+     "guardados": 8,
+     "compartidos": 22,
+     "interacciones": 199
+    },
+    {
+     "fecha": "2026-07-22",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DbHPUrTOlnU/",
+     "alcance": 1912,
+     "vistas": 2822,
+     "guardados": 1,
+     "compartidos": 7,
+     "interacciones": 54
+    },
+    {
+     "fecha": "2026-07-29",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DbZKg9BERnu/",
+     "alcance": 2030,
+     "vistas": 6151,
+     "guardados": 1,
+     "compartidos": 19,
+     "interacciones": 122
+    },
+    {
+     "fecha": "2026-08-02",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/Dbjhh4lj7Uf/",
+     "alcance": 1698,
+     "vistas": 4610,
+     "guardados": 2,
+     "compartidos": 11,
+     "interacciones": 88
+    },
+    {
+     "fecha": "2026-08-07",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/Dbvs9ikji8Q/",
+     "alcance": 2538,
+     "vistas": 6365,
+     "guardados": 2,
+     "compartidos": 13,
+     "interacciones": 124
+    }
+   ],
+   "alcance_diario": [
+    {
+     "fecha": "2026-08-02",
+     "n": 969
+    },
+    {
+     "fecha": "2026-08-03",
+     "n": 621
+    },
+    {
+     "fecha": "2026-08-04",
+     "n": 192
+    },
+    {
+     "fecha": "2026-08-05",
+     "n": 197
+    },
+    {
+     "fecha": "2026-08-06",
+     "n": 82
+    },
+    {
+     "fecha": "2026-08-07",
+     "n": 1575
+    },
+    {
+     "fecha": "2026-08-08",
+     "n": 734
+    },
+    {
+     "fecha": "2026-08-09",
+     "n": 159
+    },
+    {
+     "fecha": "2026-08-10",
+     "n": 104
+    },
+    {
+     "fecha": "2026-08-11",
+     "n": 92
+    },
+    {
+     "fecha": "2026-08-12",
+     "n": 73
+    },
+    {
+     "fecha": "2026-08-13",
+     "n": 40
+    },
+    {
+     "fecha": "2026-08-14",
+     "n": 54
+    },
+    {
+     "fecha": "2026-08-15",
+     "n": 62
+    },
+    {
+     "fecha": "2026-08-16",
+     "n": 38
+    },
+    {
+     "fecha": "2026-08-17",
+     "n": 33
+    },
+    {
+     "fecha": "2026-08-18",
+     "n": 30
+    },
+    {
+     "fecha": "2026-08-19",
+     "n": 35
+    },
+    {
+     "fecha": "2026-08-20",
+     "n": 27
+    },
+    {
+     "fecha": "2026-08-21",
+     "n": 17
+    },
+    {
+     "fecha": "2026-08-22",
+     "n": 14
+    },
+    {
+     "fecha": "2026-08-23",
+     "n": 12
+    },
+    {
+     "fecha": "2026-08-24",
+     "n": 13
+    },
+    {
+     "fecha": "2026-08-25",
+     "n": 15
+    },
+    {
+     "fecha": "2026-08-26",
+     "n": 8
+    },
+    {
+     "fecha": "2026-08-27",
+     "n": 15
+    },
+    {
+     "fecha": "2026-08-28",
+     "n": 10
+    },
+    {
+     "fecha": "2026-08-29",
+     "n": 11
+    },
+    {
+     "fecha": "2026-08-30",
+     "n": 10
+    },
+    {
+     "fecha": "2026-08-31",
+     "n": 7
+    },
+    {
+     "fecha": "2026-09-01",
+     "n": 8
+    },
+    {
+     "fecha": "2026-09-02",
+     "n": 9
+    },
+    {
+     "fecha": "2026-09-03",
+     "n": 13
+    },
+    {
+     "fecha": "2026-09-04",
+     "n": 8
+    },
+    {
+     "fecha": "2026-09-05",
+     "n": 16
+    },
+    {
+     "fecha": "2026-09-06",
+     "n": 5
+    },
+    {
+     "fecha": "2026-09-07",
+     "n": 17
+    },
+    {
+     "fecha": "2026-09-08",
+     "n": 4
+    },
+    {
+     "fecha": "2026-09-09",
+     "n": 13
+    },
+    {
+     "fecha": "2026-09-10",
+     "n": 13
+    },
+    {
+     "fecha": "2026-09-11",
+     "n": 10
+    },
+    {
+     "fecha": "2026-09-12",
+     "n": 11
+    },
+    {
+     "fecha": "2026-09-13",
+     "n": 11
+    },
+    {
+     "fecha": "2026-09-14",
+     "n": 8
+    },
+    {
+     "fecha": "2026-09-15",
+     "n": 11
+    },
+    {
+     "fecha": "2026-09-16",
+     "n": 8
+    },
+    {
+     "fecha": "2026-09-17",
+     "n": 9
+    },
+    {
+     "fecha": "2026-09-18",
+     "n": 7
+    },
+    {
+     "fecha": "2026-09-19",
+     "n": 9
+    },
+    {
+     "fecha": "2026-09-20",
+     "n": 12
+    },
+    {
+     "fecha": "2026-09-21",
+     "n": 9
+    },
+    {
+     "fecha": "2026-09-22",
+     "n": 8
+    },
+    {
+     "fecha": "2026-09-23",
+     "n": 8
+    },
+    {
+     "fecha": "2026-09-24",
+     "n": 6
+    },
+    {
+     "fecha": "2026-09-25",
+     "n": 7
+    },
+    {
+     "fecha": "2026-09-26",
+     "n": 11
+    },
+    {
+     "fecha": "2026-09-27",
+     "n": 11
+    },
+    {
+     "fecha": "2026-09-28",
+     "n": 12
+    },
+    {
+     "fecha": "2026-09-29",
+     "n": 12
+    },
+    {
+     "fecha": "2026-09-30",
+     "n": 3
+    }
+   ],
+   "ventanas": {
+    "corte": "2026-09-15",
+    "dias": 16,
+    "antes": {
+     "desde": "2026-08-30",
+     "hasta": "2026-09-14",
+     "reach": 153,
+     "profile_views": 120,
+     "website_clicks": 2,
+     "accounts_engaged": 0,
+     "total_interactions": 0
+    },
+    "despues": {
+     "desde": "2026-09-15",
+     "hasta": "2026-09-30",
+     "reach": 135,
+     "profile_views": 91,
+     "website_clicks": 1,
+     "accounts_engaged": 2,
+     "total_interactions": -3
+    }
+   },
+   "capturas": [
+    {
+     "fecha": "2026-09-30",
+     "seguidores": 3097,
+     "fuente": "Auditoría de Instagram (data.json)"
+    },
+    {
+     "fecha": "2026-10-01",
+     "seguidores": 3095,
+     "fuente": "Lectura de la API (historial del dashboard)"
+    }
+   ]
   }
  ]
 }
