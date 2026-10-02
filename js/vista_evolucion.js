@@ -1,10 +1,10 @@
 // Evolución de la gestión de marketing desde el 15-sep-2026: bloque del resumen y sección completa.
-import { json, parrilla } from './datos.js?v=20261002c';
-import * as K from './calculos.js?v=20261002c';
-import * as C from './componentes.js?v=20261002c';
-import { CORTE, sumarDias, hoyISO, diasEntre } from './periodo.js?v=20261002c';
-import { comparacionIG, totalesComparacion, tablaSeguidores, tablaActividad, lecturaComparacion, IG_DE_PESTANA } from './vista_instagram.js?v=20261002c';
-import { comparacionContenido, tablaPlanificacion, tablaCumplimiento, lecturaContenido } from './vista_contenido.js?v=20261002c';
+import { json, parrilla } from './datos.js?v=20261002d';
+import * as K from './calculos.js?v=20261002d';
+import * as C from './componentes.js?v=20261002d';
+import { CORTE, sumarDias, hoyISO, diasEntre } from './periodo.js?v=20261002d';
+import { comparacionIG, totalesComparacion, tablaSeguidores, tablaActividad, lecturaComparacion, IG_DE_PESTANA } from './vista_instagram.js?v=20261002d';
+import { comparacionContenido, tablaPlanificacion, tablaCumplimiento, lecturaContenido } from './vista_contenido.js?v=20261002d';
 const { n0, n1, usd, pct, fecha, esc } = K;
 const corta = (f) => new Date(f + 'T12:00:00').toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
 
@@ -96,14 +96,7 @@ export function bloque(d, completo = false, pref = 'evo') {
       <p class="fuente">«Sin registro disponible» indica que no hay documentación del estado anterior, no que el trabajo no existiera.</p></div>
 
     <div class="parte"><h3><span class="n">4</span> Indicadores de redes sociales ${C.tipo('resultado')}</h3>
-      <p class="fuente" style="margin:0 0 10px">Ventanas de ${r.despues.dias} días: ${fecha(r.antes.desde)} – ${fecha(r.antes.hasta)} frente a ${fecha(r.despues.desde)} – ${fecha(r.despues.hasta)}. Suma de las cuatro cuentas de Instagram.</p>
-      <div class="grid g4">
-        ${C.comparativa({ etiqueta: 'Publicaciones', antes: t.posts[0], despues: t.posts[1] })}
-        ${C.comparativa({ etiqueta: 'Alcance de las cuentas', antes: t.alcance[0], despues: t.alcance[1], detalle: 'Suma del alcance de cada cuenta' })}
-        ${C.comparativa({ etiqueta: 'Visitas al perfil', antes: t.visitas[0], despues: t.visitas[1] })}
-        ${C.comparativa({ etiqueta: 'Clics en el enlace del perfil', antes: t.clics[0], despues: t.clics[1] })}
-      </div>
-      <div class="card" style="margin-top:16px"><h3>Publicaciones en el feed por semana y cuenta</h3><p class="sub">Publicaciones reales leídas de la API de Instagram, del ${fecha('2026-07-01')} al ${fecha(K.finIG(ig))}. La línea punteada marca el 15-sep; la semana que empieza el 14-sep, que contiene el corte, queda a la derecha.</p>${C.lienzo(pref + 'Sem', '', 'Publicaciones por semana y cuenta')}</div>
+      <div class="card"><h3>Publicaciones en el feed por semana y cuenta</h3><p class="sub">Publicaciones reales leídas de la API de Instagram, del ${fecha('2026-07-01')} al ${fecha(K.finIG(ig))}. La línea punteada marca el 15-sep; la semana que empieza el 14-sep, que contiene el corte, queda a la derecha.</p>${C.lienzo(pref + 'Sem', '', 'Publicaciones por semana y cuenta')}</div>
       ${completo ? `<h3 style="margin:22px 0 8px">Seguidores: línea base y variación</h3>${tablaSeguidores(filas)}<h3 style="margin:22px 0 8px">Actividad y alcance por cuenta: antes → después</h3>${tablaActividad(filas)}` : ''}
       ${C.lectura(lecturaComparacion(filas))}${ver('Ver el detalle por cuenta')}</div>
 

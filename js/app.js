@@ -1,9 +1,9 @@
 // Enrutador por hash, menú móvil, periodo compartido, actualización manual y estados de carga y error.
-import * as V from './vistas.js?v=20261002c';
-import { json, refrescar } from './datos.js?v=20261002c';
-import { destruirGraficos } from './componentes.js?v=20261002c';
-import { esc } from './calculos.js?v=20261002c';
-import { fijarPeriodo } from './periodo.js?v=20261002c';
+import * as V from './vistas.js?v=20261002d';
+import { json, refrescar } from './datos.js?v=20261002d';
+import { destruirGraficos } from './componentes.js?v=20261002d';
+import { esc } from './calculos.js?v=20261002d';
+import { fijarPeriodo } from './periodo.js?v=20261002d';
 
 const RUTAS = {
   resumen: ['Resumen ejecutivo', V.resumen],

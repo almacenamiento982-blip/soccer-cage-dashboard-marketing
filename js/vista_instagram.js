@@ -1,8 +1,8 @@
 // Sección Instagram: estado actual, comparación antes / desde el 15-sep y evolución temporal.
-import { json, parrilla } from './datos.js?v=20261002c';
-import * as K from './calculos.js?v=20261002c';
-import * as C from './componentes.js?v=20261002c';
-import { CORTE, rangos, rangoActivo, periodo, sumarDias, diasEntre } from './periodo.js?v=20261002c';
+import { json, parrilla } from './datos.js?v=20261002d';
+import * as K from './calculos.js?v=20261002d';
+import * as C from './componentes.js?v=20261002d';
+import { CORTE, rangos, rangoActivo, periodo, sumarDias, diasEntre } from './periodo.js?v=20261002d';
 const { n0, n1, pct, fecha, esc, signo } = K;
 
 export const IG_DE_PESTANA = { athletum: 'juventusacademymiami', camps_usa: 'juventuscampsusa', camps_mx: 'juventuscampsmx', las_vegas: 'jacademylasvegas' };
@@ -60,11 +60,9 @@ export function tablaActividad(filas) {
 export function lecturaComparacion(filas) {
   const conBase = filas.filter(x => x.base.abs != null).sort((a, b) => b.base.abs - a.base.abs);
   const conBrutos = filas.filter(x => x.brutos).sort((a, b) => b.brutos.n - a.brutos.n);
-  const t = totalesComparacion(filas);
   const partes = [];
   if (conBrutos.length) partes.push(`La cuenta con más seguidores nuevos desde el 15-sep es <b>@${esc(conBrutos[0].c.usuario)}</b> (+${n0(conBrutos[0].brutos.n)} brutos).`);
   if (conBase.length) partes.push(`Entre sus dos capturas verificadas, la mayor variación neta es la de @${esc(conBase[0].c.usuario)} (${signo(conBase[0].base.abs)} en ${conBase[0].base.dias} días).`);
-  if (t.posts[0] != null) partes.push(K.leerCambio('El total de publicaciones de las cuatro cuentas', t.posts[0], t.posts[1]) + ` Ventanas de ${filas[0].r.despues.dias} días.`);
   partes.push('Estos datos describen lo ocurrido; no alcanzan para atribuir los cambios solo a la nueva gestión.');
   return partes.join(' ');
 }
@@ -101,13 +99,7 @@ export async function instagram(v) {
     + C.lectura(lider ? `<b>@${esc(lider.c.usuario)}</b> concentra el mayor crecimiento absoluto de los últimos 30 días (+${n0(lider.g.nuevos)} nuevos, ${n1(lider.g.media_dia)} por día). Las cifras son brutas: no descuentan a quienes dejaron de seguir.` : ''))
   // --- antes vs después
   + C.seccion('Antes y desde el 15 de septiembre', `Ventanas de igual duración: antes del ${fecha(r.antes.desde)} al ${fecha(r.antes.hasta)} y después del ${fecha(r.despues.desde)} al ${fecha(r.despues.hasta)} (${r.despues.dias} días cada una). Alcance, visitas y clics son totales de la cuenta que entrega la API para cada ventana.`,
-    `<div class="grid g4">
-      ${C.comparativa({ etiqueta: 'Publicaciones (4 cuentas)', antes: t.posts[0], despues: t.posts[1], detalle: `${r.despues.dias} días antes → ${r.despues.dias} días después` })}
-      ${C.comparativa({ etiqueta: 'Alcance de las cuentas', antes: t.alcance[0], despues: t.alcance[1], detalle: 'Suma del alcance de cada cuenta (una persona puede contar en varias)' })}
-      ${C.comparativa({ etiqueta: 'Visitas al perfil', antes: t.visitas[0], despues: t.visitas[1], detalle: 'Total de las cuatro cuentas' })}
-      ${C.comparativa({ etiqueta: 'Clics en el enlace del perfil', antes: t.clics[0], despues: t.clics[1], detalle: 'Total de las cuatro cuentas' })}
-    </div>
-    <h3 style="margin:22px 0 8px">Seguidores: línea base y variación</h3>
+    `<h3 style="margin:4px 0 8px">Seguidores: línea base y variación</h3>
     <p class="fuente" style="margin:0 0 10px">No existe una captura de seguidores del 15-sep. Se usa la primera captura verificada después del corte y se indica su fecha; la variación neta se mide entre esa captura y la actual.</p>
     ${tablaSeguidores(filas)}
     <h3 style="margin:22px 0 8px">Actividad y alcance: antes → después</h3>
