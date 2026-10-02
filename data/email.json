@@ -1,0 +1,504 @@
+{
+ "generado": "2026-10-01T23:23",
+ "fuente": "Auditoría de Constant Contact (API, solo lectura, 24-sep-2026) + bitácora del plan email/SMS (01-oct-2026)",
+ "informe": "https://almacenamiento982-blip.github.io/auditoria-email-juventus/",
+ "plan": "https://almacenamiento982-blip.github.io/auditoria-email-juventus/#plan-email-sms",
+ "periodo": [
+  "2024-06-14",
+  "2026-09-22"
+ ],
+ "total": {
+  "n": 482,
+  "sends": 1716994,
+  "bounces": 98986,
+  "delivered": 1618008,
+  "opens": 697967,
+  "clicks": 12494,
+  "optouts": 1209,
+  "abuse": 133,
+  "bounce": 0.05765,
+  "open": 0.43137,
+  "click": 0.00772,
+  "ctor": 0.0179,
+  "unsub": 0.00075,
+  "spam": 8e-05
+ },
+ "ultimos_12": {
+  "n": 158,
+  "sends": 479555,
+  "bounces": 30692,
+  "delivered": 448863,
+  "opens": 174258,
+  "clicks": 4377,
+  "optouts": 232,
+  "abuse": 16,
+  "bounce": 0.064,
+  "open": 0.38822,
+  "click": 0.00975,
+  "ctor": 0.02512,
+  "unsub": 0.00052,
+  "spam": 4e-05
+ },
+ "mensual": [
+  {
+   "mes": "2024-06",
+   "click": 0.01007,
+   "bounce": 0.03511,
+   "envios": 53010
+  },
+  {
+   "mes": "2024-07",
+   "click": 0.00883,
+   "bounce": 0.03863,
+   "envios": 114716
+  },
+  {
+   "mes": "2024-08",
+   "click": 0.00937,
+   "bounce": 0.03938,
+   "envios": 89006
+  },
+  {
+   "mes": "2024-09",
+   "click": 0.0153,
+   "bounce": 0.12908,
+   "envios": 74901
+  },
+  {
+   "mes": "2024-10",
+   "click": 0.01367,
+   "bounce": 0.0452,
+   "envios": 62900
+  },
+  {
+   "mes": "2024-11",
+   "click": 0.00628,
+   "bounce": 0.05113,
+   "envios": 65151
+  },
+  {
+   "mes": "2024-12",
+   "click": 0.00668,
+   "bounce": 0.0646,
+   "envios": 50080
+  },
+  {
+   "mes": "2025-01",
+   "click": 0.00541,
+   "bounce": 0.06713,
+   "envios": 99076
+  },
+  {
+   "mes": "2025-02",
+   "click": 0.00434,
+   "bounce": 0.05607,
+   "envios": 116295
+  },
+  {
+   "mes": "2025-03",
+   "click": 0.00233,
+   "bounce": 0.05287,
+   "envios": 38982
+  },
+  {
+   "mes": "2025-04",
+   "click": 0.00844,
+   "bounce": 0.04845,
+   "envios": 74321
+  },
+  {
+   "mes": "2025-05",
+   "click": 0.00462,
+   "bounce": 0.04442,
+   "envios": 99877
+  },
+  {
+   "mes": "2025-06",
+   "click": 0.00532,
+   "bounce": 0.04551,
+   "envios": 89479
+  },
+  {
+   "mes": "2025-07",
+   "click": 0.00559,
+   "bounce": 0.06725,
+   "envios": 39671
+  },
+  {
+   "mes": "2025-08",
+   "click": 0.00255,
+   "bounce": 0.05264,
+   "envios": 153864
+  },
+  {
+   "mes": "2025-09",
+   "click": 0.0099,
+   "bounce": 0.07132,
+   "envios": 23065
+  },
+  {
+   "mes": "2025-10",
+   "click": 0.01573,
+   "bounce": 0.08598,
+   "envios": 21215
+  },
+  {
+   "mes": "2025-11",
+   "click": 0.00513,
+   "bounce": 0.06781,
+   "envios": 38473
+  },
+  {
+   "mes": "2025-12",
+   "click": 0.00501,
+   "bounce": 0.07644,
+   "envios": 14481
+  },
+  {
+   "mes": "2026-01",
+   "click": 0.0032,
+   "bounce": 0.073,
+   "envios": 32399
+  },
+  {
+   "mes": "2026-02",
+   "click": 0.00609,
+   "bounce": 0.07102,
+   "envios": 78852
+  },
+  {
+   "mes": "2026-03",
+   "click": 0.00621,
+   "bounce": 0.05815,
+   "envios": 78654
+  },
+  {
+   "mes": "2026-04",
+   "click": 0.01297,
+   "bounce": 0.0509,
+   "envios": 74814
+  },
+  {
+   "mes": "2026-05",
+   "click": 0.01414,
+   "bounce": 0.04648,
+   "envios": 37389
+  },
+  {
+   "mes": "2026-06",
+   "click": 0.01964,
+   "bounce": 0.05329,
+   "envios": 31035
+  },
+  {
+   "mes": "2026-07",
+   "click": 0.26694,
+   "bounce": 0.0251,
+   "envios": 2271
+  },
+  {
+   "mes": "2026-08",
+   "click": 0.00149,
+   "bounce": 0.08028,
+   "envios": 34380
+  },
+  {
+   "mes": "2026-09",
+   "click": 0.00538,
+   "bounce": 0.07895,
+   "envios": 28637
+  }
+ ],
+ "por_tamano": [
+  {
+   "label": "< 1.000",
+   "n": 169,
+   "sends": 73384,
+   "bounces": 5080,
+   "delivered": 68304,
+   "opens": 34594,
+   "clicks": 3193,
+   "optouts": 62,
+   "abuse": 7,
+   "bounce": 0.06922,
+   "open": 0.50647,
+   "click": 0.04675,
+   "ctor": 0.0923,
+   "unsub": 0.00091,
+   "spam": 0.0001
+  },
+  {
+   "label": "1.000–3.000",
+   "n": 63,
+   "sends": 80276,
+   "bounces": 7722,
+   "delivered": 72554,
+   "opens": 34145,
+   "clicks": 1021,
+   "optouts": 81,
+   "abuse": 4,
+   "bounce": 0.09619,
+   "open": 0.47061,
+   "click": 0.01407,
+   "ctor": 0.0299,
+   "unsub": 0.00112,
+   "spam": 6e-05
+  },
+  {
+   "label": "3.000–6.000",
+   "n": 100,
+   "sends": 513775,
+   "bounces": 21950,
+   "delivered": 491825,
+   "opens": 223753,
+   "clicks": 4169,
+   "optouts": 375,
+   "abuse": 39,
+   "bounce": 0.04272,
+   "open": 0.45494,
+   "click": 0.00848,
+   "ctor": 0.01863,
+   "unsub": 0.00076,
+   "spam": 8e-05
+  },
+  {
+   "label": "6.000–10.000",
+   "n": 135,
+   "sends": 883937,
+   "bounces": 47352,
+   "delivered": 836585,
+   "opens": 347838,
+   "clicks": 2940,
+   "optouts": 502,
+   "abuse": 65,
+   "bounce": 0.05357,
+   "open": 0.41578,
+   "click": 0.00351,
+   "ctor": 0.00845,
+   "unsub": 0.0006,
+   "spam": 8e-05
+  },
+  {
+   "label": "> 10.000",
+   "n": 15,
+   "sends": 165622,
+   "bounces": 16882,
+   "delivered": 148740,
+   "opens": 57637,
+   "clicks": 1171,
+   "optouts": 189,
+   "abuse": 18,
+   "bounce": 0.10193,
+   "open": 0.3875,
+   "click": 0.00787,
+   "ctor": 0.02032,
+   "unsub": 0.00127,
+   "spam": 0.00012
+  }
+ ],
+ "por_grupo": {
+  "Torneos (clubes, B2B)": {
+   "n": 44,
+   "sends": 275925,
+   "bounces": 20732,
+   "delivered": 255193,
+   "opens": 82061,
+   "clicks": 532,
+   "optouts": 149,
+   "abuse": 15,
+   "bounce": 0.07514,
+   "open": 0.32156,
+   "click": 0.00208,
+   "ctor": 0.00648,
+   "unsub": 0.00058,
+   "spam": 6e-05
+  },
+  "Desarrollo del jugador": {
+   "n": 38,
+   "sends": 236082,
+   "bounces": 14256,
+   "delivered": 221826,
+   "opens": 102224,
+   "clicks": 2799,
+   "optouts": 154,
+   "abuse": 11,
+   "bounce": 0.06039,
+   "open": 0.46083,
+   "click": 0.01262,
+   "ctor": 0.02738,
+   "unsub": 0.00069,
+   "spam": 5e-05
+  },
+  "Familias (Pre-Academy, Camps, Academy)": {
+   "n": 156,
+   "sends": 977519,
+   "bounces": 44879,
+   "delivered": 932640,
+   "opens": 413527,
+   "clicks": 4826,
+   "optouts": 654,
+   "abuse": 87,
+   "bounce": 0.04591,
+   "open": 0.44339,
+   "click": 0.00517,
+   "ctor": 0.01167,
+   "unsub": 0.0007,
+   "spam": 9e-05
+  }
+ },
+ "pasos": [
+  {
+   "n": 1,
+   "paso": "Revisar las 16 campañas de torneos programadas (lista con 10,5% de rebote, dos cuentas regresivas a la vez)",
+   "cuando": "Antes del próximo envío",
+   "quien": "Responsable de torneos + David"
+  },
+  {
+   "n": 2,
+   "paso": "Dejar de pedir patrocinio y de promocionar terceros a las familias",
+   "cuando": "Ya",
+   "quien": "Dirección"
+  },
+  {
+   "n": 3,
+   "paso": "DKIM en juventus-academy.com (My Account → Advanced settings → Add self-authentication → CNAME)",
+   "cuando": "Esta semana",
+   "quien": "David + administrador del DNS"
+  },
+  {
+   "n": 4,
+   "paso": "DKIM en los otros 7 dominios propios",
+   "cuando": "Esta semana",
+   "quien": "David + administrador del DNS"
+  },
+  {
+   "n": 5,
+   "paso": "Miami Classic: pasar de @gmail.com a info@themiamiclassic.com, con DKIM",
+   "cuando": "Esta semana",
+   "quien": "Torneos + David"
+  },
+  {
+   "n": 6,
+   "paso": "DMARC `p=none` en los 6 dominios que no lo tienen",
+   "cuando": "Esta semana",
+   "quien": "Administrador del DNS"
+  },
+  {
+   "n": 7,
+   "paso": "Unir en un solo registro el SPF de jresidency.com",
+   "cuando": "Esta semana",
+   "quien": "Administrador del DNS"
+  },
+  {
+   "n": 8,
+   "paso": "Quitar rebotes: Reporting → Bounce → Non-existent y Suspended → Remove",
+   "cuando": "Semanas 2-4",
+   "quien": "David"
+  },
+  {
+   "n": 9,
+   "paso": "Etiquetar la base por público, y los 3.474 clientes con \"Cliente\"",
+   "cuando": "Semanas 2-4",
+   "quien": "Marketing (David), por API y con aprobación previa"
+  },
+  {
+   "n": 10,
+   "paso": "Correo de preferencias (\"¿Qué te gustaría recibir?\", 4 botones) y apartar a los inactivos de 1 año",
+   "cuando": "Semanas 2-4",
+   "quien": "David"
+  },
+  {
+   "n": 11,
+   "paso": "Dejar de crear una lista por campaña: archivar y fusionar, y usar segmentos",
+   "cuando": "Semanas 2-4",
+   "quien": "David"
+  },
+  {
+   "n": 12,
+   "paso": "Formularios web: preguntar \"¿padre/madre, club o empresa?\" y el año de nacimiento, más un campo oculto con la web de origen",
+   "cuando": "Mes 2",
+   "quien": "Quien administre las webs + David"
+  },
+  {
+   "n": 13,
+   "paso": "Plantilla de correo con texto real, texto alternativo y un botón que diga el beneficio",
+   "cuando": "Mes 2",
+   "quien": "Diseño"
+  },
+  {
+   "n": 14,
+   "paso": "Piloto: secuencia de 8 correos de Pre-Academy, midiendo con UTM",
+   "cuando": "Mes 2",
+   "quien": "David + Marketing Manager"
+  },
+  {
+   "n": 15,
+   "paso": "UTM en todos los botones",
+   "cuando": "Mes 2",
+   "quien": "Quien arma los correos"
+  },
+  {
+   "n": 16,
+   "paso": "Llevar el modelo a torneos (clubes) y a desarrollo del jugador",
+   "cuando": "Continuo",
+   "quien": "David + responsables"
+  },
+  {
+   "n": 17,
+   "paso": "Revisar los números cada mes (repetir esta auditoría)",
+   "cuando": "Continuo",
+   "quien": "David"
+  }
+ ],
+ "metas_90_dias": [
+  {
+   "metrica": "Rebote",
+   "hoy": "5,77% (últimos 12 meses: 6,4%)",
+   "meta": "menos del 2%"
+  },
+  {
+   "metrica": "Clic en envíos masivos",
+   "hoy": "0,56%",
+   "meta": "más del 1,5%"
+  },
+  {
+   "metrica": "Quejas de spam",
+   "hoy": "0,008%",
+   "meta": "menos del 0,1%"
+  },
+  {
+   "metrica": "Bajas",
+   "hoy": "0,075%",
+   "meta": "menos del 0,3% (subirán un poco al limpiar, y eso es sano)"
+  },
+  {
+   "metrica": "Volumen con DKIM propio",
+   "hoy": "~11%",
+   "meta": "100%"
+  },
+  {
+   "metrica": "Contactos con etiqueta de público",
+   "hoy": "0%",
+   "meta": "99%"
+  },
+  {
+   "metrica": "Inscripciones atribuidas al email (UTM)",
+   "hoy": "no se mide",
+   "meta": "medido cada mes"
+  }
+ ],
+ "hallazgos": [
+  "Cerca del 89 % del volumen sale sin firma DKIM propia (2 de 12 dominios configurados).",
+  "Los envíos pequeños y relevantes funcionan: 4,68 % de clic en listas de menos de 1.000 contactos, frente a 0,56 % en envíos masivos.",
+  "Los correos de torneos para clubes son los de peor resultado (0,21 % de clic y 7,5 % de rebote).",
+  "No existe un funnel: el 84 % de los envíos masivos son de venta o cuenta regresiva; no hay bienvenida ni secuencias.",
+  "La base (43.596 contactos, 190 listas) sí permite identificar el público del 99 % de los contactos activos."
+ ],
+ "estado": {
+  "auditoria": "Implementado (24-sep-2026)",
+  "plan_email_sms": "Planificado y publicado (56 emails y 36 SMS, octubre 2026 – junio 2027)",
+  "primeros_envios": "Planificado: 8 al 20 de octubre (pendiente de iniciar)",
+  "dkim_dmarc": "Pendiente: requiere al administrador del DNS",
+  "automatizaciones": "Pendiente: confirmar el plan de Constant Contact antes de crear secuencias"
+ }
+}

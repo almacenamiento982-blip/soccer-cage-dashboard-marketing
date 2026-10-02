@@ -1,0 +1,136 @@
+{
+ "actualizado": "2026-10-01",
+ "nota": "Contenido editorial del equipo de marketing. Cada estado se asigna solo con evidencia (informe, archivo o dato verificable). Editar este archivo cuando cambie un estado.",
+ "estados": {
+  "Implementado": "Hecho y verificable.",
+  "En progreso": "Iniciado; parte del trabajo ya está hecho.",
+  "Planificado": "Definido y documentado, sin ejecutar todavía.",
+  "Pendiente de validación": "Hecho, pero falta confirmar que funcione o que se apruebe."
+ },
+ "frentes": [
+  {
+   "id": "social",
+   "titulo": "Social media y crecimiento orgánico",
+   "objetivo": "Crecer en alcance y comunidad en las cuentas de Instagram de cada propiedad.",
+   "realizado": "Auditoría de 4 cuentas con datos de la API (publicaciones, alcance, interacción, formatos y mejores contenidos) publicada en un informe unificado.",
+   "estado": "Implementado",
+   "evidencia": "Informe de Instagram (4 cuentas) y data.json de cada cuenta.",
+   "hallazgo": "Juventus Academy Miami suma cerca de 1.000 nuevos seguidores al mes; las otras tres cuentas, entre 19 y 103. Ese dato no descuenta bajas: en Miami, del 18-sep al 01-oct, el neto fue +197 frente a 320 nuevos. El historial de seguidores totales se guarda desde el 01-oct-2026.",
+   "siguiente": "Publicar la parrilla aprobada con constancia y medir mensualmente seguidores, alcance e interacción por formato.",
+   "seccion": "instagram"
+  },
+  {
+   "id": "contenido",
+   "titulo": "Estrategia y producción de contenidos",
+   "objetivo": "Tener una parrilla planificada y producida con anticipación para cada cuenta.",
+   "realizado": "Parrillas en el Sheet «Social Media Content Plan 26/27» para Athletum (Juve Miami), Juve Camps USA y Juve Camps México, con piezas producidas y enlazadas en Drive.",
+   "estado": "En progreso",
+   "evidencia": "Google Sheet (lectura en vivo en la sección Plan de contenido).",
+   "hallazgo": "La mayoría de las piezas de Camps USA y México están producidas pero en «To be approved»: el cuello de botella es la aprobación, no la producción.",
+   "siguiente": "Aprobar y programar las piezas producidas; corregir las 15 piezas de México señaladas en la revisión del 01-oct.",
+   "seccion": "contenido"
+  },
+  {
+   "id": "meta",
+   "titulo": "Meta Ads y adquisición de interesados",
+   "objetivo": "Generar conversaciones y registros con un costo por resultado controlado.",
+   "realizado": "Pre-Academy Miami activa desde el 22-sep (WhatsApp, 3 públicos). ID Camps USA activa desde el 30-sep (Chicago, Dallas y retargeting de 7 sedes, 16 anuncios).",
+   "estado": "En progreso",
+   "evidencia": "Lecturas de Ads Manager (Pre-Academy) y seguimiento diario de Meta (ID Camps).",
+   "hallazgo": "Pre-Academy bajó el costo por conversación frente a la campaña anterior; ID Camps está en fase de aprendizaje y su «lead» todavía es un clic, no un registro confirmado.",
+   "siguiente": "Revisión de ID Camps del 10 al 13 de octubre; seguir midiendo cuántas conversaciones de Pre-Academy terminan en clase de prueba.",
+   "seccion": "meta-idcamps"
+  },
+  {
+   "id": "email",
+   "titulo": "Email marketing y SMS",
+   "objetivo": "Convertir la base de 43.596 contactos en un canal de seguimiento que lleve a inscripciones.",
+   "realizado": "Auditoría completa de Constant Contact (482 campañas) y plan de 56 emails y 36 SMS por público (octubre 2026 – junio 2027).",
+   "estado": "Planificado",
+   "evidencia": "Informe de auditoría de email y bitácora del plan (01-oct-2026).",
+   "hallazgo": "Cerca del 89 % de los correos sale sin firma DKIM propia y no existen secuencias automáticas.",
+   "siguiente": "Configurar DKIM y DMARC con el administrador del DNS y arrancar los primeros envíos (8–20 de octubre).",
+   "seccion": "email"
+  },
+  {
+   "id": "web",
+   "titulo": "Optimización de páginas web y formularios",
+   "objetivo": "Que quien llega desde un anuncio complete el registro sin fricción y que ese registro se pueda medir.",
+   "realizado": "Auditoría de juventuscampsusa.com, brief para el programador sobre el píxel y prototipo de landing por sede para ID Camps.",
+   "estado": "Pendiente de validación",
+   "evidencia": "Auditoría de la landing (29-sep), brief PDF y prototipo publicado.",
+   "hallazgo": "La app de inscripción no envía eventos de conversión: hoy no se puede saber qué registro vino de qué anuncio.",
+   "siguiente": "Definir con el programador la medición del registro (el píxel quedó para más adelante) y revisar formularios en móvil.",
+   "seccion": "ruta"
+  },
+  {
+   "id": "analitica",
+   "titulo": "Analítica y seguimiento de resultados",
+   "objetivo": "Relacionar inversión, visitas, registros y pagos en un solo lugar.",
+   "realizado": "Seguimiento diario de Meta y de la app de registro para ID Camps, reporte comparativo de Pre-Academy y este dashboard.",
+   "estado": "En progreso",
+   "evidencia": "Pestaña de seguimiento del informe de ID Camps y datos.json de Pre-Academy.",
+   "hallazgo": "Los registros de la app incluyen todos los canales: sirven como indicador de crecimiento, no como atribución a la publicidad.",
+   "siguiente": "Export diario de inscritos por sede y medición de leads calificados por campaña.",
+   "seccion": "ruta"
+  },
+  {
+   "id": "google",
+   "titulo": "Google Ads (oportunidad de expansión)",
+   "objetivo": "Captar búsquedas con intención («Juventus camp», ciudad + soccer camp) cuando la medición esté lista.",
+   "realizado": "Idea aprobada en principio (29-sep): búsqueda en Chicago y Dallas con $10–15 por día por ciudad.",
+   "estado": "Planificado",
+   "evidencia": "Reunión del 29-sep. No hay campañas creadas.",
+   "hallazgo": "No se sabe quién administra la cuenta de Google Ads vinculada al sitio (etiqueta AW-11171359255).",
+   "siguiente": "Identificar al dueño de la cuenta y evaluar el lanzamiento después de verificar las páginas y la medición.",
+   "seccion": "ruta"
+  }
+ ],
+ "fases": [
+  {
+   "n": 1,
+   "titulo": "Optimización de las páginas web",
+   "prioridad": "Prioritaria: antes de aumentar la inversión en adquisición",
+   "estado": "Pendiente de validación",
+   "objetivo": "Reducir las fricciones que impiden completar el formulario y poder medir cada registro.",
+   "acciones": ["Funcionamiento de los formularios y registro de los datos", "Experiencia en móvil y velocidad", "Propuesta de valor y llamados a la acción claros", "Medición de conversiones (evento de registro real, no solo clic)", "Verificar el recorrido completo: anuncio → página → registro → pago"],
+   "hecho": "Auditoría de juventuscampsusa.com, brief del píxel y prototipo de landing por sede."
+  },
+  {
+   "n": 2,
+   "titulo": "Fortalecimiento de Meta Ads",
+   "prioridad": "En curso, con revisiones programadas",
+   "estado": "En progreso",
+   "objetivo": "Optimizar las campañas activas con datos de costo y calidad del lead.",
+   "acciones": ["Pruebas de creatividades (ya se identifican anuncios ganadores en Pre-Academy)", "Evaluación de públicos (intereses, abiertos, similares, retargeting)", "Seguimiento del costo por lead", "Calidad de los registros y tasa de conversión de las páginas", "Separar indicadores de tráfico (clics) de indicadores de captación (conversaciones, registros, pagos)"],
+   "hecho": "Dos campañas activas con seguimiento: Pre-Academy (desde 22-sep) e ID Camps (desde 30-sep)."
+  },
+  {
+   "n": 3,
+   "titulo": "Google Ads",
+   "prioridad": "Oportunidad futura, sujeta a medición, estrategia y presupuesto",
+   "estado": "Planificado",
+   "objetivo": "Captar demanda con intención de búsqueda una vez que las páginas y la medición estén listas.",
+   "acciones": ["Google Search por ubicación y servicio", "Investigación de palabras clave", "Análisis de términos de búsqueda", "Costo por conversión", "Calidad comercial de los leads"],
+   "hecho": "Ninguna campaña creada. Pendiente: identificar la cuenta de Google Ads existente."
+  },
+  {
+   "n": 4,
+   "titulo": "Automatización y seguimiento comercial",
+   "prioridad": "Planificada para octubre 2026 – junio 2027",
+   "estado": "Planificado",
+   "objetivo": "Dar continuidad entre la captación del lead y la inscripción o la venta.",
+   "acciones": ["Autenticación del correo (DKIM y DMARC) en los dominios propios", "Limpieza de rebotes y etiquetado de la base por público", "Secuencias por público: Pre-Academy, ID Camps, Summer, JTE, Las Vegas y torneos", "SMS de recordatorio en momentos clave", "UTM en todos los enlaces para medir"],
+   "hecho": "Auditoría y plan publicados. Ninguna automatización activa todavía."
+  },
+  {
+   "n": 5,
+   "titulo": "Medición integral",
+   "prioridad": "Evolución continua del dashboard",
+   "estado": "En progreso",
+   "objetivo": "Pasar de métricas de alcance a resultados comerciales.",
+   "acciones": ["Inversión publicitaria", "Visitas a las páginas", "Formularios iniciados y completados", "Leads y costo por lead", "Leads calificados", "Conversión a inscripción o venta"],
+   "hecho": "Ya se cruzan gasto de Meta con registros y pagos de la app para ID Camps (sin atribución directa)."
+  }
+ ]
+}

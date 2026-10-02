@@ -1,0 +1,1480 @@
+{
+ "generado": "2026-10-01T23:23",
+ "fuente": "Auditoría de Instagram (informe unificado) + API de Instagram (Composio, solo lectura)",
+ "informe": "https://almacenamiento982-blip.github.io/soccer-cage-instagram-report/",
+ "nota_seguidores": "La API entrega los NUEVOS seguidores por día de los últimos 30 días; no descuenta a quienes dejan de seguir. No existe un historial de seguidores totales anterior: queda guardado a partir de esta primera lectura.",
+ "cuentas": [
+  {
+   "usuario": "juventusacademymiami",
+   "nombre": "Juventus Academy Miami",
+   "propiedad": "Juventus Academy Miami (incluye Athletum)",
+   "url": "https://www.instagram.com/juventusacademymiami/",
+   "auditoria": {
+    "desde": "2024-09-20",
+    "hasta": "2026-09-16",
+    "extraido": "2026-09-18",
+    "publicaciones": 243
+   },
+   "totales": {
+    "views": 3174548,
+    "reach": 1386056,
+    "likes": 50850,
+    "comments": 836,
+    "saved": 920,
+    "shares": 4622,
+    "interactions": 57664
+   },
+   "por_formato": [
+    {
+     "formato": "Carrusel",
+     "n": 77,
+     "pct": 31.7,
+     "vistas_prom": 17698,
+     "alcance_prom": 7709,
+     "interacciones_prom": 352,
+     "er_alcance": 4.56
+    },
+    {
+     "formato": "Foto",
+     "n": 66,
+     "pct": 27.2,
+     "vistas_prom": 16072,
+     "alcance_prom": 5253,
+     "interacciones_prom": 187,
+     "er_alcance": 3.57
+    },
+    {
+     "formato": "Reel",
+     "n": 100,
+     "pct": 41.2,
+     "vistas_prom": 7510,
+     "alcance_prom": 4458,
+     "interacciones_prom": 182,
+     "er_alcance": 4.08
+    }
+   ],
+   "mensual": [
+    {
+     "mes": "2024-09",
+     "posts": 6,
+     "alcance": 8586,
+     "vistas": 41507,
+     "interacciones": 909,
+     "er_alcance": 10.59
+    },
+    {
+     "mes": "2024-10",
+     "posts": 21,
+     "alcance": 72553,
+     "vistas": 134142,
+     "interacciones": 2876,
+     "er_alcance": 3.96
+    },
+    {
+     "mes": "2024-11",
+     "posts": 15,
+     "alcance": 304128,
+     "vistas": 483387,
+     "interacciones": 14448,
+     "er_alcance": 4.75
+    },
+    {
+     "mes": "2024-12",
+     "posts": 6,
+     "alcance": 30078,
+     "vistas": 55444,
+     "interacciones": 1458,
+     "er_alcance": 4.85
+    },
+    {
+     "mes": "2025-01",
+     "posts": 5,
+     "alcance": 30591,
+     "vistas": 56941,
+     "interacciones": 1102,
+     "er_alcance": 3.6
+    },
+    {
+     "mes": "2025-02",
+     "posts": 5,
+     "alcance": 33016,
+     "vistas": 63474,
+     "interacciones": 1430,
+     "er_alcance": 4.33
+    },
+    {
+     "mes": "2025-03",
+     "posts": 11,
+     "alcance": 76462,
+     "vistas": 153996,
+     "interacciones": 3110,
+     "er_alcance": 4.07
+    },
+    {
+     "mes": "2025-04",
+     "posts": 12,
+     "alcance": 63412,
+     "vistas": 135913,
+     "interacciones": 2039,
+     "er_alcance": 3.22
+    },
+    {
+     "mes": "2025-05",
+     "posts": 13,
+     "alcance": 61915,
+     "vistas": 160930,
+     "interacciones": 1874,
+     "er_alcance": 3.03
+    },
+    {
+     "mes": "2025-06",
+     "posts": 6,
+     "alcance": 36725,
+     "vistas": 226761,
+     "interacciones": 1272,
+     "er_alcance": 3.46
+    },
+    {
+     "mes": "2025-07",
+     "posts": 2,
+     "alcance": 18194,
+     "vistas": 74178,
+     "interacciones": 925,
+     "er_alcance": 5.08
+    },
+    {
+     "mes": "2025-08",
+     "posts": 3,
+     "alcance": 9890,
+     "vistas": 32340,
+     "interacciones": 321,
+     "er_alcance": 3.25
+    },
+    {
+     "mes": "2025-09",
+     "posts": 6,
+     "alcance": 40033,
+     "vistas": 150809,
+     "interacciones": 1887,
+     "er_alcance": 4.71
+    },
+    {
+     "mes": "2025-10",
+     "posts": 19,
+     "alcance": 50991,
+     "vistas": 194019,
+     "interacciones": 2215,
+     "er_alcance": 4.34
+    },
+    {
+     "mes": "2025-11",
+     "posts": 15,
+     "alcance": 93435,
+     "vistas": 244473,
+     "interacciones": 3626,
+     "er_alcance": 3.88
+    },
+    {
+     "mes": "2025-12",
+     "posts": 8,
+     "alcance": 28337,
+     "vistas": 66409,
+     "interacciones": 1099,
+     "er_alcance": 3.88
+    },
+    {
+     "mes": "2026-01",
+     "posts": 7,
+     "alcance": 21655,
+     "vistas": 39716,
+     "interacciones": 649,
+     "er_alcance": 3.0
+    },
+    {
+     "mes": "2026-02",
+     "posts": 8,
+     "alcance": 32746,
+     "vistas": 66825,
+     "interacciones": 1067,
+     "er_alcance": 3.26
+    },
+    {
+     "mes": "2026-03",
+     "posts": 8,
+     "alcance": 29850,
+     "vistas": 58790,
+     "interacciones": 994,
+     "er_alcance": 3.33
+    },
+    {
+     "mes": "2026-04",
+     "posts": 9,
+     "alcance": 42501,
+     "vistas": 118842,
+     "interacciones": 1656,
+     "er_alcance": 3.9
+    },
+    {
+     "mes": "2026-05",
+     "posts": 19,
+     "alcance": 99872,
+     "vistas": 217619,
+     "interacciones": 3749,
+     "er_alcance": 3.75
+    },
+    {
+     "mes": "2026-06",
+     "posts": 8,
+     "alcance": 32069,
+     "vistas": 56033,
+     "interacciones": 1073,
+     "er_alcance": 3.35
+    },
+    {
+     "mes": "2026-07",
+     "posts": 5,
+     "alcance": 26120,
+     "vistas": 57855,
+     "interacciones": 1144,
+     "er_alcance": 4.38
+    },
+    {
+     "mes": "2026-08",
+     "posts": 11,
+     "alcance": 54435,
+     "vistas": 102984,
+     "interacciones": 2123,
+     "er_alcance": 3.9
+    },
+    {
+     "mes": "2026-09",
+     "posts": 15,
+     "alcance": 88462,
+     "vistas": 181161,
+     "interacciones": 4618,
+     "er_alcance": 5.22
+    }
+   ],
+   "top": [
+    {
+     "fecha": "2024-11-09",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DCKO2VJOs9N/",
+     "texto": "What an amazing time at the opening ceremony of the 7th edition of Juve Cup 🏆",
+     "vistas": 363411,
+     "alcance": 236139,
+     "interacciones": 10938
+    },
+    {
+     "fecha": "2025-11-20",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DRSc7cmEdff/",
+     "texto": "Recently, representatives from Juventus, @athletumfc, and Juventus Academy Miami visited @intermiamicf togethe",
+     "vistas": 132547,
+     "alcance": 46932,
+     "interacciones": 1351
+    },
+    {
+     "fecha": "2025-09-05",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DOPHV6xEZnS/",
+     "texto": "From Miami to the international stage! 🌍⚽",
+     "vistas": 78416,
+     "alcance": 22634,
+     "interacciones": 1248
+    },
+    {
+     "fecha": "2025-06-19",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DLD9uWYxZ-a/",
+     "texto": "FINO ALLA FINE. 🩷",
+     "vistas": 58871,
+     "alcance": 7496,
+     "interacciones": 511
+    },
+    {
+     "fecha": "2025-06-19",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DLD9qt3xckA/",
+     "texto": "The new Juventus Academy Miami kit. 🖤🤍",
+     "vistas": 57694,
+     "alcance": 6784,
+     "interacciones": 230
+    }
+   ],
+   "seguidores": {
+    "actual": 26968,
+    "fecha": "2026-10-01",
+    "publicaciones_total": 1425,
+    "nuevos_por_dia": [
+     {
+      "fecha": "2026-09-01",
+      "n": 47
+     },
+     {
+      "fecha": "2026-09-02",
+      "n": 51
+     },
+     {
+      "fecha": "2026-09-03",
+      "n": 37
+     },
+     {
+      "fecha": "2026-09-04",
+      "n": 35
+     },
+     {
+      "fecha": "2026-09-05",
+      "n": 53
+     },
+     {
+      "fecha": "2026-09-06",
+      "n": 30
+     },
+     {
+      "fecha": "2026-09-07",
+      "n": 36
+     },
+     {
+      "fecha": "2026-09-08",
+      "n": 37
+     },
+     {
+      "fecha": "2026-09-09",
+      "n": 42
+     },
+     {
+      "fecha": "2026-09-10",
+      "n": 36
+     },
+     {
+      "fecha": "2026-09-11",
+      "n": 28
+     },
+     {
+      "fecha": "2026-09-12",
+      "n": 34
+     },
+     {
+      "fecha": "2026-09-13",
+      "n": 40
+     },
+     {
+      "fecha": "2026-09-14",
+      "n": 26
+     },
+     {
+      "fecha": "2026-09-15",
+      "n": 39
+     },
+     {
+      "fecha": "2026-09-16",
+      "n": 20
+     },
+     {
+      "fecha": "2026-09-17",
+      "n": 35
+     },
+     {
+      "fecha": "2026-09-18",
+      "n": 30
+     },
+     {
+      "fecha": "2026-09-19",
+      "n": 36
+     },
+     {
+      "fecha": "2026-09-20",
+      "n": 22
+     },
+     {
+      "fecha": "2026-09-21",
+      "n": 22
+     },
+     {
+      "fecha": "2026-09-22",
+      "n": 25
+     },
+     {
+      "fecha": "2026-09-23",
+      "n": 22
+     },
+     {
+      "fecha": "2026-09-24",
+      "n": 21
+     },
+     {
+      "fecha": "2026-09-25",
+      "n": 32
+     },
+     {
+      "fecha": "2026-09-26",
+      "n": 35
+     },
+     {
+      "fecha": "2026-09-27",
+      "n": 19
+     },
+     {
+      "fecha": "2026-09-28",
+      "n": 29
+     },
+     {
+      "fecha": "2026-09-29",
+      "n": 32
+     },
+     {
+      "fecha": "2026-09-30",
+      "n": 25
+     }
+    ]
+   }
+  },
+  {
+   "usuario": "juventuscampsusa",
+   "nombre": "Juventus Camps USA",
+   "propiedad": "Juventus Camps USA",
+   "url": "https://www.instagram.com/juventuscampsusa/",
+   "auditoria": {
+    "desde": "2024-10-09",
+    "hasta": "2026-09-02",
+    "extraido": "2026-09-23",
+    "publicaciones": 93
+   },
+   "totales": {
+    "views": 398081,
+    "reach": 178495,
+    "likes": 3314,
+    "comments": 97,
+    "saved": 231,
+    "shares": 561,
+    "interactions": 4266
+   },
+   "por_formato": [
+    {
+     "formato": "Carrusel",
+     "n": 23,
+     "pct": 24.7,
+     "vistas_prom": 5026,
+     "alcance_prom": 2190,
+     "interacciones_prom": 81,
+     "er_alcance": 3.71
+    },
+    {
+     "formato": "Foto",
+     "n": 55,
+     "pct": 59.1,
+     "vistas_prom": 4333,
+     "alcance_prom": 1750,
+     "interacciones_prom": 33,
+     "er_alcance": 1.87
+    },
+    {
+     "formato": "Reel",
+     "n": 15,
+     "pct": 16.1,
+     "vistas_prom": 2944,
+     "alcance_prom": 2124,
+     "interacciones_prom": 40,
+     "er_alcance": 1.86
+    }
+   ],
+   "mensual": [
+    {
+     "mes": "2024-10",
+     "posts": 3,
+     "alcance": 7280,
+     "vistas": 10542,
+     "interacciones": 185,
+     "er_alcance": 2.54
+    },
+    {
+     "mes": "2024-11",
+     "posts": 4,
+     "alcance": 10223,
+     "vistas": 16530,
+     "interacciones": 264,
+     "er_alcance": 2.58
+    },
+    {
+     "mes": "2025-02",
+     "posts": 9,
+     "alcance": 11468,
+     "vistas": 19646,
+     "interacciones": 223,
+     "er_alcance": 1.94
+    },
+    {
+     "mes": "2025-03",
+     "posts": 14,
+     "alcance": 22705,
+     "vistas": 43523,
+     "interacciones": 443,
+     "er_alcance": 1.95
+    },
+    {
+     "mes": "2025-04",
+     "posts": 11,
+     "alcance": 26356,
+     "vistas": 41766,
+     "interacciones": 369,
+     "er_alcance": 1.4
+    },
+    {
+     "mes": "2025-05",
+     "posts": 2,
+     "alcance": 6166,
+     "vistas": 13369,
+     "interacciones": 164,
+     "er_alcance": 2.66
+    },
+    {
+     "mes": "2025-06",
+     "posts": 3,
+     "alcance": 8470,
+     "vistas": 18954,
+     "interacciones": 251,
+     "er_alcance": 2.96
+    },
+    {
+     "mes": "2025-07",
+     "posts": 10,
+     "alcance": 23162,
+     "vistas": 97795,
+     "interacciones": 446,
+     "er_alcance": 1.93
+    },
+    {
+     "mes": "2025-08",
+     "posts": 1,
+     "alcance": 3187,
+     "vistas": 13510,
+     "interacciones": 72,
+     "er_alcance": 2.26
+    },
+    {
+     "mes": "2025-11",
+     "posts": 6,
+     "alcance": 11392,
+     "vistas": 16584,
+     "interacciones": 178,
+     "er_alcance": 1.56
+    },
+    {
+     "mes": "2026-02",
+     "posts": 2,
+     "alcance": 5930,
+     "vistas": 14767,
+     "interacciones": 242,
+     "er_alcance": 4.08
+    },
+    {
+     "mes": "2026-04",
+     "posts": 13,
+     "alcance": 17960,
+     "vistas": 35369,
+     "interacciones": 397,
+     "er_alcance": 2.21
+    },
+    {
+     "mes": "2026-05",
+     "posts": 1,
+     "alcance": 2863,
+     "vistas": 8353,
+     "interacciones": 64,
+     "er_alcance": 2.24
+    },
+    {
+     "mes": "2026-06",
+     "posts": 5,
+     "alcance": 8584,
+     "vistas": 17499,
+     "interacciones": 345,
+     "er_alcance": 4.02
+    },
+    {
+     "mes": "2026-07",
+     "posts": 5,
+     "alcance": 7491,
+     "vistas": 17286,
+     "interacciones": 356,
+     "er_alcance": 4.75
+    },
+    {
+     "mes": "2026-08",
+     "posts": 3,
+     "alcance": 4461,
+     "vistas": 10715,
+     "interacciones": 245,
+     "er_alcance": 5.49
+    },
+    {
+     "mes": "2026-09",
+     "posts": 1,
+     "alcance": 797,
+     "vistas": 1873,
+     "interacciones": 22,
+     "er_alcance": 2.76
+    }
+   ],
+   "top": [
+    {
+     "fecha": "2025-07-30",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DMvhMLLOB25/",
+     "texto": "Congratulations to the winner of the Juventus Training Experience in Puerto Rico! 🇵🇷🏆",
+     "vistas": 14597,
+     "alcance": 3684,
+     "interacciones": 97
+    },
+    {
+     "fecha": "2025-08-06",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DM_rPr7Og8Z/",
+     "texto": "Congratulations to the winner of the Juventus Training Experience in Seattle! 🏆",
+     "vistas": 13510,
+     "alcance": 3187,
+     "interacciones": 72
+    },
+    {
+     "fecha": "2026-02-25",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DVL77KUDqn8/",
+     "texto": "JUVENTUS CAMPS USA x ATLÉTICO DALLAS YOUTH ⚽️",
+     "vistas": 12285,
+     "alcance": 4514,
+     "interacciones": 222
+    },
+    {
+     "fecha": "2025-07-30",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DMvhB3GuIlQ/",
+     "texto": "A big shoutout to the winner of the Juventus Training Experience in Portland! 🇺🇸🏆",
+     "vistas": 12282,
+     "alcance": 2366,
+     "interacciones": 21
+    },
+    {
+     "fecha": "2026-04-03",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DWrxxS1D9jt/",
+     "texto": "Our selected  players from the Juventus Training Camps last year arrived to Italy last week to enjoy an incred",
+     "vistas": 12011,
+     "alcance": 5559,
+     "interacciones": 205
+    }
+   ],
+   "seguidores": {
+    "actual": 10192,
+    "fecha": "2026-10-01",
+    "publicaciones_total": 295,
+    "nuevos_por_dia": [
+     {
+      "fecha": "2026-09-01",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-02",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-03",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-04",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-05",
+      "n": 3
+     },
+     {
+      "fecha": "2026-09-06",
+      "n": 7
+     },
+     {
+      "fecha": "2026-09-07",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-08",
+      "n": 3
+     },
+     {
+      "fecha": "2026-09-09",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-10",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-11",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-12",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-13",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-14",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-15",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-16",
+      "n": 3
+     },
+     {
+      "fecha": "2026-09-17",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-18",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-19",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-20",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-21",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-22",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-23",
+      "n": 6
+     },
+     {
+      "fecha": "2026-09-24",
+      "n": 3
+     },
+     {
+      "fecha": "2026-09-25",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-26",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-27",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-28",
+      "n": 4
+     },
+     {
+      "fecha": "2026-09-29",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-30",
+      "n": 14
+     }
+    ]
+   }
+  },
+  {
+   "usuario": "jacademylasvegas",
+   "nombre": "Juventus Academy Las Vegas",
+   "propiedad": "Juventus Academy Las Vegas",
+   "url": "https://www.instagram.com/jacademylasvegas/",
+   "auditoria": {
+    "desde": "2025-05-08",
+    "hasta": "2026-09-23",
+    "extraido": "2026-09-23",
+    "publicaciones": 386
+   },
+   "totales": {
+    "views": 1013718,
+    "reach": 536703,
+    "likes": 18402,
+    "comments": 835,
+    "saved": 430,
+    "shares": 3528,
+    "interactions": 23616
+   },
+   "por_formato": [
+    {
+     "formato": "Carrusel",
+     "n": 13,
+     "pct": 3.4,
+     "vistas_prom": 4650,
+     "alcance_prom": 1172,
+     "interacciones_prom": 72,
+     "er_alcance": 6.12
+    },
+    {
+     "formato": "Foto",
+     "n": 39,
+     "pct": 10.1,
+     "vistas_prom": 3818,
+     "alcance_prom": 1439,
+     "interacciones_prom": 76,
+     "er_alcance": 5.27
+    },
+    {
+     "formato": "Reel",
+     "n": 334,
+     "pct": 86.5,
+     "vistas_prom": 2408,
+     "alcance_prom": 1393,
+     "interacciones_prom": 59,
+     "er_alcance": 4.24
+    }
+   ],
+   "mensual": [
+    {
+     "mes": "2025-05",
+     "posts": 10,
+     "alcance": 22437,
+     "vistas": 46406,
+     "interacciones": 954,
+     "er_alcance": 4.25
+    },
+    {
+     "mes": "2025-06",
+     "posts": 4,
+     "alcance": 8604,
+     "vistas": 14466,
+     "interacciones": 398,
+     "er_alcance": 4.63
+    },
+    {
+     "mes": "2025-07",
+     "posts": 7,
+     "alcance": 7399,
+     "vistas": 12143,
+     "interacciones": 224,
+     "er_alcance": 3.03
+    },
+    {
+     "mes": "2025-08",
+     "posts": 5,
+     "alcance": 12945,
+     "vistas": 18700,
+     "interacciones": 317,
+     "er_alcance": 2.45
+    },
+    {
+     "mes": "2025-09",
+     "posts": 42,
+     "alcance": 53336,
+     "vistas": 106324,
+     "interacciones": 2431,
+     "er_alcance": 4.56
+    },
+    {
+     "mes": "2025-10",
+     "posts": 72,
+     "alcance": 81491,
+     "vistas": 176736,
+     "interacciones": 4435,
+     "er_alcance": 5.44
+    },
+    {
+     "mes": "2025-11",
+     "posts": 58,
+     "alcance": 59937,
+     "vistas": 117929,
+     "interacciones": 3168,
+     "er_alcance": 5.29
+    },
+    {
+     "mes": "2025-12",
+     "posts": 43,
+     "alcance": 56775,
+     "vistas": 99447,
+     "interacciones": 2230,
+     "er_alcance": 3.93
+    },
+    {
+     "mes": "2026-01",
+     "posts": 38,
+     "alcance": 47877,
+     "vistas": 82964,
+     "interacciones": 1867,
+     "er_alcance": 3.9
+    },
+    {
+     "mes": "2026-02",
+     "posts": 28,
+     "alcance": 55180,
+     "vistas": 98750,
+     "interacciones": 2219,
+     "er_alcance": 4.02
+    },
+    {
+     "mes": "2026-03",
+     "posts": 28,
+     "alcance": 51100,
+     "vistas": 89131,
+     "interacciones": 1920,
+     "er_alcance": 3.76
+    },
+    {
+     "mes": "2026-04",
+     "posts": 20,
+     "alcance": 42334,
+     "vistas": 81461,
+     "interacciones": 1914,
+     "er_alcance": 4.52
+    },
+    {
+     "mes": "2026-05",
+     "posts": 10,
+     "alcance": 12027,
+     "vistas": 23662,
+     "interacciones": 478,
+     "er_alcance": 3.97
+    },
+    {
+     "mes": "2026-06",
+     "posts": 4,
+     "alcance": 4552,
+     "vistas": 9002,
+     "interacciones": 197,
+     "er_alcance": 4.33
+    },
+    {
+     "mes": "2026-07",
+     "posts": 4,
+     "alcance": 10352,
+     "vistas": 17017,
+     "interacciones": 365,
+     "er_alcance": 3.53
+    },
+    {
+     "mes": "2026-08",
+     "posts": 8,
+     "alcance": 7009,
+     "vistas": 13254,
+     "interacciones": 333,
+     "er_alcance": 4.75
+    },
+    {
+     "mes": "2026-09",
+     "posts": 5,
+     "alcance": 3348,
+     "vistas": 6326,
+     "interacciones": 166,
+     "er_alcance": 4.96
+    }
+   ],
+   "top": [
+    {
+     "fecha": "2026-04-07",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DW1rOlUCQ_5/",
+     "texto": "Juventus Academy Las Vegas Tryouts are coming soon⚪️⚫️⚽",
+     "vistas": 17774,
+     "alcance": 7108,
+     "interacciones": 364
+    },
+    {
+     "fecha": "2025-10-26",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DQRqftVCXTG/",
+     "texto": "When opportunity knocks, you step up!",
+     "vistas": 15749,
+     "alcance": 3672,
+     "interacciones": 258
+    },
+    {
+     "fecha": "2025-09-30",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DPPnoUVD0vC/",
+     "texto": "Juventus Buffon Boys Putting in Work💪💪",
+     "vistas": 12196,
+     "alcance": 2494,
+     "interacciones": 94
+    },
+    {
+     "fecha": "2025-10-09",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DPkwxwqABUI/",
+     "texto": "A great Juventus coach doesn’t just give instructions, they lead by example. 🤍🖤",
+     "vistas": 11606,
+     "alcance": 8014,
+     "interacciones": 203
+    },
+    {
+     "fecha": "2026-07-30",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/Dbbt4SGSWCP/",
+     "texto": "WELCOME COACH CARLO BUONOPANE 🇮🇹⚪⚫",
+     "vistas": 10342,
+     "alcance": 6547,
+     "interacciones": 215
+    }
+   ],
+   "seguidores": {
+    "actual": 2432,
+    "fecha": "2026-10-01",
+    "publicaciones_total": 454,
+    "nuevos_por_dia": [
+     {
+      "fecha": "2026-09-01",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-02",
+      "n": 4
+     },
+     {
+      "fecha": "2026-09-03",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-04",
+      "n": 5
+     },
+     {
+      "fecha": "2026-09-05",
+      "n": 3
+     },
+     {
+      "fecha": "2026-09-06",
+      "n": 6
+     },
+     {
+      "fecha": "2026-09-07",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-08",
+      "n": 6
+     },
+     {
+      "fecha": "2026-09-09",
+      "n": 4
+     },
+     {
+      "fecha": "2026-09-10",
+      "n": 3
+     },
+     {
+      "fecha": "2026-09-11",
+      "n": 4
+     },
+     {
+      "fecha": "2026-09-12",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-13",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-14",
+      "n": 4
+     },
+     {
+      "fecha": "2026-09-15",
+      "n": 5
+     },
+     {
+      "fecha": "2026-09-16",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-17",
+      "n": 3
+     },
+     {
+      "fecha": "2026-09-18",
+      "n": 3
+     },
+     {
+      "fecha": "2026-09-19",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-20",
+      "n": 4
+     },
+     {
+      "fecha": "2026-09-21",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-22",
+      "n": 8
+     },
+     {
+      "fecha": "2026-09-23",
+      "n": 5
+     },
+     {
+      "fecha": "2026-09-24",
+      "n": 4
+     },
+     {
+      "fecha": "2026-09-25",
+      "n": 3
+     },
+     {
+      "fecha": "2026-09-26",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-27",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-28",
+      "n": 5
+     },
+     {
+      "fecha": "2026-09-29",
+      "n": 3
+     },
+     {
+      "fecha": "2026-09-30",
+      "n": 3
+     }
+    ]
+   }
+  },
+  {
+   "usuario": "juventuscampsmx",
+   "nombre": "Juventus Camps Mexico",
+   "propiedad": "Juventus Camps México",
+   "url": "https://www.instagram.com/juventuscampsmx/",
+   "auditoria": {
+    "desde": "2025-02-27",
+    "hasta": "2026-08-07",
+    "extraido": "2026-09-30",
+    "publicaciones": 34
+   },
+   "totales": {
+    "views": 252958,
+    "reach": 117297,
+    "likes": 1985,
+    "comments": 138,
+    "saved": 177,
+    "shares": 540,
+    "interactions": 2881
+   },
+   "por_formato": [
+    {
+     "formato": "Carrusel",
+     "n": 10,
+     "pct": 29.4,
+     "vistas_prom": 9605,
+     "alcance_prom": 3162,
+     "interacciones_prom": 114,
+     "er_alcance": 3.59
+    },
+    {
+     "formato": "Foto",
+     "n": 7,
+     "pct": 20.6,
+     "vistas_prom": 10172,
+     "alcance_prom": 4198,
+     "interacciones_prom": 87,
+     "er_alcance": 2.07
+    },
+    {
+     "formato": "Reel",
+     "n": 17,
+     "pct": 50.0,
+     "vistas_prom": 5041,
+     "alcance_prom": 3311,
+     "interacciones_prom": 67,
+     "er_alcance": 2.02
+    }
+   ],
+   "mensual": [
+    {
+     "mes": "2025-02",
+     "posts": 1,
+     "alcance": 3815,
+     "vistas": 4671,
+     "interacciones": 121,
+     "er_alcance": 3.17
+    },
+    {
+     "mes": "2025-03",
+     "posts": 4,
+     "alcance": 20438,
+     "vistas": 44421,
+     "interacciones": 405,
+     "er_alcance": 1.98
+    },
+    {
+     "mes": "2025-04",
+     "posts": 3,
+     "alcance": 11785,
+     "vistas": 27922,
+     "interacciones": 186,
+     "er_alcance": 1.58
+    },
+    {
+     "mes": "2025-05",
+     "posts": 4,
+     "alcance": 13537,
+     "vistas": 33775,
+     "interacciones": 294,
+     "er_alcance": 2.17
+    },
+    {
+     "mes": "2025-06",
+     "posts": 2,
+     "alcance": 6242,
+     "vistas": 15747,
+     "interacciones": 80,
+     "er_alcance": 1.28
+    },
+    {
+     "mes": "2025-07",
+     "posts": 4,
+     "alcance": 11696,
+     "vistas": 34829,
+     "interacciones": 424,
+     "er_alcance": 3.63
+    },
+    {
+     "mes": "2025-08",
+     "posts": 2,
+     "alcance": 9970,
+     "vistas": 19419,
+     "interacciones": 331,
+     "er_alcance": 3.32
+    },
+    {
+     "mes": "2026-04",
+     "posts": 2,
+     "alcance": 4750,
+     "vistas": 7101,
+     "interacciones": 56,
+     "er_alcance": 1.18
+    },
+    {
+     "mes": "2026-05",
+     "posts": 2,
+     "alcance": 5996,
+     "vistas": 8154,
+     "interacciones": 113,
+     "er_alcance": 1.88
+    },
+    {
+     "mes": "2026-06",
+     "posts": 2,
+     "alcance": 4981,
+     "vistas": 6079,
+     "interacciones": 101,
+     "er_alcance": 2.03
+    },
+    {
+     "mes": "2026-07",
+     "posts": 6,
+     "alcance": 19851,
+     "vistas": 39865,
+     "interacciones": 558,
+     "er_alcance": 2.81
+    },
+    {
+     "mes": "2026-08",
+     "posts": 2,
+     "alcance": 4236,
+     "vistas": 10975,
+     "interacciones": 212,
+     "er_alcance": 5.0
+    }
+   ],
+   "top": [
+    {
+     "fecha": "2026-07-20",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DbBe835x0p_/",
+     "texto": "",
+     "vistas": 19423,
+     "alcance": 8861,
+     "interacciones": 199
+    },
+    {
+     "fecha": "2025-03-13",
+     "formato": "Carrusel",
+     "url": "https://www.instagram.com/p/DHJgLf9u6Ly/",
+     "texto": "¡Vive la Experiencia Juventus en México! ⚽🔥 ",
+     "vistas": 17998,
+     "alcance": 6316,
+     "interacciones": 136
+    },
+    {
+     "fecha": "2025-04-08",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DIMX30YOeXt/",
+     "texto": "En Juventus Camps, ofrecemos un entrenamiento integral tanto para jugadores de campo como para porteros. 🏆⚽",
+     "vistas": 16725,
+     "alcance": 6801,
+     "interacciones": 82
+    },
+    {
+     "fecha": "2025-03-07",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DG53oiJOPTp/",
+     "texto": "¡SEIS CIUDADES, UN SOLO ESTILO! ⚽🇮🇹",
+     "vistas": 13576,
+     "alcance": 5637,
+     "interacciones": 150
+    },
+    {
+     "fecha": "2025-05-13",
+     "formato": "Foto",
+     "url": "https://www.instagram.com/p/DJmoQRHINRW/",
+     "texto": "¿Necesitas más razones? 😏",
+     "vistas": 13088,
+     "alcance": 3975,
+     "interacciones": 61
+    }
+   ],
+   "seguidores": {
+    "actual": 3095,
+    "fecha": "2026-10-01",
+    "publicaciones_total": 73,
+    "nuevos_por_dia": [
+     {
+      "fecha": "2026-09-01",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-02",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-03",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-04",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-05",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-06",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-07",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-08",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-09",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-10",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-11",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-12",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-13",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-14",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-15",
+      "n": 2
+     },
+     {
+      "fecha": "2026-09-16",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-17",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-18",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-19",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-20",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-21",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-22",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-23",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-24",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-25",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-26",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-27",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-28",
+      "n": 1
+     },
+     {
+      "fecha": "2026-09-29",
+      "n": 0
+     },
+     {
+      "fecha": "2026-09-30",
+      "n": 0
+     }
+    ]
+   }
+  }
+ ]
+}

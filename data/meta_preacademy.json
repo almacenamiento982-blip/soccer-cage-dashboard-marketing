@@ -1,0 +1,196 @@
+{
+ "generado": "2026-10-01T23:23",
+ "fuente": "REPORTE_COMPARATIVO/datos.json (lecturas de Ads Manager)",
+ "informe": "https://almacenamiento982-blip.github.io/jam-preacademy-reporte/",
+ "campana": "PREACADEMY | WHATSAPP | COLD | SEP26",
+ "inicio": "2026-09-22",
+ "objetivo": "Conversaciones de WhatsApp con familias interesadas en Pre-Academy (Miami)",
+ "presupuesto_diario": {
+  "INTERESTS": 14,
+  "BROAD": 8,
+  "LAL": 11
+ },
+ "cambios": [
+  {
+   "fecha": "2026-09-21",
+   "texto": "Lanzamiento: 3 públicos a $11 por día cada uno, 6 anuncios en cada público."
+  },
+  {
+   "fecha": "2026-09-24",
+   "texto": "El público «Similar» no estaba entregando: se cambió su origen a las personas que interactuaron con Instagram en el último año. Empezó a entregar ese mismo día."
+  },
+  {
+   "fecha": "2026-09-28",
+   "texto": "Primera redistribución: $3 por día pasan de «Abierto» (sin conversaciones en los últimos 2 días) a «Intereses» (el más barato). La inversión total no cambia."
+  },
+  {
+   "fecha": "2026-10-01",
+   "texto": "Segunda revisión: los tres públicos están cerca entre sí ($3,35 a $4,65 por conversación en los últimos días). Se decide no mover presupuesto todavía y esperar más datos."
+  }
+ ],
+ "proxima_revision": "4 de octubre",
+ "lecturas": [
+  {
+   "fecha": "2026-09-22",
+   "conv": 3,
+   "gasto": 17.73,
+   "imp": null,
+   "clics": null
+  },
+  {
+   "fecha": "2026-09-24",
+   "conv": 28,
+   "gasto": 66.95,
+   "imp": null,
+   "clics": null
+  },
+  {
+   "fecha": "2026-09-26",
+   "conv": 52,
+   "gasto": 156.05,
+   "imp": null,
+   "clics": null
+  },
+  {
+   "fecha": "2026-09-28",
+   "conv": 65,
+   "gasto": 209.02,
+   "imp": 11728,
+   "clics": 148
+  },
+  {
+   "fecha": "2026-09-29",
+   "conv": 81,
+   "gasto": 273.19,
+   "imp": 15247,
+   "clics": 191
+  },
+  {
+   "fecha": "2026-10-01",
+   "conv": 92,
+   "gasto": 316.03,
+   "imp": 17913,
+   "clics": 232
+  }
+ ],
+ "ultima": {
+  "fecha": "2026-10-01",
+  "conv": 92,
+  "gasto": 316.03,
+  "imp": 17913,
+  "clics": 232,
+  "conjuntos": {
+   "INTERESTS": {
+    "conv": 40,
+    "gasto": 122,
+    "imp": 7299,
+    "clics": 91
+   },
+   "LAL": {
+    "conv": 25,
+    "gasto": 99.69,
+    "imp": 5469,
+    "clics": 72
+   },
+   "BROAD": {
+    "conv": 27,
+    "gasto": 94.34,
+    "imp": 5145,
+    "clics": 69
+   }
+  },
+  "anuncios": {
+   "REEL-A": {
+    "conv": 1,
+    "gasto": 3.09,
+    "imp": 153,
+    "clics": 2
+   },
+   "REEL-B": {
+    "conv": 6,
+    "gasto": 34.07,
+    "imp": 1551,
+    "clics": 13
+   },
+   "AD2": {
+    "conv": 0,
+    "gasto": 4.220000000000001,
+    "imp": 206,
+    "clics": 4
+   },
+   "AD1": {
+    "conv": 13,
+    "gasto": 25.08,
+    "imp": 1589,
+    "clics": 21
+   },
+   "AD3": {
+    "conv": 38,
+    "gasto": 115.72999999999999,
+    "imp": 7010,
+    "clics": 86
+   },
+   "AD4": {
+    "conv": 34,
+    "gasto": 133.86,
+    "imp": 7405,
+    "clics": 104
+   }
+  }
+ },
+ "mensajes": {
+  "fecha": "2026-09-29",
+  "iniciadas": 81,
+  "nuevos": 72,
+  "totales": 103,
+  "respondidas": 8,
+  "fuente": "Ads Manager, campaña PREACADEMY | WHATSAPP | COLD | SEP26, rango máximo, detalle de 'Resultados' (captura del usuario del 29-09). No viene en el CSV: actualizar a mano en cada revisión."
+ },
+ "mes_previo": {
+  "nota": "Últimos 30 días de la campaña anterior (21 ago – 19 sep 2026), archivo Ads-Aug-21-2026-Sep-19-2026.csv",
+  "dias": 30,
+  "conv": 56,
+  "gasto": 993.02
+ },
+ "campanas_anteriores": [
+  {
+   "nombre": "Sep 2023",
+   "detalle": "Apertura de Broward",
+   "meses": [
+    "2023-08",
+    "2023-09"
+   ]
+  },
+  {
+   "nombre": "Oct–Nov 2025",
+   "detalle": "Broward, Cutler Bay, Palmetto Bay y programas",
+   "meses": [
+    "2025-10",
+    "2025-11"
+   ]
+  },
+  {
+   "nombre": "Dic 2025",
+   "detalle": "Broward, Palmetto Bay y programas",
+   "meses": [
+    "2025-12"
+   ]
+  },
+  {
+   "nombre": "Mar–May 2026",
+   "detalle": "Spring break y verano",
+   "meses": [
+    "2026-03",
+    "2026-05"
+   ]
+  },
+  {
+   "nombre": "Ago–Sep 2026",
+   "detalle": "La campaña anterior, justo antes de lanzar",
+   "meses": [
+    "2026-09"
+   ],
+   "anterior_inmediata": true
+  }
+ ]
+}

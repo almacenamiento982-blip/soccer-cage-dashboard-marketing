@@ -1,0 +1,542 @@
+{
+ "generado": "2026-10-01T23:23",
+ "fuente": "montaje_meta_estado.json + meta_diario.json (Meta, por día) + app de registro (agregados) + diagnóstico de temporadas anteriores",
+ "informe": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/",
+ "campana": "IDCAMPS | LEADS | 26-27",
+ "cuenta": "976562252987422",
+ "objetivo": "Leads (clic en «Register now» hacia la app de inscripción) para los ID Camps 2026-27",
+ "presupuesto_diario": {
+  "CHI": 20,
+  "DAL": 18,
+  "RTG": 6
+ },
+ "conjuntos": {
+  "CHI": "Chicago (14–15 nov, Schaumburg)",
+  "DAL": "Dallas (21–22 nov, Richardson)",
+  "RTG": "RTG | 7 LOCATIONS | WEB+IG+FB | END 22DEC — retargeting de 7 sedes"
+ },
+ "anuncios_por_conjunto": {
+  "CHI": [
+   "HERO-POSTER",
+   "VIDEO-1 COACHES",
+   "VIDEO-2 JESUS WE-ARE-BACK",
+   "CAROUSEL WHAT-IS",
+   "STATIC GOOD-ENOUGH",
+   "STATIC JUVENTUS-WAY"
+  ],
+  "DAL": [
+   "HERO-POSTER",
+   "VIDEO-1 COACHES",
+   "VIDEO-2 JESUS WE-ARE-BACK",
+   "CAROUSEL WHAT-IS",
+   "STATIC GOOD-ENOUGH",
+   "STATIC JUVENTUS-WAY"
+  ],
+  "RTG": [
+   "STATIC TOUR-DATES",
+   "CAROUSEL WHAT-IS 8-DATES",
+   "STATIC GOOD-ENOUGH",
+   "VIDEO-1 COACHES ALL-LOCATIONS"
+  ]
+ },
+ "total_anuncios": 16,
+ "rtg_zonas": [
+  "Schaumburg",
+  "Richardson",
+  "Midland",
+  "Waipio",
+  "Mayaguez centro 18.2011,-67.1396",
+  "Atlanta centro 33.749,-84.388",
+  "Bayamon 18.3985,-66.1553"
+ ],
+ "rtg_fin": "2026-12-22",
+ "montada": "2026-09-29",
+ "activa_desde": "2026-09-30",
+ "meta_diario": [
+  {
+   "fecha": "2026-09-30",
+   "gasto": 52.97,
+   "clics": 183,
+   "leads": {
+    "CHI": 4,
+    "DAL": 6,
+    "RTG": 1
+   },
+   "parcial": false
+  },
+  {
+   "fecha": "2026-10-01",
+   "gasto": 45.75,
+   "clics": 204,
+   "leads": {
+    "CHI": 8,
+    "DAL": 3,
+    "RTG": 1
+   },
+   "parcial": true
+  }
+ ],
+ "app": {
+  "leido": "2026-10-02",
+  "total_registros": 32,
+  "estados": {
+   "Unpaid": 20,
+   "Paid": 12
+  },
+  "sedes": {
+   "Bayamon": {
+    "registros": 2,
+    "pagados": 0,
+    "ninos_pagados": 0
+   },
+   "Dallas": {
+    "registros": 7,
+    "pagados": 2,
+    "ninos_pagados": 3
+   },
+   "Chicago": {
+    "registros": 21,
+    "pagados": 10,
+    "ninos_pagados": 11
+   },
+   "Mayaguez": {
+    "registros": 1,
+    "pagados": 0,
+    "ninos_pagados": 0
+   },
+   "Hawaii": {
+    "registros": 1,
+    "pagados": 0,
+    "ninos_pagados": 0
+   }
+  },
+  "dias": [
+   {
+    "fecha": "2026-09-24",
+    "registros": 1,
+    "pagos": 1
+   },
+   {
+    "fecha": "2026-09-25",
+    "registros": 6,
+    "pagos": 3
+   },
+   {
+    "fecha": "2026-09-26",
+    "registros": 1,
+    "pagos": 1
+   },
+   {
+    "fecha": "2026-09-27",
+    "registros": 2,
+    "pagos": 1
+   },
+   {
+    "fecha": "2026-09-28",
+    "registros": 1,
+    "pagos": 1
+   },
+   {
+    "fecha": "2026-09-29",
+    "registros": 2,
+    "pagos": 0
+   },
+   {
+    "fecha": "2026-09-30",
+    "registros": 9,
+    "pagos": 1
+   },
+   {
+    "fecha": "2026-10-01",
+    "registros": 10,
+    "pagos": 4
+   }
+  ],
+  "nota": "Registros y pagos de TODOS los canales (voz a voz, WhatsApp, email, anuncios): indicador de crecimiento, no atribución a Meta. Se excluyen las pruebas 17216–17218."
+ },
+ "historico_temporadas": [
+  {
+   "clinica": "Dallas · nov 2024",
+   "temporada": "24-25",
+   "inversion": 877.38,
+   "impresiones": 104429,
+   "alcance": 34723,
+   "frecuencia": 3.01,
+   "clics": 4080,
+   "clics_sitio": 1490,
+   "visitas": 1345,
+   "leads": 205,
+   "familias": 112,
+   "pagaron": 48,
+   "ninos": 51
+  },
+  {
+   "clinica": "McAllen · nov 2024",
+   "temporada": "24-25",
+   "inversion": 795.91,
+   "impresiones": 211068,
+   "alcance": 86416,
+   "frecuencia": 2.44,
+   "clics": 11297,
+   "clics_sitio": 2434,
+   "visitas": 2062,
+   "leads": 242,
+   "familias": 124,
+   "pagaron": 55,
+   "ninos": 65
+  },
+  {
+   "clinica": "Atlanta · dic 2024",
+   "temporada": "24-25",
+   "inversion": 798.36,
+   "impresiones": 98795,
+   "alcance": 35854,
+   "frecuencia": 2.76,
+   "clics": 3959,
+   "clics_sitio": 1637,
+   "visitas": 1532,
+   "leads": 170,
+   "familias": 172,
+   "pagaron": 80,
+   "ninos": 101
+  },
+  {
+   "clinica": "Indianapolis · ene 2025",
+   "temporada": "24-25",
+   "inversion": 899.63,
+   "impresiones": 120144,
+   "alcance": 38195,
+   "frecuencia": 3.15,
+   "clics": 4539,
+   "clics_sitio": 1549,
+   "visitas": 1408,
+   "leads": 187,
+   "familias": 93,
+   "pagaron": 36,
+   "ninos": 40
+  },
+  {
+   "clinica": "Las Vegas · mar 2025",
+   "temporada": "24-25",
+   "inversion": 416.32,
+   "impresiones": 45214,
+   "alcance": 15028,
+   "frecuencia": 3.01,
+   "clics": 1251,
+   "clics_sitio": 572,
+   "visitas": 534,
+   "leads": 63,
+   "familias": 56,
+   "pagaron": 38,
+   "ninos": 43
+  },
+  {
+   "clinica": "Chula Vista · mar 2025",
+   "temporada": "24-25",
+   "inversion": 146.31,
+   "impresiones": 17182,
+   "alcance": 7419,
+   "frecuencia": 2.32,
+   "clics": 566,
+   "clics_sitio": 230,
+   "visitas": 209,
+   "leads": 16,
+   "familias": 17,
+   "pagaron": 0,
+   "ninos": 0
+  },
+  {
+   "clinica": "Corpus Christi · may 2025",
+   "temporada": "24-25",
+   "inversion": 581.75,
+   "impresiones": 74967,
+   "alcance": 18801,
+   "frecuencia": 3.99,
+   "clics": 2308,
+   "clics_sitio": 585,
+   "visitas": 521,
+   "leads": 96,
+   "familias": 75,
+   "pagaron": 50,
+   "ninos": 56
+  },
+  {
+   "clinica": "Portland · 2025",
+   "temporada": "24-25",
+   "inversion": 26.2,
+   "impresiones": 2997,
+   "alcance": 1803,
+   "frecuencia": 1.66,
+   "clics": 55,
+   "clics_sitio": 21,
+   "visitas": 20,
+   "leads": 0,
+   "familias": 1,
+   "pagaron": 0,
+   "ninos": 0
+  },
+  {
+   "clinica": "Marshall · oct 2025",
+   "temporada": "25-26",
+   "inversion": 119.24,
+   "impresiones": 19565,
+   "alcance": 8558,
+   "frecuencia": 2.29,
+   "clics": 894,
+   "clics_sitio": 236,
+   "visitas": 209,
+   "leads": 18,
+   "familias": 10,
+   "pagaron": 0,
+   "ninos": 0
+  },
+  {
+   "clinica": "Puerto Rico · oct 2025",
+   "temporada": "25-26",
+   "inversion": 493.96,
+   "impresiones": 238128,
+   "alcance": 90745,
+   "frecuencia": 2.62,
+   "clics": 3659,
+   "clics_sitio": 1531,
+   "visitas": 1208,
+   "leads": 41,
+   "familias": 52,
+   "pagaron": 25,
+   "ninos": 29
+  },
+  {
+   "clinica": "McAllen · nov 2025",
+   "temporada": "25-26",
+   "inversion": 713.28,
+   "impresiones": 104292,
+   "alcance": 24631,
+   "frecuencia": 4.23,
+   "clics": 3932,
+   "clics_sitio": 1388,
+   "visitas": 1242,
+   "leads": 62,
+   "familias": 73,
+   "pagaron": 32,
+   "ninos": 37
+  },
+  {
+   "clinica": "Dallas · nov 2025",
+   "temporada": "25-26",
+   "inversion": 659.58,
+   "impresiones": 72481,
+   "alcance": 27334,
+   "frecuencia": 2.65,
+   "clics": 2452,
+   "clics_sitio": 1127,
+   "visitas": 980,
+   "leads": 52,
+   "familias": 32,
+   "pagaron": 16,
+   "ninos": 17
+  },
+  {
+   "clinica": "Chicago · nov 2025",
+   "temporada": "25-26",
+   "inversion": 726.86,
+   "impresiones": 91336,
+   "alcance": 30504,
+   "frecuencia": 2.99,
+   "clics": 3479,
+   "clics_sitio": 1520,
+   "visitas": 1392,
+   "leads": 64,
+   "familias": 64,
+   "pagaron": 30,
+   "ninos": 31
+  },
+  {
+   "clinica": "Sarasota · nov 2025",
+   "temporada": "25-26",
+   "inversion": 660.18,
+   "impresiones": 82353,
+   "alcance": 23534,
+   "frecuencia": 3.5,
+   "clics": 2648,
+   "clics_sitio": 1033,
+   "visitas": 934,
+   "leads": 54,
+   "familias": 36,
+   "pagaron": 17,
+   "ninos": 18
+  },
+  {
+   "clinica": "Jacksonville · dic 2025",
+   "temporada": "25-26",
+   "inversion": 441.66,
+   "impresiones": 35044,
+   "alcance": 11190,
+   "frecuencia": 3.13,
+   "clics": 1240,
+   "clics_sitio": 465,
+   "visitas": 423,
+   "leads": 24,
+   "familias": 11,
+   "pagaron": 0,
+   "ninos": 0
+  },
+  {
+   "clinica": "Atlanta · dic 2025",
+   "temporada": "25-26",
+   "inversion": 1015.4,
+   "impresiones": 106547,
+   "alcance": 33270,
+   "frecuencia": 3.2,
+   "clics": 2887,
+   "clics_sitio": 2337,
+   "visitas": 2039,
+   "leads": 102,
+   "familias": 96,
+   "pagaron": 49,
+   "ninos": 57
+  },
+  {
+   "clinica": "Las Vegas · dic 2025",
+   "temporada": "25-26",
+   "inversion": 697.53,
+   "impresiones": 68091,
+   "alcance": 15812,
+   "frecuencia": 4.31,
+   "clics": 2584,
+   "clics_sitio": 1010,
+   "visitas": 897,
+   "leads": 25,
+   "familias": 75,
+   "pagaron": 53,
+   "ninos": 60
+  },
+  {
+   "clinica": "Bayamón · dic 2025",
+   "temporada": "25-26",
+   "inversion": 447.12,
+   "impresiones": 189087,
+   "alcance": 58268,
+   "frecuencia": 3.25,
+   "clics": 4777,
+   "clics_sitio": 1704,
+   "visitas": 1466,
+   "leads": 51,
+   "familias": 46,
+   "pagaron": 17,
+   "ninos": 18
+  },
+  {
+   "clinica": "Indianapolis · ene 2026",
+   "temporada": "25-26",
+   "inversion": 699.83,
+   "impresiones": 96148,
+   "alcance": 34965,
+   "frecuencia": 2.75,
+   "clics": 2958,
+   "clics_sitio": 1234,
+   "visitas": 1103,
+   "leads": 43,
+   "familias": 25,
+   "pagaron": 0,
+   "ninos": 0
+  },
+  {
+   "clinica": "Hawaii · mar 2026",
+   "temporada": "25-26",
+   "inversion": 653.33,
+   "impresiones": 73517,
+   "alcance": 19216,
+   "frecuencia": 3.83,
+   "clics": 3175,
+   "clics_sitio": 1375,
+   "visitas": 1201,
+   "leads": 49,
+   "familias": 45,
+   "pagaron": 33,
+   "ninos": 37
+  },
+  {
+   "clinica": "Seattle · mar 2026",
+   "temporada": "25-26",
+   "inversion": 268.88,
+   "impresiones": 31136,
+   "alcance": 15587,
+   "frecuencia": 2.0,
+   "clics": 697,
+   "clics_sitio": 330,
+   "visitas": 289,
+   "leads": 8,
+   "familias": 1,
+   "pagaron": 0,
+   "ninos": 0
+  },
+  {
+   "clinica": "San Diego · abr 2026",
+   "temporada": "25-26",
+   "inversion": 652.22,
+   "impresiones": 82478,
+   "alcance": 30954,
+   "frecuencia": 2.66,
+   "clics": 1949,
+   "clics_sitio": 992,
+   "visitas": 877,
+   "leads": 30,
+   "familias": 16,
+   "pagaron": 0,
+   "ninos": 0
+  },
+  {
+   "clinica": "Boston · abr 2026",
+   "temporada": "25-26",
+   "inversion": 936.26,
+   "impresiones": 124906,
+   "alcance": null,
+   "frecuencia": null,
+   "clics": 3451,
+   "clics_sitio": 1653,
+   "visitas": 1486,
+   "leads": 67,
+   "familias": 22,
+   "pagaron": 0,
+   "ninos": 0
+  },
+  {
+   "clinica": "Corpus Christi · may 2026",
+   "temporada": "25-26",
+   "inversion": 1343.22,
+   "impresiones": 198017,
+   "alcance": 36859,
+   "frecuencia": 5.37,
+   "clics": 5483,
+   "clics_sitio": 1664,
+   "visitas": 1515,
+   "leads": 70,
+   "familias": 73,
+   "pagaron": 40,
+   "ninos": 45
+  },
+  {
+   "clinica": "Midland · jun 2026",
+   "temporada": "25-26",
+   "inversion": 796.77,
+   "impresiones": 104281,
+   "alcance": 22791,
+   "frecuencia": 4.58,
+   "clics": 5565,
+   "clics_sitio": 1704,
+   "visitas": 1495,
+   "leads": 105,
+   "familias": 125,
+   "pagaron": 68,
+   "ninos": 82
+  }
+ ],
+ "revision": "Revisión de la campaña: 10–13 de octubre (no se tocan presupuestos antes).",
+ "pendiente_revision": [
+  "Corregir creativos y copys de Atlanta (Rush Union Soccer Complex · Alpharetta, GA)",
+  "Mover las zonas del retargeting de Mayagüez y Atlanta a la dirección de cada sede",
+  "Decidir el público similar de los clientes que pagaron",
+  "Montar los conjuntos de las sedes nuevas (Midland, Hawaii, Mayagüez, Atlanta, Bayamón)"
+ ],
+ "medicion": "El «lead» es un clic en «Register now»; el píxel con el evento de registro real queda pendiente del programador."
+}
