@@ -1,11 +1,11 @@
 // Resumen ejecutivo: una ruta de lectura en cinco niveles.
 // qué gestionamos → qué hicimos → en qué estado está → qué avances se pueden demostrar → qué sigue.
 // Cada cifra aparece una sola vez aquí; el detalle vive en su sección.
-import { json, parrilla } from './datos.js?v=20261002i';
-import * as K from './calculos.js?v=20261002i';
-import * as C from './componentes.js?v=20261002i';
-import { hoyISO, diasEntre } from './periodo.js?v=20261002i';
-import { piezasHechas, graficoHechas } from './vista_contenido.js?v=20261002i';
+import { json, parrilla } from './datos.js?v=20261002j';
+import * as K from './calculos.js?v=20261002j';
+import * as C from './componentes.js?v=20261002j';
+import { hoyISO, diasEntre } from './periodo.js?v=20261002j';
+import { piezasHechas, graficoHechas } from './vista_contenido.js?v=20261002j';
 const { n0, usd, pct, fecha, esc } = K;
 
 const ORDEN_ESTADOS = ['Implementado', 'En progreso', 'Pendiente de validación', 'Planificado'];
@@ -15,7 +15,9 @@ export async function resumen(v) {
   const [ig, pre, idc, em, est, evo] = await Promise.all([json('instagram'), json('meta_preacademy'), json('meta_idcamps'), json('email'), json('estrategia'), json('evolucion')]);
   const p = await parrilla();
   const hoy = hoyISO();
-  const frentes = est.frentes;
+  // las ideas en evaluación (p. ej. Google Ads) no cuentan como frente gestionado ni como avance
+  const frentes = est.frentes.filter(f => f.estado !== 'Idea');
+  const ideas = est.frentes.filter(f => f.estado === 'Idea');
   const porId = Object.fromEntries(frentes.map(f => [f.id, f]));
 
   // nivel 2: qué se hizo por frente (antes → después) y tareas de la bitácora
@@ -48,8 +50,9 @@ export async function resumen(v) {
   + `<nav class="saltos" aria-label="Ir a">${salto('n-gestion', 1, 'Qué gestionamos')}${salto('n-hecho', 2, 'Qué hicimos')}${salto('n-estado', 3, 'En qué estado está')}${salto('n-avances', 4, 'Qué avances hay')}${salto('n-sigue', 5, 'Qué sigue')}</nav>`
 
   // ---------------------------------------------------------------- 1
-  + C.nivel(1, '¿Qué estamos gestionando?', 'Frentes de trabajo', 'Siete frentes con objetivos distintos. Sus indicadores no se suman entre sí.',
-    `<div class="frentes-g">${frentes.map(f => `<a class="frente-c" href="#${esc(f.seccion)}"><b>${esc(f.corto || f.titulo)}</b><span>${esc(f.objetivo)}</span><em>Ver detalle →</em></a>`).join('')}</div>`, 'n-gestion')
+  + C.nivel(1, '¿Qué estamos gestionando?', 'Frentes de trabajo', `${n0(frentes.length)} frentes con objetivos distintos. Sus indicadores no se suman entre sí.`,
+    `<div class="frentes-g">${frentes.map(f => `<a class="frente-c" href="#${esc(f.seccion)}"><b>${esc(f.corto || f.titulo)}</b><span>${esc(f.objetivo)}</span><em>Ver detalle →</em></a>`).join('')}</div>`
+    + (ideas.length ? `<div class="ideas">${C.estado('Idea')}<span><b>Ideas en evaluación, todavía sin gestión:</b> ${ideas.map(f => `${esc(f.corto)}: ${esc(f.objetivo)}`).join(' · ')} No cuentan como frente activo ni como avance.</span></div>` : ''), 'n-gestion')
 
   // ---------------------------------------------------------------- 2
   + C.nivel(2, '¿Qué hemos hecho?', 'Desde el 15 de septiembre de 2026', 'De la situación documentada antes del corte a lo realizado desde entonces, frente por frente. Solo se incluye trabajo con evidencia.',
@@ -114,7 +117,7 @@ export async function resumen(v) {
     </div>`, 'n-avances')
 
   // ---------------------------------------------------------------- 5
-  + C.nivel(5, '¿Qué sigue?', 'Ruta de trabajo', 'Ordenada por prioridad operativa y dependencias: primero páginas y medición, después ampliar la inversión, y Google Ads más adelante.',
+  + C.nivel(5, '¿Qué sigue?', 'Ruta de trabajo', 'Ordenada por prioridad operativa y dependencias: primero páginas y medición, después ampliar la inversión. Google Ads es, por ahora, una idea en evaluación.',
     `<div class="ruta-flujo">${ORDEN_FASES.map((n, i) => {
       const f = est.fases.find(x => x.n === n);
       return `<div class="paso-ruta${i === 0 ? ' p1' : ''}"><div class="num" aria-hidden="true">${i + 1}</div><div>

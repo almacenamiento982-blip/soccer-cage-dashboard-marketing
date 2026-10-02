@@ -1147,5 +1147,18 @@
 "¿Qué estamos gestionando?": "What are we managing?",
 "¿Qué hemos hecho?": "What have we done?",
 "¿Qué sigue?": "What's next?",
-"← Volver al resumen ejecutivo": "← Back to the executive summary"
+"← Volver al resumen ejecutivo": "← Back to the executive summary",
+"Google Ads (idea en evaluación)": "Google Ads (idea under evaluation)",
+"Google Ads: Captar búsquedas con intención («Juventus camp», ciudad + soccer camp) cuando la medición esté lista. No cuentan como frente activo ni como avance.": "Google Ads: Capture intent searches («Juventus camp», city + soccer camp) once measurement is ready. Ideas do not count as an active workstream or as progress.",
+"Idea en evaluación": "Idea under evaluation",
+"Ideas en evaluación, todavía sin gestión:": "Ideas under evaluation, not yet being managed:",
+"Ninguna acción ejecutada: es una idea en evaluación.": "No action taken: it is an idea under evaluation.",
+"Ordenada por prioridad operativa y dependencias: primero páginas y medición, después ampliar la inversión. Google Ads es, por ahora, una idea en evaluación.": "Ordered by operational priority and dependencies: first pages and measurement, then increasing spend. Google Ads is, for now, an idea under evaluation.",
+"Propuesta en evaluación: no se ha ejecutado ninguna acción ni se cuenta como avance.": "Proposal under evaluation: no action has been taken and it does not count as progress.",
+"{0} fases en progreso, {1} planificada, {2} pendiente de validación y {3} idea en evaluación (Google Ads).": "{0} phases in progress, {1} planned, {2} pending validation and {3} idea under evaluation (Google Ads).",
+"{0} frentes con objetivos distintos. Sus indicadores no se suman entre sí.": "{0} workstreams with different objectives. Their indicators are not added together.",
+"Por ahora es una idea: requiere identificar la cuenta de Google Ads y aprobar presupuesto.": "For now it is an idea: it requires identifying the Google Ads account and approving a budget.",
+"Ninguna acción ejecutada. Se planteó como idea en la reunión del {0}-sep.": "No action taken. It was raised as an idea at the Sep {0} meeting.",
+"Reunión del {0}-sep. No hay campañas creadas ni presupuesto aprobado.": "Sep {0} meeting. No campaigns created and no budget approved.",
+"Idea": "Idea"
 }

@@ -1,13 +1,13 @@
 // Vistas de Meta Ads, Email y Hoja de ruta. Resumen, Instagram, Contenido y Evolución tienen su propio archivo.
 // Estructura común de cada sección: guía (qué muestra · estado · qué sigue) → indicadores → detalle → lectura → fuente.
-import { json } from './datos.js?v=20261002i';
-import * as K from './calculos.js?v=20261002i';
-import * as C from './componentes.js?v=20261002i';
-import { hoyISO } from './periodo.js?v=20261002i';
-export { resumen } from './vista_resumen.js?v=20261002i';
-export { instagram } from './vista_instagram.js?v=20261002i';
-export { contenido } from './vista_contenido.js?v=20261002i';
-export { evolucion } from './vista_evolucion.js?v=20261002i';
+import { json } from './datos.js?v=20261002j';
+import * as K from './calculos.js?v=20261002j';
+import * as C from './componentes.js?v=20261002j';
+import { hoyISO } from './periodo.js?v=20261002j';
+export { resumen } from './vista_resumen.js?v=20261002j';
+export { instagram } from './vista_instagram.js?v=20261002j';
+export { contenido } from './vista_contenido.js?v=20261002j';
+export { evolucion } from './vista_evolucion.js?v=20261002j';
 const { n0, usd, pct, fecha, esc } = K;
 
 const mes = (k) => { const [y, m] = k.split('-'); return new Date(+y, +m - 1, 15).toLocaleDateString('es-ES', { month: 'short', year: 'numeric' }); };
@@ -198,7 +198,7 @@ export async function ruta(v) {
   v.innerHTML = C.cabecera({ kicker: 'Hoja de ruta', titulo: 'Próximos pasos',
     texto: 'Las fases están ordenadas por prioridad y dependencias: no todas pueden ejecutarse a la vez.' })
   + C.guia({ muestra: 'El orden de trabajo, qué depende de qué y qué se necesita para avanzar en cada fase.',
-    estado: `${e.fases.filter(f => f.estado === 'En progreso').length} fases en progreso, ${e.fases.filter(f => f.estado === 'Planificado').length} planificadas y ${e.fases.filter(f => f.estado === 'Pendiente de validación').length} pendiente de validación.`,
+    estado: `${e.fases.filter(f => f.estado === 'En progreso').length} fases en progreso, ${e.fases.filter(f => f.estado === 'Planificado').length} planificada, ${e.fases.filter(f => f.estado === 'Pendiente de validación').length} pendiente de validación y ${e.fases.filter(f => f.estado === 'Idea').length} idea en evaluación (Google Ads).`,
     siguiente: esc(fase(1).requisito) })
   + `<div class="card" style="margin-bottom:16px"><b>Qué significa cada estado:</b> ${Object.entries(e.estados).map(([k, x]) => `${C.estado(k)} ${esc(x)}`).join(' &nbsp; ')}</div>`
   + `<div class="ruta-flujo">${ORDEN_FASES.map((n, i) => { const f = fase(n); return `<article class="paso-ruta${i === 0 ? ' p1' : ''}"><div class="num" aria-hidden="true">${i + 1}</div><div>

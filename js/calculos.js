@@ -1,5 +1,5 @@
 // Cálculos puros (sin DOM). Todo sale de los datos; nada de cifras escritas a mano.
-import { CORTE, sumarDias, diasEntre, enRango } from './periodo.js?v=20261002i';
+import { CORTE, sumarDias, diasEntre, enRango } from './periodo.js?v=20261002j';
 
 // ---------- formato ----------
 const nf = (d) => new Intl.NumberFormat('de-DE', { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -117,7 +117,7 @@ export function historicoTemporadas(d) {
   return Object.values(t).map(x => ({ ...x, cpl: x.leads ? x.inversion / x.leads : null, costo_pago: x.pagaron ? x.inversion / x.pagaron : null }));
 }
 
-export const claseEstado = (e) => ({ 'Implementado': 'implementado', 'En progreso': 'progreso', 'Planificado': 'planificado', 'Pendiente de validación': 'validacion' }[e] || 'validacion');
+export const claseEstado = (e) => ({ 'Implementado': 'implementado', 'En progreso': 'progreso', 'Planificado': 'planificado', 'Pendiente de validación': 'validacion', 'Idea': 'idea' }[e] || 'validacion');
 
 // ---------- comparación antes / desde el 15-sep ----------
 

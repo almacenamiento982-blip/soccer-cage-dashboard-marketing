@@ -1,9 +1,9 @@
 // Sección Plan de contenido: Sheet en vivo, filtrado por periodo, y comparación antes / desde el 15-sep.
-import { json, parrilla, SHEET_ID } from './datos.js?v=20261002i';
-import * as K from './calculos.js?v=20261002i';
-import * as C from './componentes.js?v=20261002i';
-import { CORTE, rangos, rangoActivo, periodo, hoyISO, enRango, sumarDias } from './periodo.js?v=20261002i';
-import { IG_DE_PESTANA } from './vista_instagram.js?v=20261002i';
+import { json, parrilla, SHEET_ID } from './datos.js?v=20261002j';
+import * as K from './calculos.js?v=20261002j';
+import * as C from './componentes.js?v=20261002j';
+import { CORTE, rangos, rangoActivo, periodo, hoyISO, enRango, sumarDias } from './periodo.js?v=20261002j';
+import { IG_DE_PESTANA } from './vista_instagram.js?v=20261002j';
 const { n0, n1, pct, fecha, esc } = K;
 
 const mes = (k) => { const [y, m] = k.split('-'); return new Date(+y, +m - 1, 15).toLocaleDateString('es-ES', { month: 'short', year: 'numeric' }); };
@@ -232,7 +232,7 @@ export async function contenido(v) {
       { t: 'Publicación', k: x => x['Publication Status'] ? `<span class="chip">${esc(x['Publication Status'])}</span>` : '<span class="vacio">—</span>' },
       { t: 'Enlaces', k: x => [...enlaces(x).map((u, i) => `<a href="${esc(u)}" target="_blank" rel="noopener">Material${enlaces(x).length > 1 ? ' ' + (i + 1) : ''} ↗</a>`), `<a href="${urlFila(x._gid, x._fila)}" target="_blank" rel="noopener">Fila ${x._fila} ↗</a>`].join('<br>') },
     ], sel.slice(0, limite), { vacio: 'Ninguna pieza coincide con los filtros.' });
-    if (document.documentElement.lang === 'en') import('./i18n.js?v=20261002i').then(m => m.traducir(document.getElementById('tablaPiezas')));
+    if (document.documentElement.lang === 'en') import('./i18n.js?v=20261002j').then(m => m.traducir(document.getElementById('tablaPiezas')));
   };
   Object.entries(ids).forEach(([k, id]) => { const el = document.getElementById(id); el.value = [...el.options || []].some(o => o.value === filtrosCont[k]) || id === 'fQ' ? filtrosCont[k] : ''; el.addEventListener(id === 'fQ' ? 'input' : 'change', () => pintar()); });
   document.getElementById('fMas').addEventListener('click', () => { limite += PAGINA; pintar(false); });

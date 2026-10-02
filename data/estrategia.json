@@ -5,7 +5,8 @@
   "Implementado": "Hecho y verificable.",
   "En progreso": "Iniciado; parte del trabajo ya está hecho.",
   "Planificado": "Definido y documentado, sin ejecutar todavía.",
-  "Pendiente de validación": "Hecho, pero falta confirmar que funcione o que se apruebe."
+  "Pendiente de validación": "Hecho, pero falta confirmar que funcione o que se apruebe.",
+  "Idea": "Propuesta en evaluación: no se ha ejecutado ninguna acción ni se cuenta como avance."
  },
  "frentes": [
   {
@@ -88,15 +89,15 @@
   },
   {
    "id": "google",
-   "titulo": "Google Ads (oportunidad de expansión)",
+   "titulo": "Google Ads (idea en evaluación)",
    "objetivo": "Captar búsquedas con intención («Juventus camp», ciudad + soccer camp) cuando la medición esté lista.",
-   "realizado": "Idea aprobada en principio (29-sep): búsqueda en Chicago y Dallas con $10–15 por día por ciudad.",
-   "estado": "Planificado",
-   "evidencia": "Reunión del 29-sep. No hay campañas creadas.",
+   "realizado": "Ninguna acción ejecutada. Se planteó como idea en la reunión del 29-sep.",
+   "estado": "Idea",
+   "evidencia": "Reunión del 29-sep. No hay campañas creadas ni presupuesto aprobado.",
    "hallazgo": "No se sabe quién administra la cuenta de Google Ads vinculada al sitio (etiqueta AW-11171359255).",
    "siguiente": "Identificar al dueño de la cuenta y evaluar el lanzamiento después de verificar las páginas y la medición.",
    "seccion": "ruta",
-   "atencion": "Requiere identificar al dueño de la cuenta y definir presupuesto.",
+   "atencion": "Por ahora es una idea: requiere identificar la cuenta de Google Ads y aprobar presupuesto.",
    "corto": "Google Ads"
   }
  ],
@@ -150,7 +151,7 @@
    "n": 3,
    "titulo": "Google Ads",
    "prioridad": "Oportunidad futura, sujeta a medición, estrategia y presupuesto",
-   "estado": "Planificado",
+   "estado": "Idea",
    "objetivo": "Captar demanda con intención de búsqueda una vez que las páginas y la medición estén listas.",
    "acciones": [
     "Google Search por ubicación y servicio",
@@ -159,8 +160,8 @@
     "Costo por conversión",
     "Calidad comercial de los leads"
    ],
-   "hecho": "Ninguna campaña creada. Pendiente: identificar la cuenta de Google Ads existente.",
-   "nivel": "Oportunidad futura",
+   "hecho": "Ninguna acción ejecutada: es una idea en evaluación.",
+   "nivel": "Idea en evaluación",
    "depende_de": [
     1,
     2
