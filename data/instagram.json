@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-02T20:17",
+ "generado": "2026-10-03T07:06",
  "fuente": "Auditoría de Instagram (informe unificado) + API de Instagram (Composio, solo lectura)",
  "informe": "https://almacenamiento982-blip.github.io/soccer-cage-instagram-report/",
  "nota_seguidores": "La API entrega los NUEVOS seguidores por día de los últimos 30 días; no descuenta a quienes dejan de seguir. No existe un historial de seguidores totales anterior: queda guardado a partir de esta primera lectura.",
@@ -304,14 +304,10 @@
     }
    ],
    "seguidores": {
-    "actual": 26982,
-    "fecha": "2026-10-02",
+    "actual": 26990,
+    "fecha": "2026-10-03",
     "publicaciones_total": 1426,
     "nuevos_por_dia": [
-     {
-      "fecha": "2026-09-02",
-      "n": 51
-     },
      {
       "fecha": "2026-09-03",
       "n": 37
@@ -427,6 +423,10 @@
      {
       "fecha": "2026-10-01",
       "n": 25
+     },
+     {
+      "fecha": "2026-10-02",
+      "n": 0
      }
     ]
    },
@@ -775,8 +775,8 @@
      "fecha": "2026-09-12",
      "formato": "Reel",
      "url": "https://www.instagram.com/reel/DdM9HrIuUy3/",
-     "alcance": 9227,
-     "vistas": 15737,
+     "alcance": 9293,
+     "vistas": 15815,
      "guardados": 12,
      "compartidos": 85,
      "interacciones": 556
@@ -785,8 +785,8 @@
      "fecha": "2026-09-14",
      "formato": "Foto",
      "url": "https://www.instagram.com/p/DdRq1ZkoBhj/",
-     "alcance": 6670,
-     "vistas": 12778,
+     "alcance": 6671,
+     "vistas": 12784,
      "guardados": 1,
      "compartidos": 38,
      "interacciones": 325
@@ -795,28 +795,28 @@
      "fecha": "2026-09-15",
      "formato": "Foto",
      "url": "https://www.instagram.com/p/DdHN20UI4G4/",
-     "alcance": 6049,
-     "vistas": 11106,
+     "alcance": 6056,
+     "vistas": 11129,
      "guardados": 1,
      "compartidos": 14,
-     "interacciones": 311
+     "interacciones": 312
     },
     {
      "fecha": "2026-09-15",
      "formato": "Reel",
      "url": "https://www.instagram.com/reel/DdUHcmXuWKq/",
-     "alcance": 4655,
-     "vistas": 8085,
+     "alcance": 4684,
+     "vistas": 8125,
      "guardados": 4,
      "compartidos": 12,
-     "interacciones": 255
+     "interacciones": 256
     },
     {
      "fecha": "2026-09-16",
      "formato": "Carrusel",
      "url": "https://www.instagram.com/p/DdXQTQ2CBZE/",
      "alcance": 4046,
-     "vistas": 10682,
+     "vistas": 10700,
      "guardados": 1,
      "compartidos": 10,
      "interacciones": 209
@@ -825,18 +825,18 @@
      "fecha": "2026-09-18",
      "formato": "Foto",
      "url": "https://www.instagram.com/p/DdbnugkoP30/",
-     "alcance": 6973,
-     "vistas": 14591,
+     "alcance": 7013,
+     "vistas": 14629,
      "guardados": 7,
      "compartidos": 14,
-     "interacciones": 339
+     "interacciones": 340
     },
     {
      "fecha": "2026-09-21",
      "formato": "Reel",
      "url": "https://www.instagram.com/reel/DdkE38KOvuq/",
-     "alcance": 4785,
-     "vistas": 9123,
+     "alcance": 4837,
+     "vistas": 9218,
      "guardados": 0,
      "compartidos": 9,
      "interacciones": 240
@@ -845,68 +845,64 @@
      "fecha": "2026-09-23",
      "formato": "Carrusel",
      "url": "https://www.instagram.com/p/DdpQLHNiI5B/",
-     "alcance": 2788,
-     "vistas": 7470,
+     "alcance": 2831,
+     "vistas": 7549,
      "guardados": 0,
      "compartidos": 6,
-     "interacciones": 171
+     "interacciones": 172
     },
     {
      "fecha": "2026-09-24",
      "formato": "Carrusel",
      "url": "https://www.instagram.com/p/Ddr1BL7CHmH/",
-     "alcance": 2835,
-     "vistas": 7078,
+     "alcance": 2863,
+     "vistas": 7189,
      "guardados": 0,
      "compartidos": 6,
-     "interacciones": 143
+     "interacciones": 144
     },
     {
      "fecha": "2026-09-24",
      "formato": "Reel",
      "url": "https://www.instagram.com/reel/DdrssWuMDN2/",
-     "alcance": 4046,
-     "vistas": 6393,
+     "alcance": 4120,
+     "vistas": 6479,
      "guardados": 2,
      "compartidos": 22,
-     "interacciones": 177
+     "interacciones": 178
     },
     {
      "fecha": "2026-09-29",
      "formato": "Foto",
      "url": "https://www.instagram.com/p/Dd4rkTMx_ar/",
-     "alcance": 4469,
-     "vistas": 8981,
+     "alcance": 4616,
+     "vistas": 9399,
      "guardados": 2,
      "compartidos": 15,
-     "interacciones": 212
+     "interacciones": 220
     },
     {
      "fecha": "2026-09-30",
      "formato": "Carrusel",
      "url": "https://www.instagram.com/p/Dd7Rwq6kVHk/",
-     "alcance": 1686,
-     "vistas": 4091,
+     "alcance": 2006,
+     "vistas": 4778,
      "guardados": 0,
      "compartidos": 7,
-     "interacciones": 82
+     "interacciones": 91
     },
     {
      "fecha": "2026-10-02",
      "formato": "Reel",
      "url": "https://www.instagram.com/reel/DeAdA7RB5i_/",
-     "alcance": 2757,
-     "vistas": 4434,
-     "guardados": 1,
-     "compartidos": 8,
-     "interacciones": 134
+     "alcance": 5411,
+     "vistas": 7811,
+     "guardados": 4,
+     "compartidos": 14,
+     "interacciones": 236
     }
    ],
    "alcance_diario": [
-    {
-     "fecha": "2026-08-03",
-     "n": 256
-    },
     {
      "fecha": "2026-08-04",
      "n": 229
@@ -1142,28 +1138,32 @@
     {
      "fecha": "2026-10-01",
      "n": 2912
+    },
+    {
+     "fecha": "2026-10-02",
+     "n": 8509
     }
    ],
    "ventanas": {
     "corte": "2026-09-15",
-    "dias": 17,
+    "dias": 18,
     "antes": {
-     "desde": "2026-08-29",
+     "desde": "2026-08-28",
      "hasta": "2026-09-14",
-     "reach": 54335,
-     "profile_views": 5359,
-     "website_clicks": 202,
-     "accounts_engaged": 2421,
-     "total_interactions": 6049
+     "reach": 55338,
+     "profile_views": 5579,
+     "website_clicks": 219,
+     "accounts_engaged": 2474,
+     "total_interactions": 6237
     },
     "despues": {
      "desde": "2026-09-15",
-     "hasta": "2026-10-01",
-     "reach": 44594,
-     "profile_views": 4230,
-     "website_clicks": 107,
-     "accounts_engaged": 1969,
-     "total_interactions": 4606
+     "hasta": "2026-10-02",
+     "reach": 48088,
+     "profile_views": 4445,
+     "website_clicks": 117,
+     "accounts_engaged": 2077,
+     "total_interactions": 4955
     }
    },
    "capturas": [
@@ -1180,6 +1180,11 @@
     {
      "fecha": "2026-10-02",
      "seguidores": 26982,
+     "fuente": "Lectura de la API (historial del dashboard)"
+    },
+    {
+     "fecha": "2026-10-03",
+     "seguidores": 26990,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -1419,14 +1424,10 @@
     }
    ],
    "seguidores": {
-    "actual": 10202,
-    "fecha": "2026-10-02",
+    "actual": 10204,
+    "fecha": "2026-10-03",
     "publicaciones_total": 295,
     "nuevos_por_dia": [
-     {
-      "fecha": "2026-09-02",
-      "n": 2
-     },
      {
       "fecha": "2026-09-03",
       "n": 0
@@ -1542,6 +1543,10 @@
      {
       "fecha": "2026-10-01",
       "n": 18
+     },
+     {
+      "fecha": "2026-10-02",
+      "n": 0
      }
     ]
    },
@@ -1690,8 +1695,8 @@
      "fecha": "2026-09-28",
      "formato": "Foto",
      "url": "https://www.instagram.com/p/Dd14v14IE96/",
-     "alcance": 1039,
-     "vistas": 2085,
+     "alcance": 1081,
+     "vistas": 2142,
      "guardados": 5,
      "compartidos": 4,
      "interacciones": 32
@@ -1700,18 +1705,14 @@
      "fecha": "2026-09-30",
      "formato": "Reel",
      "url": "https://www.instagram.com/reel/Dd66u63OjQr/",
-     "alcance": 1358,
-     "vistas": 2172,
+     "alcance": 1442,
+     "vistas": 2295,
      "guardados": 4,
-     "compartidos": 31,
-     "interacciones": 97
+     "compartidos": 32,
+     "interacciones": 100
     }
    ],
    "alcance_diario": [
-    {
-     "fecha": "2026-08-03",
-     "n": 94
-    },
     {
      "fecha": "2026-08-04",
      "n": 702
@@ -1947,28 +1948,32 @@
     {
      "fecha": "2026-10-01",
      "n": 2480
+    },
+    {
+     "fecha": "2026-10-02",
+     "n": 2057
     }
    ],
    "ventanas": {
     "corte": "2026-09-15",
-    "dias": 17,
+    "dias": 18,
     "antes": {
-     "desde": "2026-08-29",
+     "desde": "2026-08-28",
      "hasta": "2026-09-14",
-     "reach": 988,
-     "profile_views": 218,
+     "reach": 1178,
+     "profile_views": 241,
      "website_clicks": 10,
-     "accounts_engaged": 29,
-     "total_interactions": 33
+     "accounts_engaged": 30,
+     "total_interactions": 36
     },
     "despues": {
      "desde": "2026-09-15",
-     "hasta": "2026-10-01",
-     "reach": 5243,
-     "profile_views": 303,
-     "website_clicks": 22,
-     "accounts_engaged": 152,
-     "total_interactions": 281
+     "hasta": "2026-10-02",
+     "reach": 6278,
+     "profile_views": 355,
+     "website_clicks": 27,
+     "accounts_engaged": 197,
+     "total_interactions": 366
     }
    },
    "capturas": [
@@ -1985,6 +1990,11 @@
     {
      "fecha": "2026-10-02",
      "seguidores": 10202,
+     "fuente": "Lectura de la API (historial del dashboard)"
+    },
+    {
+     "fecha": "2026-10-03",
+     "seguidores": 10204,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -2225,13 +2235,9 @@
    ],
    "seguidores": {
     "actual": 2430,
-    "fecha": "2026-10-02",
+    "fecha": "2026-10-03",
     "publicaciones_total": 455,
     "nuevos_por_dia": [
-     {
-      "fecha": "2026-09-02",
-      "n": 4
-     },
      {
       "fecha": "2026-09-03",
       "n": 2
@@ -2347,6 +2353,10 @@
      {
       "fecha": "2026-10-01",
       "n": 1
+     },
+     {
+      "fecha": "2026-10-02",
+      "n": 0
      }
     ]
    },
@@ -2515,8 +2525,8 @@
      "fecha": "2026-09-14",
      "formato": "Reel",
      "url": "https://www.instagram.com/reel/DdQqjHFI2SF/",
-     "alcance": 901,
-     "vistas": 1368,
+     "alcance": 904,
+     "vistas": 1373,
      "guardados": 0,
      "compartidos": 7,
      "interacciones": 51
@@ -2525,8 +2535,8 @@
      "fecha": "2026-09-16",
      "formato": "Reel",
      "url": "https://www.instagram.com/reel/DdWtvAFJMVE/",
-     "alcance": 966,
-     "vistas": 1757,
+     "alcance": 969,
+     "vistas": 1766,
      "guardados": 0,
      "compartidos": 3,
      "interacciones": 31
@@ -2535,18 +2545,18 @@
      "fecha": "2026-09-18",
      "formato": "Foto",
      "url": "https://www.instagram.com/p/Ddb6fLpJbOK/",
-     "alcance": 1318,
-     "vistas": 2970,
+     "alcance": 1331,
+     "vistas": 2989,
      "guardados": 5,
      "compartidos": 8,
-     "interacciones": 64
+     "interacciones": 65
     },
     {
      "fecha": "2026-09-23",
      "formato": "Foto",
      "url": "https://www.instagram.com/p/DdokqUGh4Cc/",
-     "alcance": 534,
-     "vistas": 1142,
+     "alcance": 539,
+     "vistas": 1147,
      "guardados": 0,
      "compartidos": 3,
      "interacciones": 12
@@ -2555,18 +2565,18 @@
      "fecha": "2026-09-23",
      "formato": "Foto",
      "url": "https://www.instagram.com/p/DdnA73yJtiU/",
-     "alcance": 1282,
-     "vistas": 2107,
+     "alcance": 1307,
+     "vistas": 2124,
      "guardados": 2,
      "compartidos": 3,
-     "interacciones": 60
+     "interacciones": 62
     },
     {
      "fecha": "2026-09-25",
      "formato": "Reel",
      "url": "https://www.instagram.com/reel/Ddst3PisJEN/",
-     "alcance": 920,
-     "vistas": 1551,
+     "alcance": 934,
+     "vistas": 1574,
      "guardados": 1,
      "compartidos": 15,
      "interacciones": 47
@@ -2575,18 +2585,14 @@
      "fecha": "2026-10-02",
      "formato": "Reel",
      "url": "https://www.instagram.com/reel/DeAXlsqS4Le/",
-     "alcance": 284,
-     "vistas": 500,
+     "alcance": 387,
+     "vistas": 679,
      "guardados": 0,
      "compartidos": 0,
-     "interacciones": 8
+     "interacciones": 10
     }
    ],
    "alcance_diario": [
-    {
-     "fecha": "2026-08-03",
-     "n": 5865
-    },
     {
      "fecha": "2026-08-04",
      "n": 987
@@ -2822,28 +2828,32 @@
     {
      "fecha": "2026-10-01",
      "n": 88
+    },
+    {
+     "fecha": "2026-10-02",
+     "n": 440
     }
    ],
    "ventanas": {
     "corte": "2026-09-15",
-    "dias": 17,
+    "dias": 18,
     "antes": {
-     "desde": "2026-08-29",
+     "desde": "2026-08-28",
      "hasta": "2026-09-14",
-     "reach": 2819,
-     "profile_views": 888,
+     "reach": 2855,
+     "profile_views": 921,
      "website_clicks": 27,
-     "accounts_engaged": 362,
-     "total_interactions": 1155
+     "accounts_engaged": 365,
+     "total_interactions": 1167
     },
     "despues": {
      "desde": "2026-09-15",
-     "hasta": "2026-10-01",
-     "reach": 3488,
-     "profile_views": 760,
-     "website_clicks": 33,
-     "accounts_engaged": 330,
-     "total_interactions": 970
+     "hasta": "2026-10-02",
+     "reach": 3642,
+     "profile_views": 793,
+     "website_clicks": 35,
+     "accounts_engaged": 347,
+     "total_interactions": 1002
     }
    },
    "capturas": [
@@ -2859,6 +2869,11 @@
     },
     {
      "fecha": "2026-10-02",
+     "seguidores": 2430,
+     "fuente": "Lectura de la API (historial del dashboard)"
+    },
+    {
+     "fecha": "2026-10-03",
      "seguidores": 2430,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
@@ -3060,13 +3075,9 @@
    ],
    "seguidores": {
     "actual": 3094,
-    "fecha": "2026-10-02",
+    "fecha": "2026-10-03",
     "publicaciones_total": 73,
     "nuevos_por_dia": [
-     {
-      "fecha": "2026-09-02",
-      "n": 1
-     },
      {
       "fecha": "2026-09-03",
       "n": 0
@@ -3182,6 +3193,10 @@
      {
       "fecha": "2026-10-01",
       "n": 0
+     },
+     {
+      "fecha": "2026-10-02",
+      "n": 0
      }
     ]
    },
@@ -3288,10 +3303,6 @@
     }
    ],
    "alcance_diario": [
-    {
-     "fecha": "2026-08-03",
-     "n": 621
-    },
     {
      "fecha": "2026-08-04",
      "n": 192
@@ -3527,25 +3538,29 @@
     {
      "fecha": "2026-10-01",
      "n": 8
+    },
+    {
+     "fecha": "2026-10-02",
+     "n": 6
     }
    ],
    "ventanas": {
     "corte": "2026-09-15",
-    "dias": 17,
+    "dias": 18,
     "antes": {
-     "desde": "2026-08-29",
+     "desde": "2026-08-28",
      "hasta": "2026-09-14",
-     "reach": 161,
-     "profile_views": 135,
+     "reach": 168,
+     "profile_views": 148,
      "website_clicks": 2,
-     "accounts_engaged": 0,
-     "total_interactions": -1
+     "accounts_engaged": 1,
+     "total_interactions": 0
     },
     "despues": {
      "desde": "2026-09-15",
-     "hasta": "2026-10-01",
-     "reach": 143,
-     "profile_views": 93,
+     "hasta": "2026-10-02",
+     "reach": 148,
+     "profile_views": 99,
      "website_clicks": 1,
      "accounts_engaged": 2,
      "total_interactions": -3
@@ -3564,6 +3579,11 @@
     },
     {
      "fecha": "2026-10-02",
+     "seguidores": 3094,
+     "fuente": "Lectura de la API (historial del dashboard)"
+    },
+    {
+     "fecha": "2026-10-03",
      "seguidores": 3094,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
