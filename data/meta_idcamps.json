@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-02T19:04",
+ "generado": "2026-10-02T20:17",
  "fuente": "montaje_meta_estado.json + meta_diario.json (Meta, por día) + app de registro (agregados) + diagnóstico de temporadas anteriores",
  "informe": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/",
  "campana": "IDCAMPS | LEADS | 26-27",
@@ -66,7 +66,7 @@
   },
   {
    "fecha": "2026-10-01",
-   "gasto": 59.05,
+   "gasto": 59.17,
    "clics": 286,
    "leads": {
     "CHI": 13,
@@ -77,28 +77,33 @@
   },
   {
    "fecha": "2026-10-02",
-   "gasto": 13.48,
-   "clics": 53,
+   "gasto": 33.64,
+   "clics": 170,
    "leads": {
-    "CHI": 2,
+    "CHI": 8,
     "DAL": 0,
-    "RTG": 3
+    "RTG": 5
    },
    "parcial": true
   }
  ],
  "app": {
-  "leido": "2026-10-02",
-  "total_registros": 38,
+  "leido": "2026-10-03",
+  "total_registros": 47,
   "estados": {
-   "Paid": 13,
-   "Unpaid": 25
+   "Unpaid": 31,
+   "Paid": 16
   },
   "sedes": {
    "Chicago": {
-    "registros": 25,
-    "pagados": 11,
-    "ninos_pagados": 12
+    "registros": 33,
+    "pagados": 13,
+    "ninos_pagados": 14
+   },
+   "Bayamon": {
+    "registros": 3,
+    "pagados": 1,
+    "ninos_pagados": 1
    },
    "Atlanta": {
     "registros": 1,
@@ -106,11 +111,6 @@
     "ninos_pagados": 0
    },
    "Hawaii": {
-    "registros": 2,
-    "pagados": 0,
-    "ninos_pagados": 0
-   },
-   "Bayamon": {
     "registros": 2,
     "pagados": 0,
     "ninos_pagados": 0
@@ -169,7 +169,12 @@
    },
    {
     "fecha": "2026-10-02",
-    "registros": 5,
+    "registros": 14,
+    "pagos": 3
+   },
+   {
+    "fecha": "2026-10-03",
+    "registros": 0,
     "pagos": 1
    }
   ],
