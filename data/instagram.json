@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-02T09:42",
+ "generado": "2026-10-02T19:04",
  "fuente": "Auditoría de Instagram (informe unificado) + API de Instagram (Composio, solo lectura)",
  "informe": "https://almacenamiento982-blip.github.io/soccer-cage-instagram-report/",
  "nota_seguidores": "La API entrega los NUEVOS seguidores por día de los últimos 30 días; no descuenta a quienes dejan de seguir. No existe un historial de seguidores totales anterior: queda guardado a partir de esta primera lectura.",
@@ -304,9 +304,9 @@
     }
    ],
    "seguidores": {
-    "actual": 26971,
+    "actual": 26982,
     "fecha": "2026-10-02",
-    "publicaciones_total": 1425,
+    "publicaciones_total": 1426,
     "nuevos_por_dia": [
      {
       "fecha": "2026-09-02",
@@ -426,7 +426,7 @@
      },
      {
       "fecha": "2026-10-01",
-      "n": 0
+      "n": 25
      }
     ]
    },
@@ -890,6 +890,16 @@
      "guardados": 0,
      "compartidos": 7,
      "interacciones": 82
+    },
+    {
+     "fecha": "2026-10-02",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DeAdA7RB5i_/",
+     "alcance": 2757,
+     "vistas": 4434,
+     "guardados": 1,
+     "compartidos": 8,
+     "interacciones": 134
     }
    ],
    "alcance_diario": [
@@ -1169,7 +1179,7 @@
     },
     {
      "fecha": "2026-10-02",
-     "seguidores": 26971,
+     "seguidores": 26982,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -1409,7 +1419,7 @@
     }
    ],
    "seguidores": {
-    "actual": 10195,
+    "actual": 10202,
     "fecha": "2026-10-02",
     "publicaciones_total": 295,
     "nuevos_por_dia": [
@@ -1531,7 +1541,7 @@
      },
      {
       "fecha": "2026-10-01",
-      "n": 0
+      "n": 18
      }
     ]
    },
@@ -1974,7 +1984,7 @@
     },
     {
      "fecha": "2026-10-02",
-     "seguidores": 10195,
+     "seguidores": 10202,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -2214,9 +2224,9 @@
     }
    ],
    "seguidores": {
-    "actual": 2431,
+    "actual": 2430,
     "fecha": "2026-10-02",
-    "publicaciones_total": 454,
+    "publicaciones_total": 455,
     "nuevos_por_dia": [
      {
       "fecha": "2026-09-02",
@@ -2336,7 +2346,7 @@
      },
      {
       "fecha": "2026-10-01",
-      "n": 0
+      "n": 1
      }
     ]
    },
@@ -2560,6 +2570,16 @@
      "guardados": 1,
      "compartidos": 15,
      "interacciones": 47
+    },
+    {
+     "fecha": "2026-10-02",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DeAXlsqS4Le/",
+     "alcance": 284,
+     "vistas": 500,
+     "guardados": 0,
+     "compartidos": 0,
+     "interacciones": 8
     }
    ],
    "alcance_diario": [
@@ -2839,7 +2859,7 @@
     },
     {
      "fecha": "2026-10-02",
-     "seguidores": 2431,
+     "seguidores": 2430,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -3039,7 +3059,7 @@
     }
    ],
    "seguidores": {
-    "actual": 3095,
+    "actual": 3094,
     "fecha": "2026-10-02",
     "publicaciones_total": 73,
     "nuevos_por_dia": [
@@ -3544,7 +3564,7 @@
     },
     {
      "fecha": "2026-10-02",
-     "seguidores": 3095,
+     "seguidores": 3094,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
