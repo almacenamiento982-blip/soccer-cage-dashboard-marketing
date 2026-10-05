@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-04T21:26",
+ "generado": "2026-10-04T23:21",
  "fuente": "Auditoría de Instagram (informe unificado) + API de Instagram (Composio, solo lectura)",
  "informe": "https://almacenamiento982-blip.github.io/soccer-cage-instagram-report/",
  "nota_seguidores": "La API entrega los NUEVOS seguidores por día de los últimos 30 días; no descuenta a quienes dejan de seguir. No existe un historial de seguidores totales anterior: queda guardado a partir de esta primera lectura.",
@@ -304,7 +304,7 @@
     }
    ],
    "seguidores": {
-    "actual": 27023,
+    "actual": 27026,
     "fecha": "2026-10-04",
     "publicaciones_total": 1428,
     "nuevos_por_dia": [
@@ -1189,7 +1189,7 @@
     },
     {
      "fecha": "2026-10-04",
-     "seguidores": 27023,
+     "seguidores": 27026,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -1429,7 +1429,7 @@
     }
    ],
    "seguidores": {
-    "actual": 10217,
+    "actual": 10218,
     "fecha": "2026-10-04",
     "publicaciones_total": 295,
     "nuevos_por_dia": [
@@ -2004,7 +2004,7 @@
     },
     {
      "fecha": "2026-10-04",
-     "seguidores": 10217,
+     "seguidores": 10218,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -2244,7 +2244,7 @@
     }
    ],
    "seguidores": {
-    "actual": 2431,
+    "actual": 2432,
     "fecha": "2026-10-04",
     "publicaciones_total": 456,
     "nuevos_por_dia": [
@@ -2889,7 +2889,7 @@
     },
     {
      "fecha": "2026-10-04",
-     "seguidores": 2431,
+     "seguidores": 2432,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -3089,7 +3089,7 @@
     }
    ],
    "seguidores": {
-    "actual": 3096,
+    "actual": 3095,
     "fecha": "2026-10-04",
     "publicaciones_total": 73,
     "nuevos_por_dia": [
@@ -3604,7 +3604,7 @@
     },
     {
      "fecha": "2026-10-04",
-     "seguidores": 3096,
+     "seguidores": 3095,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]

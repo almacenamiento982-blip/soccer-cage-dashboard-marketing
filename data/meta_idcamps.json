@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-04T21:26",
+ "generado": "2026-10-04T23:21",
  "fuente": "montaje_meta_estado.json + meta_diario.json (Meta, por día) + app de registro (agregados) + diagnóstico de temporadas anteriores",
  "informe": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/",
  "campana": "IDCAMPS | LEADS | 26-27",
@@ -99,11 +99,11 @@
   },
   {
    "fecha": "2026-10-04",
-   "gasto": 41.15,
-   "clics": 213,
+   "gasto": 46.74,
+   "clics": 248,
    "leads": {
-    "CHI": 7,
-    "DAL": 2,
+    "CHI": 8,
+    "DAL": 3,
     "RTG": 4
    },
    "parcial": true
@@ -111,16 +111,16 @@
  ],
  "app": {
   "leido": "2026-10-05",
-  "total_registros": 67,
+  "total_registros": 68,
   "estados": {
-   "Unpaid": 45,
-   "Paid": 22
+   "Paid": 23,
+   "Unpaid": 45
   },
   "sedes": {
    "Chicago": {
-    "registros": 45,
-    "pagados": 19,
-    "ninos_pagados": 21
+    "registros": 46,
+    "pagados": 20,
+    "ninos_pagados": 22
    },
    "Atlanta": {
     "registros": 3,
@@ -206,8 +206,13 @@
    },
    {
     "fecha": "2026-10-04",
-    "registros": 7,
+    "registros": 8,
     "pagos": 3
+   },
+   {
+    "fecha": "2026-10-05",
+    "registros": 0,
+    "pagos": 1
    }
   ],
   "nota": "Registros y pagos de TODOS los canales (voz a voz, WhatsApp, email, anuncios): indicador de crecimiento, no atribución a Meta. Se excluyen las pruebas 17216–17218."
