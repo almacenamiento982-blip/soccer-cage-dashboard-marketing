@@ -1,8 +1,8 @@
 {
- "generado": "2026-10-04T23:21",
+ "generado": "2026-10-05T10:52",
  "secciones": {
   "instagram": {
-   "actualizado": "2026-10-04T23:21",
+   "actualizado": "2026-10-05T10:52",
    "fuentes": [
     {
      "archivo": "7 HERRAMIENTAS Y DASHBOARDS/Dashboard Instagram/_version con servidor/data.json",
@@ -24,16 +24,16 @@
    "api": true
   },
   "preacademy": {
-   "actualizado": "2026-10-04T23:21",
+   "actualizado": "2026-10-05T10:52",
    "fuentes": [
     {
      "archivo": "1 JUVENTUS ACADEMY MIAMI/Campana Ads PreAcademy/REPORTE_COMPARATIVO/datos.json",
-     "modificado": "2026-10-02T09:37"
+     "modificado": "2026-10-05T10:48"
     }
    ]
   },
   "idcamps": {
-   "actualizado": "2026-10-04T23:21",
+   "actualizado": "2026-10-05T10:52",
    "fuentes": [
     {
      "archivo": "3 ID CAMPS JUVENTUS/Campana Ads/_pipeline_ads/montaje_meta_estado.json",
@@ -41,11 +41,11 @@
     },
     {
      "archivo": "3 ID CAMPS JUVENTUS/Campana Ads/_pipeline_ads/informes/meta_diario.json",
-     "modificado": "2026-10-04T23:18"
+     "modificado": "2026-10-05T10:47"
     },
     {
      "archivo": "3 ID CAMPS JUVENTUS/Campana Ads/_pipeline_ads/seguimiento_app.json",
-     "modificado": "2026-10-04T23:17"
+     "modificado": "2026-10-05T09:47"
     },
     {
      "archivo": "3 ID CAMPS JUVENTUS/Campana Ads/_pipeline_ads/informes/diagnostico_clinicas.json",
@@ -54,7 +54,7 @@
    ]
   },
   "email": {
-   "actualizado": "2026-10-04T23:21",
+   "actualizado": "2026-10-05T10:52",
    "fuentes": [
     {
      "archivo": "7 HERRAMIENTAS Y DASHBOARDS/Auditoria Email Constant Contact/scripts/data/report.json",
@@ -71,7 +71,7 @@
    ]
   },
   "parrilla": {
-   "actualizado": "2026-10-04T23:21",
+   "actualizado": "2026-10-05T10:52",
    "fuentes": []
   }
  }
