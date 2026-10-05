@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-04T07:05",
+ "generado": "2026-10-04T21:11",
  "fuente": "montaje_meta_estado.json + meta_diario.json (Meta, por día) + app de registro (agregados) + diagnóstico de temporadas anteriores",
  "informe": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/",
  "campana": "IDCAMPS | LEADS | 26-27",
@@ -88,28 +88,49 @@
   },
   {
    "fecha": "2026-10-03",
-   "gasto": 5.13,
-   "clics": 36,
+   "gasto": 44.13,
+   "clics": 240,
    "leads": {
-    "CHI": 2,
-    "DAL": 0,
+    "CHI": 9,
+    "DAL": 1,
+    "RTG": 5
+   },
+   "parcial": false
+  },
+  {
+   "fecha": "2026-10-04",
+   "gasto": 19.55,
+   "clics": 103,
+   "leads": {
+    "CHI": 3,
+    "DAL": 1,
     "RTG": 0
    },
    "parcial": true
   }
  ],
  "app": {
-  "leido": "2026-10-03",
-  "total_registros": 53,
+  "leido": "2026-10-04",
+  "total_registros": 62,
   "estados": {
-   "Paid": 19,
-   "Unpaid": 34
+   "Paid": 21,
+   "Unpaid": 41
   },
   "sedes": {
    "Chicago": {
-    "registros": 37,
-    "pagados": 16,
-    "ninos_pagados": 18
+    "registros": 42,
+    "pagados": 18,
+    "ninos_pagados": 20
+   },
+   "Midland": {
+    "registros": 2,
+    "pagados": 0,
+    "ninos_pagados": 0
+   },
+   "Dallas": {
+    "registros": 9,
+    "pagados": 2,
+    "ninos_pagados": 3
    },
    "Bayamon": {
     "registros": 5,
@@ -125,11 +146,6 @@
     "registros": 2,
     "pagados": 0,
     "ninos_pagados": 0
-   },
-   "Dallas": {
-    "registros": 7,
-    "pagados": 2,
-    "ninos_pagados": 3
    },
    "Mayaguez": {
     "registros": 1,
@@ -185,8 +201,13 @@
    },
    {
     "fecha": "2026-10-03",
-    "registros": 4,
+    "registros": 11,
     "pagos": 4
+   },
+   {
+    "fecha": "2026-10-04",
+    "registros": 2,
+    "pagos": 2
    }
   ],
   "nota": "Registros y pagos de TODOS los canales (voz a voz, WhatsApp, email, anuncios): indicador de crecimiento, no atribución a Meta. Se excluyen las pruebas 17216–17218."

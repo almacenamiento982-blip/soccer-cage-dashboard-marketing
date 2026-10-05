@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-04T07:05",
+ "generado": "2026-10-04T21:11",
  "fuente": "Auditoría de Instagram (informe unificado) + API de Instagram (Composio, solo lectura)",
  "informe": "https://almacenamiento982-blip.github.io/soccer-cage-instagram-report/",
  "nota_seguidores": "La API entrega los NUEVOS seguidores por día de los últimos 30 días; no descuenta a quienes dejan de seguir. No existe un historial de seguidores totales anterior: queda guardado a partir de esta primera lectura.",
@@ -304,9 +304,9 @@
     }
    ],
    "seguidores": {
-    "actual": 27004,
+    "actual": 27022,
     "fecha": "2026-10-04",
-    "publicaciones_total": 1427,
+    "publicaciones_total": 1428,
     "nuevos_por_dia": [
      {
       "fecha": "2026-09-04",
@@ -426,7 +426,7 @@
      },
      {
       "fecha": "2026-10-03",
-      "n": 0
+      "n": 32
      }
     ]
    },
@@ -1189,7 +1189,7 @@
     },
     {
      "fecha": "2026-10-04",
-     "seguidores": 27004,
+     "seguidores": 27022,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -1429,7 +1429,7 @@
     }
    ],
    "seguidores": {
-    "actual": 10213,
+    "actual": 10216,
     "fecha": "2026-10-04",
     "publicaciones_total": 295,
     "nuevos_por_dia": [
@@ -1551,7 +1551,7 @@
      },
      {
       "fecha": "2026-10-03",
-      "n": 0
+      "n": 12
      }
     ]
    },
@@ -2004,7 +2004,7 @@
     },
     {
      "fecha": "2026-10-04",
-     "seguidores": 10213,
+     "seguidores": 10216,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -2244,9 +2244,9 @@
     }
    ],
    "seguidores": {
-    "actual": 2432,
+    "actual": 2431,
     "fecha": "2026-10-04",
-    "publicaciones_total": 455,
+    "publicaciones_total": 456,
     "nuevos_por_dia": [
      {
       "fecha": "2026-09-04",
@@ -2366,7 +2366,7 @@
      },
      {
       "fecha": "2026-10-03",
-      "n": 0
+      "n": 4
      }
     ]
    },
@@ -2889,7 +2889,7 @@
     },
     {
      "fecha": "2026-10-04",
-     "seguidores": 2432,
+     "seguidores": 2431,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -3089,7 +3089,7 @@
     }
    ],
    "seguidores": {
-    "actual": 3094,
+    "actual": 3096,
     "fecha": "2026-10-04",
     "publicaciones_total": 73,
     "nuevos_por_dia": [
@@ -3211,7 +3211,7 @@
      },
      {
       "fecha": "2026-10-03",
-      "n": 0
+      "n": 1
      }
     ]
    },
@@ -3604,7 +3604,7 @@
     },
     {
      "fecha": "2026-10-04",
-     "seguidores": 3094,
+     "seguidores": 3096,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
