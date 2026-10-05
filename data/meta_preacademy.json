@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-05T10:52",
+ "generado": "2026-10-05T12:31",
  "fuente": "REPORTE_COMPARATIVO/datos.json (lecturas de Ads Manager)",
  "informe": "https://almacenamiento982-blip.github.io/jam-preacademy-reporte/",
  "campana": "PREACADEMY | WHATSAPP | COLD | SEP26",
@@ -157,12 +157,12 @@
   }
  },
  "mensajes": {
-  "fecha": "2026-09-29",
-  "iniciadas": 81,
-  "nuevos": 72,
-  "totales": 103,
-  "respondidas": 8,
-  "fuente": "Ads Manager, campaña PREACADEMY | WHATSAPP | COLD | SEP26, rango máximo, detalle de 'Resultados' (captura del usuario del 29-09). No viene en el CSV: actualizar a mano en cada revisión."
+  "fecha": "2026-10-05",
+  "iniciadas": 121,
+  "nuevos": 109,
+  "totales": 150,
+  "respondidas": 13,
+  "fuente": "Ads Manager, campaña PREACADEMY | WHATSAPP | COLD | SEP26, detalle de 'Resultados' (captura del usuario del 05-10). Según Meta, 'respondidas' = conversaciones a las que el negocio respondió en 24 horas, atribuidas a los anuncios. No viene en el CSV: actualizar a mano en cada revisión."
  },
  "mes_previo": {
   "nota": "Últimos 30 días de la campaña anterior (21 ago – 19 sep 2026), archivo Ads-Aug-21-2026-Sep-19-2026.csv",
