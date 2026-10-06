@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-05T12:31",
+ "generado": "2026-10-06T10:58",
  "fuente": "montaje_meta_estado.json + meta_diario.json (Meta, por día) + app de registro (agregados) + diagnóstico de temporadas anteriores",
  "informe": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/",
  "campana": "IDCAMPS | LEADS | 26-27",
@@ -110,48 +110,59 @@
   },
   {
    "fecha": "2026-10-05",
-   "gasto": 9.89,
-   "clics": 45,
+   "gasto": 43.05,
+   "clics": 203,
+   "leads": {
+    "CHI": 8,
+    "DAL": 2,
+    "RTG": 0
+   },
+   "parcial": false
+  },
+  {
+   "fecha": "2026-10-06",
+   "gasto": 10.75,
+   "clics": 47,
    "leads": {
     "CHI": 2,
     "DAL": 0,
-    "RTG": 0
+    "RTG": 1
    },
    "parcial": true
   }
  ],
  "app": {
-  "leido": "2026-10-05",
-  "total_registros": 72,
+  "leido": "2026-10-06",
+  "total_registros": 89,
   "estados": {
-   "Unpaid": 48,
-   "Paid": 24
+   "Paid": 29,
+   "Unpaid": 60
   },
   "sedes": {
+   "Midland": {
+    "registros": 3,
+    "pagados": 1,
+    "ninos_pagados": 2
+   },
    "Chicago": {
-    "registros": 50,
-    "pagados": 21,
-    "ninos_pagados": 23
+    "registros": 62,
+    "pagados": 25,
+    "ninos_pagados": 28
+   },
+   "Bayamon": {
+    "registros": 6,
+    "pagados": 1,
+    "ninos_pagados": 1
+   },
+   "Dallas": {
+    "registros": 12,
+    "pagados": 2,
+    "ninos_pagados": 3
    },
    "Atlanta": {
     "registros": 3,
     "pagados": 0,
     "ninos_pagados": 0
-   },
-   "Midland": {
-    "registros": 2,
-    "pagados": 0,
-    "ninos_pagados": 0
-   },
-   "Dallas": {
-    "registros": 9,
-    "pagados": 2,
-    "ninos_pagados": 3
-   },
-   "Bayamon": {
-    "registros": 5,
-    "pagados": 1,
-    "ninos_pagados": 1
    },
    "Hawaii": {
     "registros": 2,
@@ -222,8 +233,13 @@
    },
    {
     "fecha": "2026-10-05",
-    "registros": 4,
-    "pagos": 2
+    "registros": 14,
+    "pagos": 4
+   },
+   {
+    "fecha": "2026-10-06",
+    "registros": 7,
+    "pagos": 3
    }
   ],
   "nota": "Registros y pagos de TODOS los canales (voz a voz, WhatsApp, email, anuncios): indicador de crecimiento, no atribución a Meta. Se excluyen las pruebas 17216–17218."
