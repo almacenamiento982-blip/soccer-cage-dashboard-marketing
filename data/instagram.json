@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-06T11:20",
+ "generado": "2026-10-06T15:47",
  "fuente": "Auditoría de Instagram (informe unificado) + API de Instagram (Composio, solo lectura)",
  "informe": "https://almacenamiento982-blip.github.io/soccer-cage-instagram-report/",
  "nota_seguidores": "La API entrega los NUEVOS seguidores por día de los últimos 30 días; no descuenta a quienes dejan de seguir. No existe un historial de seguidores totales anterior: queda guardado a partir de esta primera lectura.",
@@ -304,9 +304,9 @@
     }
    ],
    "seguidores": {
-    "actual": 27047,
+    "actual": 27048,
     "fecha": "2026-10-06",
-    "publicaciones_total": 1429,
+    "publicaciones_total": 1430,
     "nuevos_por_dia": [
      {
       "fecha": "2026-09-06",
@@ -426,7 +426,7 @@
      },
      {
       "fecha": "2026-10-05",
-      "n": 0
+      "n": 27
      }
     ]
    },
@@ -900,6 +900,16 @@
      "guardados": 6,
      "compartidos": 14,
      "interacciones": 329
+    },
+    {
+     "fecha": "2026-10-06",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DeKn1XGNwNH/",
+     "alcance": 97,
+     "vistas": 660,
+     "guardados": 0,
+     "compartidos": 0,
+     "interacciones": 27
     }
    ],
    "alcance_diario": [
@@ -1199,7 +1209,7 @@
     },
     {
      "fecha": "2026-10-06",
-     "seguidores": 27047,
+     "seguidores": 27048,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -1561,7 +1571,7 @@
      },
      {
       "fecha": "2026-10-05",
-      "n": 0
+      "n": 4
      }
     ]
    },
@@ -2264,7 +2274,7 @@
     }
    ],
    "seguidores": {
-    "actual": 2430,
+    "actual": 2431,
     "fecha": "2026-10-06",
     "publicaciones_total": 456,
     "nuevos_por_dia": [
@@ -2386,7 +2396,7 @@
      },
      {
       "fecha": "2026-10-05",
-      "n": 0
+      "n": 1
      }
     ]
    },
@@ -2919,7 +2929,7 @@
     },
     {
      "fecha": "2026-10-06",
-     "seguidores": 2430,
+     "seguidores": 2431,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
