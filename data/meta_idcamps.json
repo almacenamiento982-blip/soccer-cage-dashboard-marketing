@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-06T10:58",
+ "generado": "2026-10-06T11:20",
  "fuente": "montaje_meta_estado.json + meta_diario.json (Meta, por día) + app de registro (agregados) + diagnóstico de temporadas anteriores",
  "informe": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/",
  "campana": "IDCAMPS | LEADS | 26-27",
@@ -133,21 +133,21 @@
  ],
  "app": {
   "leido": "2026-10-06",
-  "total_registros": 89,
+  "total_registros": 90,
   "estados": {
-   "Paid": 29,
-   "Unpaid": 60
+   "Unpaid": 61,
+   "Paid": 29
   },
   "sedes": {
+   "Chicago": {
+    "registros": 63,
+    "pagados": 25,
+    "ninos_pagados": 28
+   },
    "Midland": {
     "registros": 3,
     "pagados": 1,
     "ninos_pagados": 2
-   },
-   "Chicago": {
-    "registros": 62,
-    "pagados": 25,
-    "ninos_pagados": 28
    },
    "Bayamon": {
     "registros": 6,
@@ -238,7 +238,7 @@
    },
    {
     "fecha": "2026-10-06",
-    "registros": 7,
+    "registros": 8,
     "pagos": 3
    }
   ],
