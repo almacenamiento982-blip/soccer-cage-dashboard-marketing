@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-07T11:04",
+ "generado": "2026-10-07T11:39",
  "fuente": "REPORTE_COMPARATIVO/datos.json (lecturas de Ads Manager)",
  "informe": "https://almacenamiento982-blip.github.io/jam-preacademy-reporte/",
  "campana": "PREACADEMY | WHATSAPP | COLD | SEP26",
@@ -36,7 +36,7 @@
    "texto": "Segunda redistribución: en los últimos 4 días el similar a seguidores de Instagram subió a $6,31 por conversación y el total a $5,12, mientras «Intereses» se mantiene en $4,00. Pasan $2 por día del similar a «Intereses» (Intereses $16 · Similar $9 · Abierto $8). La inversión total no cambia ($33 por día) y los anuncios no se tocan."
   }
  ],
- "proxima_revision": "8 de octubre",
+ "proxima_revision": "9 de octubre",
  "lecturas": [
   {
    "fecha": "2026-09-22",
@@ -96,77 +96,77 @@
   },
   {
    "fecha": "2026-10-06",
-   "conv": 126,
-   "gasto": 491.22,
-   "imp": 30344,
-   "clics": 338
+   "conv": 132,
+   "gasto": 513.87,
+   "imp": 31709,
+   "clics": 352
   }
  ],
  "ultima": {
   "fecha": "2026-10-06",
-  "conv": 126,
-  "gasto": 491.22,
-  "imp": 30344,
-  "clics": 338,
+  "conv": 132,
+  "gasto": 513.87,
+  "imp": 31709,
+  "clics": 352,
   "conjuntos": {
    "INTERESTS": {
-    "conv": 61,
-    "gasto": 197.33,
-    "imp": 12392,
-    "clics": 141
+    "conv": 63,
+    "gasto": 207.35,
+    "imp": 12979,
+    "clics": 145
    },
    "LAL": {
-    "conv": 32,
-    "gasto": 155.29,
-    "imp": 9849,
-    "clics": 102
+    "conv": 34,
+    "gasto": 162.8,
+    "imp": 10372,
+    "clics": 107
    },
    "BROAD": {
-    "conv": 33,
-    "gasto": 138.6,
-    "imp": 8103,
-    "clics": 95
+    "conv": 35,
+    "gasto": 143.72,
+    "imp": 8358,
+    "clics": 100
    }
   },
   "anuncios": {
    "REEL-A": {
     "conv": 2,
-    "gasto": 6.08,
-    "imp": 292,
+    "gasto": 6.279999999999999,
+    "imp": 301,
     "clics": 3
    },
    "REEL-B": {
-    "conv": 6,
-    "gasto": 39.010000000000005,
-    "imp": 1739,
-    "clics": 16
+    "conv": 7,
+    "gasto": 42.300000000000004,
+    "imp": 1860,
+    "clics": 19
    },
    "AD2": {
-    "conv": 0,
-    "gasto": 4.8100000000000005,
-    "imp": 253,
-    "clics": 4
+    "conv": 1,
+    "gasto": 4.99,
+    "imp": 259,
+    "clics": 5
    },
    "AD1": {
     "conv": 15,
-    "gasto": 37.13,
-    "imp": 2411,
-    "clics": 25
+    "gasto": 39.230000000000004,
+    "imp": 2525,
+    "clics": 27
    },
    "AD3": {
-    "conv": 62,
-    "gasto": 211.97,
-    "imp": 14420,
-    "clics": 151
+    "conv": 65,
+    "gasto": 218.82,
+    "imp": 14930,
+    "clics": 155
    },
    "AD4": {
-    "conv": 41,
-    "gasto": 192.22,
-    "imp": 11229,
-    "clics": 139
+    "conv": 42,
+    "gasto": 202.25,
+    "imp": 11834,
+    "clics": 143
    }
   },
-  "nota_tramo": "Cifra de un solo día, inflada por gasto que Meta reportó tarde. Últimos 4 días: $5,12."
+  "nota_tramo": "Tramo desde la mañana del 5-oct, con gasto que Meta reportó tarde. Últimos 5 días (desde el 2-oct): $4,88; después del cambio del 6-oct: $3,77."
  },
  "mensajes": {
   "fecha": "2026-10-05",
