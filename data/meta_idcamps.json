@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-06T20:58",
+ "generado": "2026-10-07T11:04",
  "fuente": "montaje_meta_estado.json + meta_diario.json (Meta, por día) + app de registro (agregados) + diagnóstico de temporadas anteriores",
  "informe": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/",
  "campana": "IDCAMPS | LEADS | 26-27",
@@ -30,7 +30,9 @@
    "VIDEO-2 JESUS WE-ARE-BACK",
    "CAROUSEL WHAT-IS",
    "STATIC GOOD-ENOUGH",
-   "STATIC JUVENTUS-WAY"
+   "STATIC JUVENTUS-WAY",
+   "VIDEO-3 JESUS ESPANOL",
+   "HERO-POSTER ESPANOL"
   ],
   "RTG": [
    "STATIC TOUR-DATES",
@@ -39,7 +41,7 @@
    "VIDEO-1 COACHES ALL-LOCATIONS"
   ]
  },
- "total_anuncios": 16,
+ "total_anuncios": 18,
  "rtg_zonas": [
   "Schaumburg",
   "Richardson",
@@ -121,26 +123,42 @@
   },
   {
    "fecha": "2026-10-06",
-   "gasto": 30.33,
-   "clics": 147,
+   "gasto": 40.2,
+   "clics": 184,
    "leads": {
-    "CHI": 7,
+    "CHI": 8,
     "DAL": 3,
     "RTG": 1
+   },
+   "parcial": false
+  },
+  {
+   "fecha": "2026-10-07",
+   "gasto": 7.78,
+   "clics": 32,
+   "leads": {
+    "CHI": 1,
+    "DAL": 0,
+    "RTG": 0
    },
    "parcial": true
   }
  ],
  "app": {
   "leido": "2026-10-07",
-  "total_registros": 97,
+  "total_registros": 100,
   "estados": {
-   "Unpaid": 67,
+   "Unpaid": 70,
    "Paid": 30
   },
   "sedes": {
+   "Bayamon": {
+    "registros": 8,
+    "pagados": 1,
+    "ninos_pagados": 1
+   },
    "Chicago": {
-    "registros": 66,
+    "registros": 67,
     "pagados": 25,
     "ninos_pagados": 28
    },
@@ -158,11 +176,6 @@
     "registros": 3,
     "pagados": 1,
     "ninos_pagados": 2
-   },
-   "Bayamon": {
-    "registros": 6,
-    "pagados": 1,
-    "ninos_pagados": 1
    },
    "Hawaii": {
     "registros": 2,
@@ -238,8 +251,13 @@
    },
    {
     "fecha": "2026-10-06",
-    "registros": 15,
+    "registros": 16,
     "pagos": 4
+   },
+   {
+    "fecha": "2026-10-07",
+    "registros": 2,
+    "pagos": 0
    }
   ],
   "nota": "Registros y pagos de TODOS los canales (voz a voz, WhatsApp, email, anuncios): indicador de crecimiento, no atribución a Meta. Se excluyen las pruebas 17216–17218."
