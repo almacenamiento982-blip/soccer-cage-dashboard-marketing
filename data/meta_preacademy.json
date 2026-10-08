@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-08T13:35",
+ "generado": "2026-10-08T13:48",
  "fuente": "REPORTE_COMPARATIVO/datos.json (lecturas de Ads Manager)",
  "informe": "https://almacenamiento982-blip.github.io/jam-preacademy-reporte/",
  "campana": "PREACADEMY | WHATSAPP | COLD | SEP26",
@@ -34,6 +34,10 @@
   {
    "fecha": "2026-10-06",
    "texto": "Segunda redistribución: en los últimos 4 días el similar a seguidores de Instagram subió a $6,31 por conversación y el total a $5,12, mientras «Intereses» se mantiene en $4,00. Pasan $2 por día del similar a «Intereses» (Intereses $16 · Similar $9 · Abierto $8). La inversión total no cambia ($33 por día) y los anuncios no se tocan."
+  },
+  {
+   "fecha": "2026-10-08",
+   "texto": "Cuarta revisión, dos días después de la redistribución: Intereses se mantiene en $4,00 por conversación y el Abierto en $3,82; el similar a seguidores de Instagram sigue caro ($6,91), pero con solo 2 conversaciones el dato no es suficiente. No se mueve presupuesto; se revisa de nuevo con la lectura del 9 y 10-oct."
   }
  ],
  "proxima_revision": "9 de octubre",
@@ -100,73 +104,80 @@
    "gasto": 513.87,
    "imp": 31709,
    "clics": 352
+  },
+  {
+   "fecha": "2026-10-08",
+   "conv": 143,
+   "gasto": 563.16,
+   "imp": 34351,
+   "clics": 389
   }
  ],
  "ultima": {
-  "fecha": "2026-10-06",
-  "conv": 132,
-  "gasto": 513.87,
-  "imp": 31709,
-  "clics": 352,
+  "fecha": "2026-10-08",
+  "conv": 143,
+  "gasto": 563.16,
+  "imp": 34351,
+  "clics": 389,
   "conjuntos": {
    "INTERESTS": {
-    "conv": 63,
-    "gasto": 207.35,
-    "imp": 12979,
-    "clics": 145
+    "conv": 69,
+    "gasto": 231.37,
+    "imp": 14249,
+    "clics": 165
    },
    "LAL": {
-    "conv": 34,
-    "gasto": 162.8,
-    "imp": 10372,
-    "clics": 107
+    "conv": 36,
+    "gasto": 176.62,
+    "imp": 11135,
+    "clics": 117
    },
    "BROAD": {
-    "conv": 35,
-    "gasto": 143.72,
-    "imp": 8358,
-    "clics": 100
+    "conv": 38,
+    "gasto": 155.17,
+    "imp": 8967,
+    "clics": 107
    }
   },
   "anuncios": {
    "REEL-A": {
     "conv": 2,
-    "gasto": 6.279999999999999,
-    "imp": 301,
+    "gasto": 7.800000000000001,
+    "imp": 333,
     "clics": 3
    },
    "REEL-B": {
     "conv": 7,
-    "gasto": 42.300000000000004,
-    "imp": 1860,
+    "gasto": 44.47,
+    "imp": 1941,
     "clics": 19
    },
    "AD2": {
     "conv": 1,
-    "gasto": 4.99,
-    "imp": 259,
-    "clics": 5
+    "gasto": 5.35,
+    "imp": 276,
+    "clics": 6
    },
    "AD1": {
     "conv": 15,
-    "gasto": 39.230000000000004,
-    "imp": 2525,
-    "clics": 27
+    "gasto": 41.16,
+    "imp": 2668,
+    "clics": 29
    },
    "AD3": {
-    "conv": 65,
-    "gasto": 218.82,
-    "imp": 14930,
-    "clics": 155
+    "conv": 69,
+    "gasto": 238.51,
+    "imp": 16029,
+    "clics": 173
    },
    "AD4": {
-    "conv": 42,
-    "gasto": 202.25,
-    "imp": 11834,
-    "clics": 143
+    "conv": 49,
+    "gasto": 225.65999999999997,
+    "imp": 13087,
+    "clics": 159
    }
   },
-  "nota_tramo": "Tramo desde la mañana del 5-oct, con gasto que Meta reportó tarde. Últimos 5 días (desde el 2-oct): $4,88; después del cambio del 6-oct: $3,77."
+  "nota_tramo": "Lectura del 8-oct a mediodía. Desde el cierre del 6-oct: +11 conversaciones por $49,29 ($4,48 cada una). Intereses $4,00 · Abierto $3,82 · Similar $6,91 (solo 2 conversaciones)."
  },
  "mensajes": {
   "fecha": "2026-10-05",
