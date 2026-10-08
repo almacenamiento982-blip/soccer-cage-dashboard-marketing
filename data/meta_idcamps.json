@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-07T20:21",
+ "generado": "2026-10-08T08:58",
  "fuente": "montaje_meta_estado.json + meta_diario.json (Meta, por día) + app de registro (agregados) + diagnóstico de temporadas anteriores",
  "informe": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/",
  "campana": "IDCAMPS | LEADS | 26-27",
@@ -134,11 +134,22 @@
   },
   {
    "fecha": "2026-10-07",
-   "gasto": 29.27,
-   "clics": 111,
+   "gasto": 44.27,
+   "clics": 181,
    "leads": {
-    "CHI": 4,
-    "DAL": 4,
+    "CHI": 8,
+    "DAL": 5,
+    "RTG": 0
+   },
+   "parcial": false
+  },
+  {
+   "fecha": "2026-10-08",
+   "gasto": 3.31,
+   "clics": 17,
+   "leads": {
+    "CHI": 0,
+    "DAL": 1,
     "RTG": 0
    },
    "parcial": true
@@ -146,21 +157,21 @@
  ],
  "app": {
   "leido": "2026-10-08",
-  "total_registros": 106,
+  "total_registros": 110,
   "estados": {
-   "Unpaid": 74,
+   "Unpaid": 78,
    "Paid": 32
   },
   "sedes": {
-   "Chicago": {
-    "registros": 68,
-    "pagados": 25,
-    "ninos_pagados": 28
-   },
    "Dallas": {
-    "registros": 20,
+    "registros": 22,
     "pagados": 4,
     "ninos_pagados": 5
+   },
+   "Chicago": {
+    "registros": 70,
+    "pagados": 25,
+    "ninos_pagados": 28
    },
    "Bayamon": {
     "registros": 8,
@@ -256,8 +267,13 @@
    },
    {
     "fecha": "2026-10-07",
-    "registros": 8,
+    "registros": 11,
     "pagos": 2
+   },
+   {
+    "fecha": "2026-10-08",
+    "registros": 1,
+    "pagos": 0
    }
   ],
   "nota": "Registros y pagos de TODOS los canales (voz a voz, WhatsApp, email, anuncios): indicador de crecimiento, no atribución a Meta. Se excluyen las pruebas 17216–17218."

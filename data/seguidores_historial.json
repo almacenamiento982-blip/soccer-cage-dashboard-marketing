@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-07T20:21",
+ "generado": "2026-10-08T08:58",
  "lecturas": [
   {
    "fecha": "2026-10-01",
@@ -49,6 +49,13 @@
    "juventuscampsusa": 10219,
    "jacademylasvegas": 2429,
    "juventuscampsmx": 3086
+  },
+  {
+   "fecha": "2026-10-08",
+   "juventusacademymiami": 27079,
+   "juventuscampsusa": 10219,
+   "jacademylasvegas": 2430,
+   "juventuscampsmx": 3085
   }
  ]
 }
