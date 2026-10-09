@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-08T22:59",
+ "generado": "2026-10-09T09:03",
  "fuente": "montaje_meta_estado.json + meta_diario.json (Meta, por día) + app de registro (agregados) + diagnóstico de temporadas anteriores",
  "informe": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/",
  "campana": "IDCAMPS | LEADS | 26-27",
@@ -145,24 +145,40 @@
   },
   {
    "fecha": "2026-10-08",
-   "gasto": 39.46,
-   "clics": 168,
+   "gasto": 44.31,
+   "clics": 194,
    "leads": {
     "CHI": 9,
     "DAL": 4,
-    "RTG": 2
+    "RTG": 4
+   },
+   "parcial": false
+  },
+  {
+   "fecha": "2026-10-09",
+   "gasto": 5.54,
+   "clics": 23,
+   "leads": {
+    "CHI": 0,
+    "DAL": 0,
+    "RTG": 0
    },
    "parcial": true
   }
  ],
  "app": {
   "leido": "2026-10-09",
-  "total_registros": 120,
+  "total_registros": 121,
   "estados": {
-   "Unpaid": 84,
+   "Unpaid": 85,
    "Paid": 36
   },
   "sedes": {
+   "Hawaii": {
+    "registros": 3,
+    "pagados": 0,
+    "ninos_pagados": 0
+   },
    "Midland": {
     "registros": 6,
     "pagados": 3,
@@ -187,11 +203,6 @@
     "registros": 4,
     "pagados": 1,
     "ninos_pagados": 1
-   },
-   "Hawaii": {
-    "registros": 2,
-    "pagados": 0,
-    "ninos_pagados": 0
    },
    "Mayaguez": {
     "registros": 1,
@@ -272,7 +283,7 @@
    },
    {
     "fecha": "2026-10-08",
-    "registros": 11,
+    "registros": 12,
     "pagos": 3
    },
    {
