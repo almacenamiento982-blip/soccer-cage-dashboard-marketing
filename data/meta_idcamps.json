@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-10T10:20",
+ "generado": "2026-10-10T10:30",
  "fuente": "montaje_meta_estado.json + meta_diario.json (Meta, por día) + app de registro (agregados) + diagnóstico de temporadas anteriores",
  "informe": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/",
  "campana": "IDCAMPS | LEADS | 26-27",
@@ -179,46 +179,60 @@
  ],
  "app": {
   "leido": "2026-10-10",
-  "total_registros": 136,
+  "total_registros": 111,
   "estados": {
    "Unpaid": 97,
    "Paid": 39
   },
   "sedes": {
    "Chicago": {
-    "registros": 84,
+    "registros": 68,
     "pagados": 30,
-    "ninos_pagados": 34
+    "ninos_pagados": 34,
+    "registros_brutos": 84,
+    "familias_sin_pagar": 38
    },
    "Dallas": {
-    "registros": 30,
+    "registros": 23,
     "pagados": 4,
-    "ninos_pagados": 5
+    "ninos_pagados": 5,
+    "registros_brutos": 30,
+    "familias_sin_pagar": 19
    },
    "Hawaii": {
     "registros": 3,
     "pagados": 0,
-    "ninos_pagados": 0
+    "ninos_pagados": 0,
+    "registros_brutos": 3,
+    "familias_sin_pagar": 3
    },
    "Midland": {
-    "registros": 6,
+    "registros": 5,
     "pagados": 3,
-    "ninos_pagados": 5
+    "ninos_pagados": 5,
+    "registros_brutos": 6,
+    "familias_sin_pagar": 2
    },
    "Bayamon": {
     "registros": 8,
     "pagados": 1,
-    "ninos_pagados": 1
+    "ninos_pagados": 1,
+    "registros_brutos": 8,
+    "familias_sin_pagar": 7
    },
    "Atlanta": {
-    "registros": 4,
+    "registros": 3,
     "pagados": 1,
-    "ninos_pagados": 1
+    "ninos_pagados": 1,
+    "registros_brutos": 4,
+    "familias_sin_pagar": 2
    },
    "Mayaguez": {
     "registros": 1,
     "pagados": 0,
-    "ninos_pagados": 0
+    "ninos_pagados": 0,
+    "registros_brutos": 1,
+    "familias_sin_pagar": 1
    }
   },
   "dias": [
@@ -234,7 +248,7 @@
    },
    {
     "fecha": "2026-09-26",
-    "registros": 1,
+    "registros": 0,
     "pagos": 1
    },
    {
@@ -244,7 +258,7 @@
    },
    {
     "fecha": "2026-09-28",
-    "registros": 1,
+    "registros": 0,
     "pagos": 1
    },
    {
@@ -254,42 +268,42 @@
    },
    {
     "fecha": "2026-09-30",
-    "registros": 9,
+    "registros": 8,
     "pagos": 1
    },
    {
     "fecha": "2026-10-01",
-    "registros": 11,
+    "registros": 10,
     "pagos": 4
    },
    {
     "fecha": "2026-10-02",
-    "registros": 16,
+    "registros": 13,
     "pagos": 3
    },
    {
     "fecha": "2026-10-03",
-    "registros": 11,
+    "registros": 10,
     "pagos": 4
    },
    {
     "fecha": "2026-10-04",
-    "registros": 8,
+    "registros": 6,
     "pagos": 3
    },
    {
     "fecha": "2026-10-05",
-    "registros": 14,
+    "registros": 10,
     "pagos": 4
    },
    {
     "fecha": "2026-10-06",
-    "registros": 16,
+    "registros": 9,
     "pagos": 4
    },
    {
     "fecha": "2026-10-07",
-    "registros": 11,
+    "registros": 10,
     "pagos": 2
    },
    {
@@ -304,7 +318,7 @@
    },
    {
     "fecha": "2026-10-10",
-    "registros": 9,
+    "registros": 6,
     "pagos": 1
    }
   ],
