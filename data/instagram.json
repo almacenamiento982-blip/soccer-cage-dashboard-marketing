@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-09T09:03",
+ "generado": "2026-10-09T20:39",
  "fuente": "Auditoría de Instagram (informe unificado) + API de Instagram (Composio, solo lectura)",
  "informe": "https://almacenamiento982-blip.github.io/soccer-cage-instagram-report/",
  "nota_seguidores": "La API entrega los NUEVOS seguidores por día de los últimos 30 días; no descuenta a quienes dejan de seguir. No existe un historial de seguidores totales anterior: queda guardado a partir de esta primera lectura.",
@@ -304,9 +304,9 @@
     }
    ],
    "seguidores": {
-    "actual": 27089,
+    "actual": 27098,
     "fecha": "2026-10-09",
-    "publicaciones_total": 1430,
+    "publicaciones_total": 1431,
     "nuevos_por_dia": [
      {
       "fecha": "2026-09-09",
@@ -426,7 +426,7 @@
      },
      {
       "fecha": "2026-10-08",
-      "n": 0
+      "n": 27
      }
     ]
    },
@@ -920,6 +920,16 @@
      "guardados": 0,
      "compartidos": 5,
      "interacciones": 111
+    },
+    {
+     "fecha": "2026-10-09",
+     "formato": "Reel",
+     "url": "https://www.instagram.com/reel/DeSeojVh_xF/",
+     "alcance": 1617,
+     "vistas": 2803,
+     "guardados": 4,
+     "compartidos": 7,
+     "interacciones": 121
     }
    ],
    "alcance_diario": [
@@ -1234,7 +1244,7 @@
     },
     {
      "fecha": "2026-10-09",
-     "seguidores": 27089,
+     "seguidores": 27098,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -1474,7 +1484,7 @@
     }
    ],
    "seguidores": {
-    "actual": 10225,
+    "actual": 10232,
     "fecha": "2026-10-09",
     "publicaciones_total": 297,
     "nuevos_por_dia": [
@@ -1596,7 +1606,7 @@
      },
      {
       "fecha": "2026-10-08",
-      "n": 0
+      "n": 11
      }
     ]
    },
@@ -2084,7 +2094,7 @@
     },
     {
      "fecha": "2026-10-09",
-     "seguidores": 10225,
+     "seguidores": 10232,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -2324,7 +2334,7 @@
     }
    ],
    "seguidores": {
-    "actual": 2431,
+    "actual": 2430,
     "fecha": "2026-10-09",
     "publicaciones_total": 456,
     "nuevos_por_dia": [
@@ -2446,7 +2456,7 @@
      },
      {
       "fecha": "2026-10-08",
-      "n": 0
+      "n": 2
      }
     ]
    },
@@ -3004,7 +3014,7 @@
     },
     {
      "fecha": "2026-10-09",
-     "seguidores": 2431,
+     "seguidores": 2430,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
@@ -3204,7 +3214,7 @@
     }
    ],
    "seguidores": {
-    "actual": 3084,
+    "actual": 3083,
     "fecha": "2026-10-09",
     "publicaciones_total": 73,
     "nuevos_por_dia": [
@@ -3326,7 +3336,7 @@
      },
      {
       "fecha": "2026-10-08",
-      "n": 0
+      "n": 1
      }
     ]
    },
@@ -3744,7 +3754,7 @@
     },
     {
      "fecha": "2026-10-09",
-     "seguidores": 3084,
+     "seguidores": 3083,
      "fuente": "Lectura de la API (historial del dashboard)"
     }
    ]
