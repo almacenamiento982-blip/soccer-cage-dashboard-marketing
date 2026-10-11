@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-10T10:30",
+ "generado": "2026-10-10T20:45",
  "fuente": "montaje_meta_estado.json + meta_diario.json (Meta, por día) + app de registro (agregados) + diagnóstico de temporadas anteriores",
  "informe": "https://almacenamiento982-blip.github.io/idcamps-montaje-2026-27/",
  "campana": "IDCAMPS | LEADS | 26-27",
@@ -167,37 +167,44 @@
   },
   {
    "fecha": "2026-10-10",
-   "gasto": 10.84,
-   "clics": 42,
+   "gasto": 38.14,
+   "clics": 158,
    "leads": {
-    "CHI": 3,
-    "DAL": 1,
-    "RTG": 0
+    "CHI": 8,
+    "DAL": 7,
+    "RTG": 1
    },
    "parcial": true
   }
  ],
  "app": {
-  "leido": "2026-10-10",
-  "total_registros": 111,
+  "leido": "2026-10-11",
+  "total_registros": 121,
   "estados": {
-   "Unpaid": 97,
-   "Paid": 39
+   "Unpaid": 106,
+   "Paid": 42
   },
   "sedes": {
+   "Dallas": {
+    "registros": 28,
+    "pagados": 5,
+    "ninos_pagados": 6,
+    "registros_brutos": 36,
+    "familias_sin_pagar": 23
+   },
    "Chicago": {
-    "registros": 68,
+    "registros": 71,
     "pagados": 30,
     "ninos_pagados": 34,
-    "registros_brutos": 84,
-    "familias_sin_pagar": 38
+    "registros_brutos": 88,
+    "familias_sin_pagar": 41
    },
-   "Dallas": {
-    "registros": 23,
-    "pagados": 4,
-    "ninos_pagados": 5,
-    "registros_brutos": 30,
-    "familias_sin_pagar": 19
+   "Midland": {
+    "registros": 7,
+    "pagados": 5,
+    "ninos_pagados": 7,
+    "registros_brutos": 8,
+    "familias_sin_pagar": 2
    },
    "Hawaii": {
     "registros": 3,
@@ -205,13 +212,6 @@
     "ninos_pagados": 0,
     "registros_brutos": 3,
     "familias_sin_pagar": 3
-   },
-   "Midland": {
-    "registros": 5,
-    "pagados": 3,
-    "ninos_pagados": 5,
-    "registros_brutos": 6,
-    "familias_sin_pagar": 2
    },
    "Bayamon": {
     "registros": 8,
@@ -318,8 +318,8 @@
    },
    {
     "fecha": "2026-10-10",
-    "registros": 6,
-    "pagos": 1
+    "registros": 16,
+    "pagos": 4
    }
   ],
   "nota": "Registros y pagos de TODOS los canales (voz a voz, WhatsApp, email, anuncios): indicador de crecimiento, no atribución a Meta. Se excluyen las pruebas 17216–17218."
